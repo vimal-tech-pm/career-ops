@@ -1,104 +1,115 @@
-# Career-Ops Profile -- Vimal Sekar
+# Career-Ops Profile -- Dual-Track Example (Engineer + Instructor)
 #
-# Adapted from the dual-track example using the attached candidate source
-# material and master resume. The evidence clearly supports a senior product
-# leadership profile with a meaningful AI-builder lane, so this version does
-# not force the original engineer + instructor framing.
+# Fictional persona. Demonstrates how to configure a profile when you are
+# optimizing for TWO archetypes at the same time -- e.g. Senior AI Engineer
+# AND Senior Technical Instructor. See README.md in this folder for the
+# rationale and the interview-objection playbook.
 #
-# Copy this file to config/profile.yml and adjust any assumptions called out
-# below (especially compensation and work authorization preferences).
+# Copy this file to config/profile.yml and edit before using.
 
 candidate:
-  full_name: "Vimal Sekar"
-  email: "vimalsekar87@outlook.com"
-  phone: "+1 905 872 1552"
-  location: "Toronto, ON, Canada"
-  linkedin: "linkedin.com/in/vimalsekar"
-  portfolio_url: ""
-  github: ""
-  twitter: ""
+  full_name: "Sam Rivera"
+  email: "sam@example.com"
+  phone: "+00-000-0000000"          # placeholder, replace with your real number
+  location: "Berlin, Germany"
+  linkedin: "linkedin.com/in/sam-rivera-example"
+  portfolio_url: "https://sam-rivera.example.dev"
+  github: "github.com/sam-rivera-example"
+  twitter: "https://x.com/sam_rivera_example"
 
 target_roles:
-  # North Star roles derived from the attached resume and source notes.
+  # North Star -- TWO primary tracks, not one.
   primary:
-    - "Senior Product Manager"
-    - "AI Product Manager"
-    - "Product Manager"
-    - "Product Owner"
+    - "Senior AI Engineer"
+    - "Staff AI Engineer"
+    - "Senior Technical Instructor (AI/ML)"
+    - "Lead Curriculum Engineer"
+  # Archetypes -- note: TWO entries with fit: primary.
+  # The evaluator should pick whichever is closer to the JD at scoring time.
   archetypes:
-    - name: "Senior Product Manager"
-      level: "Senior"
+    - name: "Senior AI Engineer"
+      level: "Senior/Staff"
       fit: "primary"
-      track: "product"
-      sell_when: "JD emphasizes roadmap ownership, cross-functional delivery, migration, KPI-driven prioritization, and executive communication"
-    - name: "AI Product Manager"
+      track: "engineering"
+      sell_when: "JD emphasizes shipping production AI, agent infra, LangChain/LangGraph, eval systems, ownership of an AI subsystem"
+    - name: "Senior Technical Instructor (AI/ML)"
+      level: "Senior/Lead"
+      fit: "primary"
+      track: "teaching"
+      sell_when: "JD emphasizes curriculum, cohort delivery, bootcamp/university lectureship, DevRel education, internal enablement, instructor-led training"
+    - name: "AI DevRel Engineer"
       level: "Senior"
       fit: "secondary"
-      track: "ai-product"
-      sell_when: "JD emphasizes AI-enabled product strategy, experimentation, agentic workflows, internal AI adoption, or AI-assisted customer experiences"
-    - name: "Product Manager"
-      level: "Senior"
+      track: "hybrid"
+      sell_when: "JD wants someone who can ship demos, write docs, AND speak at events / run workshops -- the natural dual-track landing zone"
+    - name: "Head of AI Education / Curriculum Lead"
+      level: "Lead/Manager"
       fit: "secondary"
-      track: "product"
-      sell_when: "JD focuses on roadmap ownership, customer problems, feature prioritization, launch execution, or cross-functional product delivery"
-    - name: "Product Owner"
-      level: "Senior"
-      fit: "secondary"
-      track: "product"
-      sell_when: "JD emphasizes backlog ownership, user stories, sprint planning, Agile ceremonies, and close partnership with engineering delivery teams"
-    - name: "0-to-1 AI Product Builder"
+      track: "teaching"
+      sell_when: "JD wants ownership of an entire curriculum, hiring + managing instructors, working with industry partners"
+    - name: "Forward Deployed AI Engineer"
       level: "Senior"
       fit: "adjacent"
-      track: "builder"
-      sell_when: "JD wants hands-on prototyping, fast validation, and product judgment paired with AI-native tooling"
+      track: "engineering"
+      sell_when: "JD wants client-facing technical work, fast prototyping, customer enablement -- teaching skills become a differentiator here"
 
 narrative:
-  headline: "Senior Product Manager who modernizes complex platforms and prototypes AI-native products"
-  exit_story: "Built a product career across enterprise lending, platform modernization, and mission-critical audit workflows, then expanded into AI-native product building and internal AI enablement. Now optimizing for senior product roles where roadmap leadership, platform depth, and practical AI fluency all matter."
+  # One-line headline. Names BOTH tracks. The "rare combination" is the value.
+  headline: "Senior AI engineer who also runs the curriculum -- 60K LOC in production, 5,200+ teaching hours, 80+ careers launched"
+  # Exit story bridges both tracks into one coherent reason for the move.
+  exit_story: "Spent 4 years running an AI subsystem at a knowledge-graph SaaS in parallel with leading the AI Engineering track at a Berlin bootcamp. Both missions are complete -- now optimizing for a single role that uses both sides, or for one side at full intensity if the team is right."
+  # Superpowers -- mix of engineering AND teaching to reflect the dual track.
   superpowers:
-    - "Turn messy platform constraints into clear roadmaps, releases, and migration plans"
-    - "Lead cross-functional execution across 7+ scrum teams and senior stakeholders"
-    - "Use analytics, experimentation, and KPI dashboards to prioritize what actually moves outcomes"
-    - "Bridge modernization, compliance, and customer experience without losing delivery momentum"
-    - "Prototype AI-enabled product ideas quickly and translate them into practical bets"
+    - "Ship production AI systems end-to-end (LangChain, LangGraph, Neo4j, Redis)"
+    - "Design curriculum that produces hireable engineers (92% completion, 80+ placed)"
+    - "Explain hard technical material in plain language -- in two languages"
+    - "Run incident reviews and code reviews at scale without burning out the team"
+    - "Bridge engineering and education -- internal docs that people actually read"
+  # Proof points -- mix engineering AND teaching wins, marked by track.
   proof_points:
-    - name: "Thomson Reuters Confirmation Platform"
-      url: "https://www.linkedin.com/in/vimalsekar/"
-      hero_metric: "125,000+ professionals served; NPS improved from 26 to 70"
-      track: "product"
-    - name: "NextGen Launches and Migration"
-      url: "https://www.linkedin.com/in/vimalsekar/"
-      hero_metric: "2 major launches on schedule; 100% customer migration completion with zero data loss"
-      track: "platform"
-    - name: "Bank Forms Automation"
-      url: "https://www.linkedin.com/in/vimalsekar/"
-      hero_metric: "60% faster time-to-market for 200+ critical forms; $420K+ savings"
-      track: "product"
-    - name: "Digital Lending Platform"
-      url: "https://www.linkedin.com/in/vimalsekar/"
-      hero_metric: "$2B+ in loan originations supported; 10% conversion increase across 100,000 users"
-      track: "product"
-    - name: "AI Product Builder"
-      url: "https://www.linkedin.com/in/vimalsekar/"
-      hero_metric: "Building AI-native product experiments since 2025 using Claude Code, OpenAI Codex, Replit, and Vercel"
-      track: "ai-product"
+    - name: "Knowledge-Graph SaaS AI subsystem"
+      url: "https://sam-rivera.example.dev/case-study-knowledge-graph"
+      hero_metric: "60K LOC owned, 4M+ agent events/month, 38% latency cut"
+      track: "engineering"
+    - name: "agent-skills-kit"
+      url: "https://github.com/sam-rivera-example/agent-skills-kit"
+      hero_metric: "2,400+ GitHub stars, 11 contributors"
+      track: "engineering"
+    - name: "AI Engineering 4-Week Intensive (curriculum)"
+      url: "https://sam-rivera.example.dev/curriculum-ai-eng"
+      hero_metric: "6 cohorts, NPS 71, 92% completion, 80+ careers launched"
+      track: "teaching"
+    - name: "pplx-embed-local-runner"
+      url: "https://github.com/sam-rivera-example/pplx-embed-local-runner"
+      hero_metric: "610 stars, used in 3 lab exercises"
+      track: "hybrid"
+  # Optional dashboard / live demo
+  # dashboard:
+  #   url: "https://sam-rivera.example.dev/demo"
+  #   password: "demo-2026"
 
 compensation:
-  # Compensation is not specified in the source documents; these are reasonable
-  # defaults for a Toronto-based senior product target and should be confirmed.
-  target_range: "CAD 170K-220K"
-  currency: "CAD"
-  minimum: "CAD 150K"
-  location_flexibility: "Toronto hybrid preferred; open to remote roles across Canada and occasional travel"
+  # Default range = engineering range (typically higher).
+  target_range: "EUR 95K-130K"
+  currency: "EUR"
+  minimum: "EUR 80K"
+  location_flexibility: "Remote within EU; up to 1 week/month on-site in Berlin or any EU city"
+
+  # alternate_ranges -- non-standard but the dual-track pattern needs it.
+  # The evaluator should pick the range matching the detected archetype track.
   alternate_ranges:
-    - track: "ai-product"
-      target_range: "CAD 180K-230K"
-      minimum: "CAD 160K"
-      note: "Use this when the role expects both senior PM ownership and hands-on AI-native prototyping."
+    - track: "teaching"
+      target_range: "EUR 70K-95K"
+      minimum: "EUR 60K"
+      note: "Teaching roles pay less than engineering. Walk-away is lower because the work is intrinsically rewarding, but not unlimited."
+    - track: "hybrid"
+      target_range: "EUR 90K-120K"
+      minimum: "EUR 75K"
+      note: "DevRel and Forward-Deployed roles -- price between the two tracks."
 
 location:
-  country: "Canada"
-  city: "Toronto"
-  timezone: "ET"
-  visa_status: "Confirm work authorization / sponsorship preferences"
-  onsite_availability: "Greater Toronto Area hybrid is fine; remote preferred for the right scope"
+  country: "Germany"
+  city: "Berlin"
+  timezone: "CET/CEST"
+  visa_status: "EU citizen, no sponsorship needed"
+  onsite_availability: "1 week/month in any EU city; full remote preferred"
