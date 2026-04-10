@@ -15,12 +15,26 @@
 9. Reordena bullets de experiencia por relevancia al JD
 10. Construye competency grid desde requisitos del JD (6-8 keyword phrases)
 11. Inyecta keywords naturalmente en logros existentes (NUNCA inventa)
-12. **Budget de contenido:** apunta a 2 páginas para perfiles senior. Si después de resumir proyectos y bullets aún queda espacio visible, usa ese espacio para incluir experiencia previa relevante en formato compacto (empresa + rol + 1 bullet) antes de dejar huecos vacíos
-13. **Regla de backfill:** si el JD valora delivery, troubleshooting, implementation, QA, requirements, training, documentation, integrations o consulting, prioriza añadir roles antiguos relevantes (por ejemplo HCL / Infosys) en vez de expandir texto fluff o dejar whitespace
-14. Genera HTML completo desde template + contenido personalizado
-15. Escribe HTML a `/tmp/cv-candidate-{company}.html`
-16. Ejecuta: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
-17. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
+12. **Content budget — HARD RULE: target exactly 2 pages. No more, no less. If content is running short, expand — never leave half a page blank. If running long, compress.**
+13. **All work experience MUST appear — HARD RULE: every role from cv.md must be present in the final PDF, no exceptions. Older or less-relevant roles use compact format: company | role | date range + 1 tight bullet. Never drop a role entirely.**
+14. **Space-filling priority order (use in sequence until 2 pages are filled):**
+    1. Expand top 2-3 roles with additional bullets from article-digest.md (up to 5 bullets per role)
+    2. Add a second or third relevant project from cv.md
+    3. Expand compact older roles from 1 bullet to 2 bullets if JD-relevant (delivery, consulting, QA, implementation)
+    4. Expand the Professional Summary from 3 lines to 4-5 lines
+    5. Expand the Core Competencies grid from 6 to 8-10 tags
+    6. Add a "Key Achievements" callout row under the most relevant role (3 metrics in a tight inline list)
+    **NEVER leave visible whitespace greater than one blank line anywhere on the page.**
+15. **Compression priority order (use in sequence if content exceeds 2 pages):**
+    1. Trim older roles (HCL, Infosys, Murugappa) to 1 bullet each — but KEEP them visible
+    2. Reduce Summary to 3 lines
+    3. Drop the least-relevant project (keep minimum 2)
+    4. Trim bullets on mid-tier roles to 2 each
+    **NEVER drop a role entirely to save space.**
+16. Generate complete HTML from template + personalized content
+17. Write HTML to `/tmp/cv-candidate-{company}.html`
+18. Run: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
+19. Report: PDF path, page count (must be 2), % keyword coverage, list of all roles included (verify none were dropped)
 
 ## Reglas ATS (parseo limpio)
 
