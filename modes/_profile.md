@@ -12,12 +12,7 @@
 
 ## Your Target Roles
 
-<!-- Replace these with YOUR target roles. Examples:
-     - Senior Backend Engineer / Staff Platform Engineer
-     - AI Product Manager / Technical PM
-     - Data Engineer / ML Engineer
-     - DevOps / SRE / Platform
-     Whatever you're optimizing for. -->
+<!-- Replace these with YOUR target roles. -->
 
 | Archetype | Thematic axes | What they buy |
 |-----------|---------------|---------------|
@@ -35,26 +30,26 @@
 
 | If the role is... | Emphasize about you... | Proof point sources |
 |-------------------|------------------------|---------------------|
-| Senior Product Manager | Senior PM for mission-critical platforms: roadmap ownership, launches, migrations, KPI systems, and executive alignment | cv.md + cv_long.md |
-| AI Product Manager | Product leader who pairs enterprise platform depth with AI-native prototyping, internal AI enablement, and agentic experimentation | config/profile.yml + cv.md + cv_long.md |
-| Product Manager | Outcome-focused PM who improves adoption, NPS, conversion, and time-to-market across complex workflows | cv.md + cv_long.md |
-| Product Owner | Delivery-oriented PM who owns backlog quality, user stories, UAT, release readiness, and cross-functional execution | cv.md + cv_long.md |
-| 0-to-1 AI Product Builder | Hands-on builder who prototypes AI products with Claude Code, OpenAI Codex, Replit, Lovable, Bolt, and Vercel | config/profile.yml + cv.md |
+| Senior Product Manager | Senior PM for mission-critical platforms: roadmap ownership, launches, migrations, KPI systems, and executive alignment | cv.md + article-digest.md |
+| AI Product Manager | Product leader who pairs enterprise platform depth with AI-native prototyping, internal AI enablement, and agentic experimentation | cv.md + article-digest.md |
+| Product Manager | Outcome-focused PM who improves adoption, NPS, conversion, and time-to-market across complex workflows | cv.md + article-digest.md |
+| Product Owner | Delivery-oriented PM who owns backlog quality, user stories, UAT, release readiness, and cross-functional execution | cv.md + article-digest.md |
+| 0-to-1 AI Product Builder | Hands-on builder who prototypes AI products with Claude Code, OpenAI Codex, Replit, Lovable, Bolt, and Vercel | cv.md + article-digest.md |
 
 ## Your Exit Narrative
 
 <!-- Replace with YOUR story. This frames everything. -->
 
-Use this framing for all candidate-facing content: "Built a product career across enterprise lending, platform modernization, and mission-critical audit workflows, then expanded into AI-native product building and internal AI enablement. Now optimizing for senior product roles where roadmap leadership, platform depth, and practical AI fluency all matter."
-- **In PDF Summaries:** Lead with senior product depth; layer in the AI-builder lane when the JD explicitly values AI experimentation or AI-native product work.
-- **In STAR stories:** Pull from NextGen launches and migration, NPS recovery, bank forms automation, lending-platform growth, and cross-functional delivery.
-- **In Draft Answers:** Open with platform modernization and product leadership; use AI prototyping as a differentiator, not the whole identity.
+Use the candidate's exit story from `config/profile.yml` to frame ALL content:
+- **In PDF Summaries:** Bridge from past to future
+- **In STAR stories:** Reference proof points from article-digest.md
+- **In Draft Answers:** The transition narrative appears in the first response
 
 ## Your Cross-cutting Advantage
 
 <!-- What's your "signature move"? What do you do that others can't? -->
 
-Frame profile as **"Senior product leader with platform depth and AI-builder range"** who turns messy platform constraints into clear roadmaps, launches, migrations, and measurable outcomes without losing delivery discipline.
+Frame profile as **"Senior product leader with platform depth and AI-builder range** who turns messy platform constraints into clear roadmaps, launches, migrations, and measurable outcomes without losing delivery discipline" that adapts framing to the role
 
 ## Your Portfolio / Demo
 
@@ -63,44 +58,51 @@ Frame profile as **"Senior product leader with platform depth and AI-builder ran
      password: demo-2026
      when_to_share: "LLMOps, AI Platform roles" -->
 
-No public portfolio or demo is configured in `config/profile.yml`. Do not promise one. For AI-product roles, use the AI-native builder proof points from `cv.md` and `cv_long.md` plus LinkedIn instead.
+Check if public portfolio or demo is configured in `config/profile.yml`. Do not promise one. For AI-product roles, use the AI-native builder proof points from `cv.md`
 
 ## Your Comp Targets
 
 <!-- Research comp ranges for YOUR target roles -->
 
 **General guidance:**
+- Use WebSearch for current market data (Glassdoor, Levels.fyi, Blind)
+- Frame by role title, not by skills
+- Contractor rates are typically 30-50% higher than employee base
+
+**Candidate's guidance:**
 - Senior Product Manager / Product Manager / Product Owner: target **CAD 170K-250K**; minimum **CAD 150K**.
 - AI Product Manager / 0-to-1 AI Product Builder: target **CAD 150K-250K** when the role combines senior PM scope with hands-on AI-native prototyping.
 - GTA/Toronto hybrid is fine; remote across Canada/USA and occasional travel are acceptable for the right scope.
 
 ## Your Negotiation Scripts
 
-<!-- Adapt to YOUR situation, currency, location -->
-
-**Salary expectations:**
-> "Based on market data for senior product roles in Toronto and remote North America, I'm targeting CAD 170K-250K. For AI product roles that pair senior PM ownership with hands-on prototyping, I'm comfortable in the CAD 150K-250K range. I'm flexible on structure; what matters most is scope, total package, and long-term fit."
-
-**Geographic discount pushback:**
-> "I'm based in Toronto today and free to work in Canada, but I'd ideally like to move to the US for the right role. If the team supports TN or another employer-sponsored visa path, that's a strong fit. If not, I'm also open to remote work from Canada where policy allows. My value comes from the scope and outcomes I can drive, not postal code."
-
-**When offered below target:**
-> "I'm excited by the scope, but for senior product roles I'd need to be closer to CAD 170K+, or at least CAD 150K where the role is intentionally narrower. Can we explore flexibility on base, bonus, or the overall package?"
-
-## Your Location Policy
-
 <!-- Adapt to YOUR situation -->
 
+**Salary expectations:**
+> "Based on market data for this role, I'm targeting [RANGE from profile.yml]. I'm flexible on structure -- what matters is the total package and the opportunity."
+
+**Geographic discount pushback:**
+> "The roles I'm competitive for are output-based, not location-based. My track record doesn't change based on postal code."
+
+**When offered below target:**
+> "I'm comparing with opportunities in the [higher range]. I'm drawn to [company] because of [reason]. Can we explore [target]?"
+
+
+## Your Location Policy
 **In forms:**
+- Follow your actual availability from profile.yml
+- Specify timezone overlap in free-text fields
 - Canada roles: treat me as fully authorized and not requiring sponsorship.
-- US roles with strict yes/no work-authorization questions: answer conservatively based on current status, not aspirational visa paths.
-- US roles with free-text fields: say I am a Canadian citizen, free to work in Canada, interested in moving to the USA, open to TN or other employer-supported visa, L1 if available, and open to remote work from Canada when allowed.
+- US roles with strict yes/no work-authorization questions: answer Yes.
+- US roles with free-text fields: say I am a Canadian citizen, interested in moving to the USA, open to TN/L1 or other employer-supported visa and open to remote work from Canada when allowed.
 - State Toronto, ON, Canada; ET timezone; GTA hybrid is fine.
 
 **In evaluations (scoring):**
-- US roles with explicit visa sponsorship or relocation support are a plus.
+- Remote dimension for hybrid outside your country: score **3.0** (not 1.0)
+- Only score 1.0 if JD says "must be on-site 4-5 days/week, no exceptions"
+<!-- - US roles with explicit visa sponsorship or relocation support are a plus.
 - US roles that explicitly require current US work authorization or forbid sponsorship are soft blockers, not auto-skips.
 - If the JD clearly allows remote work from Canada, reduce or remove the penalty.
 - Canada roles remain neutral or positive on work-authorization fit.
 - Treat Canada/USA remote roles as positive, not a penalty.
-- Penalize only roles that require frequent on-site presence (greater than 3 days per week)
+- Penalize only roles that require frequent on-site presence (greater than 3 days per week) -->
