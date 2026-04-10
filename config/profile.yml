@@ -14,9 +14,9 @@ candidate:
   phone: "+1 905 872 1552"
   location: "Toronto, ON, Canada"
   linkedin: "linkedin.com/in/vimalsekar"
-  portfolio_url: ""
-  github: ""
-  twitter: ""
+  #portfolio_url: ""
+  #github: ""
+  #twitter: ""
   # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
   # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
   # The ID starts with "D" and is 11 characters long.
@@ -89,19 +89,19 @@ narrative:
 compensation:
   # Compensation is not specified in the source documents; these are reasonable
   # defaults for a Toronto-based senior product target and should be confirmed.
-  target_range: "CAD 170K-220K"
+  target_range: "CAD 170K-250K"
   currency: "CAD"
   minimum: "CAD 150K"
-  location_flexibility: "Toronto hybrid preferred; open to remote roles across Canada and occasional travel"
+  location_flexibility: "GTA/Toronto hybrid preferred; open to remote roles across Canada/USA and occasional travel"
   alternate_ranges:
     - track: "ai-product"
-      target_range: "CAD 180K-230K"
-      minimum: "CAD 160K"
+      target_range: "CAD 150K-250K"
+      minimum: "CAD 150K"
       note: "Use this when the role expects both senior PM ownership and hands-on AI-native prototyping."
 
 location:
   country: "Canada"
   city: "Toronto"
   timezone: "ET"
-  visa_status: "Confirm work authorization / sponsorship preferences"
+  visa_status: "No sponsorship needed"
   onsite_availability: "Greater Toronto Area hybrid is fine; remote preferred for the right scope"
