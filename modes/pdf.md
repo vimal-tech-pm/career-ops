@@ -1,20 +1,20 @@
-# Modo: pdf — Generación de PDF ATS-Optimizado
+# Mode: pdf — ATS-Optimized PDF Generation
 
-## Pipeline completo
+## Complete Pipeline
 
-1. Lee `cv.md` como fuente de verdad base y `article-digest.md` (si existe) como fuente suplementaria de proof points
-2. Pide al usuario el JD si no está en contexto (texto o URL)
-3. Extrae 15-20 keywords del JD
-4. Detecta idioma del JD → idioma del CV (EN default)
-5. Detecta ubicación empresa → formato papel:
+1. Read `cv.md` as the base source of truth and `article-digest.md` (if it exists) as a supplementary source of proof points
+2. Ask the user for the JD if not already in context (text or URL)
+3. Extract 15-20 keywords from the JD
+4. Detect JD language → CV language (EN default)
+5. Detect company location → paper format:
    - US/Canada → `letter`
-   - Resto del mundo → `a4`
-6. Detecta arquetipo del rol → adapta framing
-7. Reescribe Professional Summary inyectando keywords del JD + exit narrative bridge ("Built and sold a business. Now applying systems thinking to [domain del JD].")
-8. Selecciona top 3-4 proyectos más relevantes para la oferta
-9. Reordena bullets de experiencia por relevancia al JD
-10. Construye competency grid desde requisitos del JD (6-8 keyword phrases)
-11. Inyecta keywords naturalmente en logros existentes (NUNCA inventa)
+   - Rest of the world → `a4`
+6. Detect role archetype → adapt framing
+7. Rewrite Professional Summary injecting JD keywords + exit narrative bridge ("Built and sold a business. Now applying systems thinking to [JD domain].")
+8. Select top 3-4 most relevant projects for the offer
+9. Reorder experience bullets by JD relevance
+10. Build competency grid from JD requirements (6-8 keyword phrases)
+11. Inject keywords naturally into existing achievements (NEVER invent)
 12. **Content budget — HARD RULE: target exactly 2 pages. No more, no less. If content is running short, expand — never leave half a page blank. If running long, compress.**
 13. **All work experience MUST appear — HARD RULE: every role from cv.md must be present in the final PDF, no exceptions. Older or less-relevant roles use compact format: company | role | date range + 1 tight bullet. Never drop a role entirely.**
 14. **Space-filling priority order (use in sequence until 2 pages are filled):**
@@ -26,7 +26,7 @@
     6. Add a "Key Achievements" callout row under the most relevant role (3 metrics in a tight inline list)
     **NEVER leave visible whitespace greater than one blank line anywhere on the page.**
 15. **Compression priority order (use in sequence if content exceeds 2 pages):**
-    1. Trim older roles (HCL, Infosys, Murugappa) to 1 bullet each — but KEEP them visible
+    1. Trim older roles to 1 bullet each, starting from the last two in reverse chronological order — but KEEP them visible
     2. Reduce Summary to 3 lines
     3. Drop the least-relevant project (keep minimum 2)
     4. Trim bullets on mid-tier roles to 2 each
@@ -35,81 +35,82 @@
 17. Write HTML to `/tmp/cv-candidate-{company}.html`
 18. Run: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
 19. Report: PDF path, page count (must be 2), % keyword coverage, list of all roles included (verify none were dropped)
+20. **Retry if page count ≠ 2:** If the rendered PDF is not exactly 2 pages, adjust using the space-filling ladder (step 14) or compression ladder (step 15), re-generate HTML, and re-render. Maximum 2 retries.
 
-## Reglas ATS (parseo limpio)
+## ATS Rules (clean parsing)
 
-- Layout single-column (sin sidebars, sin columnas paralelas)
-- Headers estándar: "Professional Summary", "Work Experience", "Education", "Skills", "Certifications", "Projects"
-- Sin texto en imágenes/SVGs
-- Sin info crítica en headers/footers del PDF (ATS los ignora)
-- UTF-8, texto seleccionable (no rasterizado)
-- Sin tablas anidadas
-- Keywords del JD distribuidas: Summary (top 5), primer bullet de cada rol, Skills section
+- Single-column layout (no sidebars, no parallel columns)
+- Standard headers: "Professional Summary", "Work Experience", "Education", "Skills", "Certifications", "Projects"
+- No text in images/SVGs
+- No critical info in PDF headers/footers (ATS ignores them)
+- UTF-8, selectable text (not rasterized)
+- No nested tables
+- JD keywords distributed: Summary (top 5), first bullet of each role, Skills section
 
-## Diseño del PDF
+## PDF Design
 
 - **Fonts**: Space Grotesk (headings, 600-700) + DM Sans (body, 400-500)
 - **Fonts self-hosted**: `fonts/`
-- **Header**: nombre en Space Grotesk 24px bold + línea gradiente `linear-gradient(to right, hsl(187,74%,32%), hsl(270,70%,45%))` 2px + fila de contacto
-- **Section headers**: Space Grotesk 13px, uppercase, letter-spacing 0.05em, color cyan primary
+- **Header**: name in Space Grotesk 24px bold + gradient line `linear-gradient(to right, hsl(187,74%,32%), hsl(270,70%,45%))` 2px + contact row
+- **Section headers**: Space Grotesk 13px, uppercase, letter-spacing 0.05em, cyan primary color
 - **Body**: DM Sans 11px, line-height 1.5
-- **Company names**: color accent purple `hsl(270,70%,45%)`
-- **Márgenes**: 0.6in
-- **Background**: blanco puro
+- **Company names**: accent purple `hsl(270,70%,45%)`
+- **Margins**: 0.6in
+- **Background**: pure white
 
-## Orden de secciones (optimizado "6-second recruiter scan")
+## Section Order (optimized for "6-second recruiter scan")
 
-1. Header (nombre grande, gradiente, contacto, link portfolio)
-2. Professional Summary (3-4 líneas, keyword-dense)
-3. Core Competencies (6-8 keyword phrases en flex-grid)
-4. Work Experience (cronológico inverso)
-5. Projects (top 3-4 más relevantes)
+1. Header (large name, gradient, contact, portfolio link)
+2. Professional Summary (3-5 lines, keyword-dense)
+3. Core Competencies (6-10 keyword phrases in flex-grid)
+4. Work Experience (reverse chronological)
+5. Projects (top 3-4 most relevant)
 6. Education & Certifications
-7. Skills (idiomas + técnicos)
+7. Skills (languages + technical)
 
-## Estrategia de keyword injection (ético, basado en verdad)
+## Keyword Injection Strategy (ethical, truth-based)
 
-Ejemplos de reformulación legítima:
-- JD dice "RAG pipelines" y CV dice "LLM workflows with retrieval" → cambiar a "RAG pipeline design and LLM orchestration workflows"
-- JD dice "MLOps" y CV dice "observability, evals, error handling" → cambiar a "MLOps and observability: evals, error handling, cost monitoring"
-- JD dice "stakeholder management" y CV dice "collaborated with team" → cambiar a "stakeholder management across engineering, operations, and business"
+Legitimate reformulation examples:
+- JD says "RAG pipelines" and CV says "LLM workflows with retrieval" → change to "RAG pipeline design and LLM orchestration workflows"
+- JD says "MLOps" and CV says "observability, evals, error handling" → change to "MLOps and observability: evals, error handling, cost monitoring"
+- JD says "stakeholder management" and CV says "collaborated with team" → change to "stakeholder management across engineering, operations, and business"
 
-**NUNCA añadir skills que el candidato no tiene. Solo reformular experiencia real con el vocabulario exacto del JD.**
+**NEVER add skills the candidate does not have. Only reformulate real experience using the exact vocabulary of the JD.**
 
-**Uso de fuentes suplementarias:**
-- `cv.md` sigue siendo la base canónica del CV
-- `article-digest.md` sirve para recuperar especificidad que quedó comprimida en `cv.md`
-- Si un detalle aparece solo en `article-digest.md`, úsalo para enriquecer bullets o recuperar experiencia antigua relevante, pero mantén el output con forma de CV, no de dossier
+**Supplementary source usage:**
+- `cv.md` remains the canonical base of the CV
+- `article-digest.md` is used to recover specificity that was compressed out of `cv.md`
+- If a detail appears only in `article-digest.md`, use it to enrich bullets or recover relevant older experience — but keep the output shaped like a CV, not a dossier
 
-## Template HTML
+## HTML Template
 
-Usar el template en `cv-template.html`. Reemplazar los placeholders `{{...}}` con contenido personalizado:
+Use the template in `cv-template.html`. Replace the `{{...}}` placeholders with personalized content:
 
-| Placeholder | Contenido |
+| Placeholder | Content |
 |-------------|-----------|
-| `{{LANG}}` | `en` o `es` |
-| `{{PAGE_WIDTH}}` | `8.5in` (letter) o `210mm` (A4) |
+| `{{LANG}}` | `en` or `es` |
+| `{{PAGE_WIDTH}}` | `8.5in` (letter) or `210mm` (A4) |
 | `{{NAME}}` | (from profile.yml) |
 | `{{EMAIL}}` | (from profile.yml) |
 | `{{LINKEDIN_URL}}` | [from profile.yml] |
 | `{{LINKEDIN_DISPLAY}}` | [from profile.yml] |
-| `{{PORTFOLIO_URL}}` | [from profile.yml] (o /es según idioma) |
-| `{{PORTFOLIO_DISPLAY}}` | [from profile.yml] (o /es según idioma) |
+| `{{PORTFOLIO_URL}}` | [from profile.yml] (or /es depending on language) |
+| `{{PORTFOLIO_DISPLAY}}` | [from profile.yml] (or /es depending on language) |
 | `{{LOCATION}}` | [from profile.yml] |
 | `{{SECTION_SUMMARY}}` | Professional Summary / Resumen Profesional |
-| `{{SUMMARY_TEXT}}` | Summary personalizado con keywords |
+| `{{SUMMARY_TEXT}}` | Personalized summary with keywords |
 | `{{SECTION_COMPETENCIES}}` | Core Competencies / Competencias Core |
-| `{{COMPETENCIES}}` | `<span class="competency-tag">keyword</span>` × 6-8 |
+| `{{COMPETENCIES}}` | `<span class="competency-tag">keyword</span>` × 6-10 |
 | `{{SECTION_EXPERIENCE}}` | Work Experience / Experiencia Laboral |
-| `{{EXPERIENCE}}` | HTML de cada trabajo con bullets reordenados |
+| `{{EXPERIENCE}}` | HTML for each role with reordered bullets |
 | `{{SECTION_PROJECTS}}` | Projects / Proyectos |
-| `{{PROJECTS}}` | HTML de top 3-4 proyectos |
+| `{{PROJECTS}}` | HTML for top 3-4 projects |
 | `{{SECTION_EDUCATION}}` | Education / Formación |
-| `{{EDUCATION}}` | HTML de educación |
+| `{{EDUCATION}}` | HTML for education |
 | `{{SECTION_CERTIFICATIONS}}` | Certifications / Certificaciones |
-| `{{CERTIFICATIONS}}` | HTML de certificaciones |
+| `{{CERTIFICATIONS}}` | HTML for certifications |
 | `{{SECTION_SKILLS}}` | Skills / Competencias |
-| `{{SKILLS}}` | HTML de skills |
+| `{{SKILLS}}` | HTML for skills |
 
 ## Canva CV Generation (optional)
 
@@ -140,11 +141,13 @@ c. If mapping fails, show the user what was found and ask for guidance
 
 #### Step 3 — Generate tailored content
 
-Same content generation as the HTML flow (Steps 1-11 above):
+Same content generation as the HTML flow (Steps 1-11 above), plus the same layout rules (Steps 12-15):
 - Rewrite Professional Summary with JD keywords + exit narrative
 - Reorder experience bullets by JD relevance
 - Select top competencies from JD requirements
 - Inject keywords naturally (NEVER invent)
+- **All work experience must appear** (step 13 applies here too — no role may be dropped)
+- **Target 2 pages** (step 12 applies — use space-filling/compression ladders as needed)
 
 **IMPORTANT — Character budget rule:** Each replacement text MUST be approximately the same length as the original text it replaces (within ±15% character count). If tailored content is longer, condense it. The Canva design has fixed-size text boxes — longer text causes overlapping with adjacent elements. Count the characters in each original element from Step 2 and enforce this budget when generating replacements.
 
@@ -193,6 +196,6 @@ d. Report: PDF path, file size, Canva design URL (for manual tweaking)
 - If `find_and_replace_text` finds no matches → try broader substring matching
 - Always provide the Canva design URL so the user can edit manually if auto-edit fails
 
-## Post-generación
+## Post-generation
 
-Actualizar tracker si la oferta ya está registrada: cambiar PDF de ❌ a ✅.
+Update tracker if the offer is already registered: change PDF from ❌ to ✅.
