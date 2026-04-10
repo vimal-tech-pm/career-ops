@@ -198,7 +198,7 @@ Donde `{company-slug}` es el nombre de empresa en lowercase, sin espacios, con g
 
 ### Paso 4 — Generar PDF
 
-1. Lee `cv.md` + `i18n.ts`
+1. Lee `cv.md`, `article-digest.md` (si existe) + `i18n.ts`
 2. Extrae 15-20 keywords del JD
 3. Detecta idioma del JD → idioma del CV (EN default)
 4. Detecta ubicación empresa → formato papel: US/Canada → `letter`, resto → `a4`
@@ -208,16 +208,18 @@ Donde `{company-slug}` es el nombre de empresa en lowercase, sin espacios, con g
 8. Reordena bullets de experiencia por relevancia al JD
 9. Construye competency grid (6-8 keyword phrases)
 10. Inyecta keywords en logros existentes (**NUNCA inventa**)
-11. Genera HTML completo desde template (lee `templates/cv-template.html`)
-12. Escribe HTML a `/tmp/cv-candidate-{company-slug}.html`
-13. Ejecuta:
+11. Apunta a 2 páginas. Si aún queda espacio visible, recupera experiencia previa relevante en formato compacto (empresa + rol + 1 bullet) antes de dejar huecos vacíos
+12. Si el JD valora implementation, troubleshooting, consulting, QA, requirements, training, documentation o integrations, prioriza añadir experiencia antigua relevante desde `article-digest.md` / `cv.md`
+13. Genera HTML completo desde template (lee `templates/cv-template.html`)
+14. Escribe HTML a `/tmp/cv-candidate-{company-slug}.html`
+15. Ejecuta:
 ```bash
 node generate-pdf.mjs \
   /tmp/cv-candidate-{company-slug}.html \
   output/cv-candidate-{company-slug}-{{DATE}}.pdf \
   --format={letter|a4}
 ```
-14. Reporta: ruta PDF, nº páginas, % cobertura keywords
+16. Reporta: ruta PDF, nº páginas, % cobertura keywords
 
 **Reglas ATS:**
 - Single-column (sin sidebars)

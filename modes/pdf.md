@@ -2,7 +2,7 @@
 
 ## Pipeline completo
 
-1. Lee `cv.md` como fuentes de verdad
+1. Lee `cv.md` como fuente de verdad base y `article-digest.md` (si existe) como fuente suplementaria de proof points
 2. Pide al usuario el JD si no está en contexto (texto o URL)
 3. Extrae 15-20 keywords del JD
 4. Detecta idioma del JD → idioma del CV (EN default)
@@ -15,10 +15,12 @@
 9. Reordena bullets de experiencia por relevancia al JD
 10. Construye competency grid desde requisitos del JD (6-8 keyword phrases)
 11. Inyecta keywords naturalmente en logros existentes (NUNCA inventa)
-12. Genera HTML completo desde template + contenido personalizado
-13. Escribe HTML a `/tmp/cv-candidate-{company}.html`
-14. Ejecuta: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
-15. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
+12. **Budget de contenido:** apunta a 2 páginas para perfiles senior. Si después de resumir proyectos y bullets aún queda espacio visible, usa ese espacio para incluir experiencia previa relevante en formato compacto (empresa + rol + 1 bullet) antes de dejar huecos vacíos
+13. **Regla de backfill:** si el JD valora delivery, troubleshooting, implementation, QA, requirements, training, documentation, integrations o consulting, prioriza añadir roles antiguos relevantes (por ejemplo HCL / Infosys) en vez de expandir texto fluff o dejar whitespace
+14. Genera HTML completo desde template + contenido personalizado
+15. Escribe HTML a `/tmp/cv-candidate-{company}.html`
+16. Ejecuta: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
+17. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
 
 ## Reglas ATS (parseo limpio)
 
@@ -59,6 +61,11 @@ Ejemplos de reformulación legítima:
 - JD dice "stakeholder management" y CV dice "collaborated with team" → cambiar a "stakeholder management across engineering, operations, and business"
 
 **NUNCA añadir skills que el candidato no tiene. Solo reformular experiencia real con el vocabulario exacto del JD.**
+
+**Uso de fuentes suplementarias:**
+- `cv.md` sigue siendo la base canónica del CV
+- `article-digest.md` sirve para recuperar especificidad que quedó comprimida en `cv.md`
+- Si un detalle aparece solo en `article-digest.md`, úsalo para enriquecer bullets o recuperar experiencia antigua relevante, pero mantén el output con forma de CV, no de dossier
 
 ## Template HTML
 

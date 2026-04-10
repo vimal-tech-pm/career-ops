@@ -9,7 +9,26 @@ Key sections:
 - **target_roles**: Your North Star roles and archetypes
 - **narrative**: Your headline, exit story, superpowers, proof points
 - **compensation**: Target range, minimum, currency
-- **location**: Country, timezone, visa status, on-site availability
+- **location**: Country, timezone, citizenship, short visa summary, detailed work authorization, US relocation goal, sponsorship policy, on-site availability
+
+Recommended `location` shape:
+
+```yaml
+location:
+  country: "Canada"
+  city: "Toronto"
+  timezone: "ET"
+  citizenship: "Canadian citizen"
+  visa_status: "Authorized to work in Canada without sponsorship; US roles may require employer-supported visa or remote-from-Canada arrangement"
+  work_authorization:
+    canada: "Authorized without sponsorship"
+    united_states_current: "Not currently authorized without employer support"
+    united_states_preferred_paths: "TN preferred; L1 if available; other employer-sponsored US visa acceptable"
+    united_states_remote_fallback: "Open to remote work from Canada when allowed"
+  us_relocation_goal: "Ideally wants to move to the USA for the right role"
+  sponsorship_policy: "US roles that explicitly sponsor visas are a plus; US roles that require existing US work authorization and forbid sponsorship are soft blockers unless remote from Canada is allowed"
+  onsite_availability: "Greater Toronto Area hybrid is fine; remote preferred for the right scope"
+```
 
 ## Target Roles (modes/_shared.md)
 
