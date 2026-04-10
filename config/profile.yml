@@ -108,8 +108,8 @@ location:
   work_authorization:
     canada: "Authorized without sponsorship"
     united_states_current: "Not currently authorized without employer support"
-    united_states_preferred_paths: "TN preferred; L1 if available; other employer-sponsored US visa acceptable"
+    united_states_preferred_paths: "TN/L1/other employer-sponsored US visa preferred"
     united_states_remote_fallback: "Open to remote work from Canada when allowed"
   us_relocation_goal: "Ideally wants to move to the USA for the right role"
   sponsorship_policy: "US roles that explicitly sponsor visas are a plus; US roles that require existing US work authorization and forbid sponsorship are soft blockers unless remote from Canada is allowed"
-  onsite_availability: "Greater Toronto Area hybrid is fine; remote preferred for the right scope"
+  onsite_availability: "Greater Toronto Area hybrid is fine; remote preferred"
