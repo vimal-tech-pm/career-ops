@@ -6,21 +6,14 @@
 <title>{{NAME}} — CV</title>
 <style>
   @font-face {
-    font-family: 'Space Grotesk';
-    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
-    font-weight: 300 700;
+    font-family: 'Calibri-Bold';
+    src: local('Carlito Bold'),
+         local('Carlito-Bold'),
+         local('Carlito'),
+         url('./fonts/Carlito-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
-  @font-face {
-    font-family: 'Space Grotesk';
-    src: url('./fonts/space-grotesk-latin-ext.woff2') format('woff2');
-    font-weight: 300 700;
-    font-style: normal;
-    font-display: swap;
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
   }
 
   @font-face {
@@ -75,7 +68,7 @@
   }
 
   .header h1 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Calibri-Bold', Calibri, sans-serif;
     font-size: 28px;
     font-weight: 700;
     color: #1a1a2e;
@@ -86,7 +79,7 @@
 
   .header-gradient {
     height: 2px;
-    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    background: linear-gradient(to right, hsl(187, 74%, 32%), #2563b0);
     border-radius: 1px;
     margin-bottom: 10px;
   }
@@ -98,16 +91,16 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 10.5px;
     line-height: 1.4;
-    color: #555;
+    color: #555555;
   }
 
   .contact-row a {
-    color: #555;
+    color: #555555;
     text-decoration: none;
   }
 
   .contact-row .separator {
-    color: #ccc;
+    color: #555555;
   }
 
   /* === SECTIONS === */
@@ -116,13 +109,13 @@
   }
 
   .section-title {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Calibri-Bold', Calibri, sans-serif;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: hsl(187, 74%, 32%);
-    border-bottom: 1.5px solid #e2e2e2;
+    border-bottom: 1.5px solid #555555;
     padding-bottom: 4px;
     margin-bottom: 10px;
     line-height: 1.2;
@@ -132,7 +125,7 @@
   .summary-text {
     font-size: 11px;
     line-height: 1.7;
-    color: #2f2f2f;
+    color: #1a1a2e;
   }
 
   /* Links must never break across lines */
@@ -172,28 +165,28 @@
   }
 
   .job-company {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Calibri-Bold', Calibri, sans-serif;
     font-size: 12.5px;
     font-weight: 600;
-    color: hsl(270, 70%, 45%);
+    color: #2563b0;
   }
 
   .job-period {
     font-size: 10.5px;
-    color: #777;
+    color: #555555;
     white-space: nowrap;
   }
 
   .job-role {
     font-size: 11px;
     font-weight: 600;
-    color: #333;
+    color: #555555;
     margin-bottom: 6px;
   }
 
   .job-location {
     font-size: 10px;
-    color: #888;
+    color: #555555;
   }
 
   .job ul {
@@ -204,7 +197,7 @@
   .job li {
     font-size: 10.5px;
     line-height: 1.6;
-    color: #333;
+    color: #1a1a2e;
     margin-bottom: 4px;
   }
 
@@ -218,10 +211,10 @@
   }
 
   .project-title {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Calibri-Bold', Calibri, sans-serif;
     font-size: 11.5px;
     font-weight: 600;
-    color: hsl(270, 70%, 45%);
+    color: #2563b0;
   }
 
   .project-badge {
@@ -236,14 +229,14 @@
 
   .project-desc {
     font-size: 10.5px;
-    color: #444;
+    color: #1a1a2e;
     margin-top: 3px;
     line-height: 1.55;
   }
 
   .project-tech {
     font-size: 9.5px;
-    color: #888;
+    color: #555555;
     margin-top: 3px;
   }
 
@@ -262,23 +255,23 @@
   .edu-title {
     font-weight: 600;
     font-size: 11px;
-    color: #333;
+    color: #1a1a2e;
   }
 
   .edu-org {
-    color: hsl(270, 70%, 45%);
+    color: #2563b0;
     font-weight: 500;
   }
 
   .edu-year {
     font-size: 10px;
-    color: #777;
+    color: #555555;
     white-space: nowrap;
   }
 
   .edu-desc {
     font-size: 10px;
-    color: #666;
+    color: #555555;
     margin-top: 2px;
     line-height: 1.5;
   }
@@ -295,16 +288,16 @@
   .cert-title {
     font-size: 10.5px;
     font-weight: 500;
-    color: #333;
+    color: #1a1a2e;
   }
 
   .cert-org {
-    color: hsl(270, 70%, 45%);
+    color: #2563b0;
   }
 
   .cert-year {
     font-size: 10px;
-    color: #777;
+    color: #555555;
     white-space: nowrap;
   }
 
@@ -317,12 +310,12 @@
 
   .skill-item {
     font-size: 10.5px;
-    color: #444;
+    color: #1a1a2e;
   }
 
   .skill-category {
     font-weight: 600;
-    color: #333;
+    color: #1a1a2e;
     font-size: 10.5px;
   }
 
