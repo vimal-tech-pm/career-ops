@@ -24,11 +24,28 @@
  */
 
 import { chromium } from 'playwright';
-import { mkdir, writeFile, access } from 'fs/promises';
+import { mkdir, writeFile, access, readFile } from 'fs/promises';
 import { constants } from 'fs';
 import { createInterface } from 'readline';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+
+// Load .env file manually (compatible with all Node versions)
+const __envPath = resolve(dirname(fileURLToPath(import.meta.url)), '.env');
+try {
+  const envContent = await readFile(__envPath, 'utf8');
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const eq = trimmed.indexOf('=');
+    if (eq === -1) continue;
+    const key = trimmed.slice(0, eq).trim();
+    const val = trimmed.slice(eq + 1).trim().replace(/^["']|["']$/g, '');
+    if (key && !(key in process.env)) process.env[key] = val;
+  }
+} catch {
+  // .env not found — credentials must come from environment directly
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SESSION_DIR  = resolve(__dirname, '.linkedin-session');
