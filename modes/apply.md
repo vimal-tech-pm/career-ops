@@ -6,11 +6,17 @@ Modo interactivo para cuando el candidato está rellenando un formulario de apli
 
 - **Mejor con Playwright visible**: En modo visible, el candidato ve el navegador y Claude puede interactuar con la página.
 - **Sin Playwright**: el candidato comparte un screenshot o pega las preguntas manualmente.
+- **LinkedIn Easy Apply**: Requiere autenticación previa. Si la URL es de LinkedIn, comprobar que `.linkedin-session/storageState.json` existe. Si no existe, pedir al candidato que ejecute `npm run linkedin-login` primero.
 
 ## Workflow
 
 ```
 1. DETECTAR    → Leer Chrome tab activa (screenshot/URL/título)
+1b. LINKEDIN   → Si la URL contiene linkedin.com:
+                 - Comprobar si .linkedin-session/storageState.json existe
+                 - Si NO existe → decir "LinkedIn requiere autenticación previa.
+                   Ejecuta `npm run linkedin-login` y vuelve aquí." → PARAR
+                 - Si existe → continuar con la sesión guardada
 2. IDENTIFICAR → Extraer empresa + rol de la página
 3. BUSCAR      → Match contra reports existentes en reports/
 4. CARGAR      → Leer report completo + Section G (si existe)
@@ -23,6 +29,8 @@ Modo interactivo para cuando el candidato está rellenando un formulario de apli
 ## Paso 1 — Detectar la oferta
 
 **Con Playwright:** Tomar snapshot de la página activa. Leer título, URL, y contenido visible.
+
+**Con Playwright (LinkedIn):** Si la URL es de LinkedIn, verificar primero que `.linkedin-session/storageState.json` existe. Si está presente, la sesión guardada permite navegar sin que LinkedIn redirija al login. Si no existe, pedir al candidato que ejecute `npm run linkedin-login` antes de continuar.
 
 **Sin Playwright:** Pedir al candidato que:
 - Comparta un screenshot del formulario (Read tool lee imágenes)
