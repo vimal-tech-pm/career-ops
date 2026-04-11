@@ -71,10 +71,16 @@ node cv-sync-check.mjs      # Check configuration
 node verify-pipeline.mjs     # Check pipeline integrity
 ```
 
-## Build Dashboard (Optional)
+## Build Dashboard (Optional - 1st time)
 
 ```bash
 cd dashboard
 go build -o career-dashboard .
 ./career-dashboard            # Opens TUI pipeline viewer
+```
+## Run Dashboard (Optional)
+
+```bash
+cd ..
+./dashboard/career-dashboard          # Opens TUI pipeline viewer
 ```

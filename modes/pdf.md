@@ -15,27 +15,36 @@
 9. Reorder experience bullets by JD relevance
 10. Build competency grid from JD requirements (6-8 keyword phrases)
 11. Inject keywords naturally into existing achievements (NEVER invent)
-12. **Content budget — HARD RULE: target exactly 2 pages. No more, no less. If content is running short, expand — never leave half a page blank. If running long, compress.**
-13. **All work experience MUST appear — HARD RULE: every role from cv.md must be present in the final PDF, no exceptions. Older or less-relevant roles use compact format: company | role | date range + 1 tight bullet. Never drop a role entirely.**
-14. **Space-filling priority order (use in sequence until 2 pages are filled):**
-    1. Expand top 2-3 roles with additional bullets from article-digest.md (up to 5 bullets per role)
-    2. Add a second or third relevant project from cv.md
-    3. Expand compact older roles from 1 bullet to 2 bullets if JD-relevant (delivery, consulting, QA, implementation)
-    4. Expand the Professional Summary from 3 lines to 4-5 lines
-    5. Expand the Core Competencies grid from 6 to 8-10 tags
-    6. Add a "Key Achievements" callout row under the most relevant role (3 metrics in a tight inline list)
+12. **Content budget — HARD RULE: the final PDF MUST fill exactly 2 full pages. No half-empty pages. No 3-page overflow.**
+13. **All work experience MUST appear — HARD RULE: every role from cv.md must be present in the final PDF, no exceptions. Never drop a role entirely.**
+14. **Content density targets (apply BEFORE generating HTML — do not generate and then check):**
+    With the current template (0.6in margins, 11px body, line-height 1.5), a full 2-page letter/A4 PDF holds approximately 85-95 content lines. Use these targets as your starting point:
+    - **Professional Summary:** 4-5 lines (not 3 — use the space)
+    - **Core Competencies:** keep as-is from JD keyword extraction
+    - **Top 2 most relevant roles:** 4-5 bullets each, with at least 2 bullets wrapping to 2 lines. Pull additional proof points from article-digest.md.
+    - **Mid-tier roles:** 2-3 bullets each
+    - **Older/less relevant roles (last 2-3 in reverse chronological order):** 1-2 bullets each. If the JD values delivery, consulting, QA, or implementation, expand to 2 bullets.
+    - **Projects:** 3 projects, each with a 2-line description (not 1-line summaries)
+    - **Education, Certifications, Skills:** keep as-is (these are fixed-length)
+    **Mental math check: before generating HTML, count your approximate lines. If total is under 80, you need more content. If over 95, compress.**
+15. **Space-filling priority order (if estimated content is under ~85 lines, apply in sequence):**
+    1. Expand top roles from 4 to 5 bullets using article-digest.md proof points
+    2. Expand older roles from 1 to 2 bullets each
+    3. Expand project descriptions from 2 to 3 lines each
+    4. Add a 4th project
+    5. Add a "Key Achievements" callout row under the most relevant role (3 metrics in a tight inline list)
     **NEVER leave visible whitespace greater than one blank line anywhere on the page.**
-15. **Compression priority order (use in sequence if content exceeds 2 pages):**
+16. **Compression priority order (if estimated content exceeds ~95 lines, apply in sequence):**
     1. Trim older roles to 1 bullet each, starting from the last two in reverse chronological order — but KEEP them visible
     2. Reduce Summary to 3 lines
     3. Drop the least-relevant project (keep minimum 2)
     4. Trim bullets on mid-tier roles to 2 each
     **NEVER drop a role entirely to save space.**
-16. Generate complete HTML from template + personalized content
-17. Write HTML to `/tmp/cv-candidate-{company}.html`
-18. Run: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
-19. Report: PDF path, page count (must be 2), % keyword coverage, list of all roles included (verify none were dropped)
-20. **Retry if page count ≠ 2:** If the rendered PDF is not exactly 2 pages, adjust using the space-filling ladder (step 14) or compression ladder (step 15), re-generate HTML, and re-render. Maximum 2 retries.
+17. Generate complete HTML from template + personalized content
+18. Write HTML to `/tmp/cv-candidate-{company}.html`
+19. Run: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
+20. Report: PDF path, page count (must be 2), % keyword coverage, list of all roles included (verify none were dropped)
+21. **Retry if page count ≠ 2:** If the rendered PDF is not exactly 2 pages, adjust using the space-filling ladder (step 15) or compression ladder (step 16), re-generate HTML, and re-render. Maximum 2 retries.
 
 ## ATS Rules (clean parsing)
 
@@ -62,7 +71,7 @@
 
 1. Header (large name, gradient, contact, portfolio link)
 2. Professional Summary (3-5 lines, keyword-dense)
-3. Core Competencies (6-10 keyword phrases in flex-grid)
+3. Core Competencies (6-8 keyword phrases in flex-grid)
 4. Work Experience (reverse chronological)
 5. Projects (top 3-4 most relevant)
 6. Education & Certifications
@@ -100,7 +109,7 @@ Use the template in `cv-template.html`. Replace the `{{...}}` placeholders with 
 | `{{SECTION_SUMMARY}}` | Professional Summary / Resumen Profesional |
 | `{{SUMMARY_TEXT}}` | Personalized summary with keywords |
 | `{{SECTION_COMPETENCIES}}` | Core Competencies / Competencias Core |
-| `{{COMPETENCIES}}` | `<span class="competency-tag">keyword</span>` × 6-10 |
+| `{{COMPETENCIES}}` | `<span class="competency-tag">keyword</span>` × 6-8 |
 | `{{SECTION_EXPERIENCE}}` | Work Experience / Experiencia Laboral |
 | `{{EXPERIENCE}}` | HTML for each role with reordered bullets |
 | `{{SECTION_PROJECTS}}` | Projects / Proyectos |
@@ -141,13 +150,14 @@ c. If mapping fails, show the user what was found and ask for guidance
 
 #### Step 3 — Generate tailored content
 
-Same content generation as the HTML flow (Steps 1-11 above), plus the same layout rules (Steps 12-15):
+Same content generation as the HTML flow (Steps 1-11 above), plus the same layout rules (Steps 12-16):
 - Rewrite Professional Summary with JD keywords + exit narrative
 - Reorder experience bullets by JD relevance
 - Select top competencies from JD requirements
 - Inject keywords naturally (NEVER invent)
 - **All work experience must appear** (step 13 applies here too — no role may be dropped)
-- **Target 2 pages** (step 12 applies — use space-filling/compression ladders as needed)
+- **Use content density targets from step 14** — same bullet counts and line estimates apply
+- **Target 2 full pages** (step 12 applies — use space-filling/compression ladders as needed)
 
 **IMPORTANT — Character budget rule:** Each replacement text MUST be approximately the same length as the original text it replaces (within ±15% character count). If tailored content is longer, condense it. The Canva design has fixed-size text boxes — longer text causes overlapping with adjacent elements. Count the characters in each original element from Step 2 and enforce this budget when generating replacements.
 
