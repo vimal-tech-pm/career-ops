@@ -230,12 +230,12 @@ node generate-pdf.mjs \
 - Keywords distribuidas: Summary (top 5), primer bullet de cada rol, Skills section
 
 **Diseño:**
-- Fonts: Space Grotesk (headings, 600-700) + DM Sans (body, 400-500)
+- Fonts: Calibri (headings, 700) + DM Sans (body, 400-500)
 - Fonts self-hosted: `fonts/`
-- Header: Space Grotesk 24px bold + gradiente cyan→purple 2px + contacto
-- Section headers: Space Grotesk 13px uppercase, color cyan `hsl(187,74%,32%)`
+- Header: Calibri 24px bold + gradient cyan→blue 2px + contact row
+- Section headers: Calibri 13px uppercase, color cyan `hsl(187,74%,32%)`
 - Body: DM Sans 11px, line-height 1.5
-- Company names: purple `hsl(270,70%,45%)`
+- Company names: blue `#2563b0`
 - Márgenes: 0.6in
 - Background: blanco
 

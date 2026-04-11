@@ -55,8 +55,8 @@ Copy from `templates/portals.example.yml` and customize:
 ## CV Template (templates/cv-template.html)
 
 The HTML template uses these design tokens:
-- **Fonts**: Space Grotesk (headings) + DM Sans (body) -- self-hosted in `fonts/`
-- **Colors**: Cyan primary (`hsl(187,74%,32%)`) + Purple accent (`hsl(270,70%,45%)`)
+- **Fonts**: Calibri (headings) + DM Sans (body) -- self-hosted in `fonts/`
+- **Colors**: Cyan primary (`hsl(187,74%,32%)`) + Blue accent (`#2563b0`)
 - **Layout**: Single-column, ATS-optimized
 
 To customize fonts/colors, edit the CSS in the template. Update font files in `fonts/` if switching fonts.

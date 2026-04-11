@@ -49,12 +49,12 @@
 
 ## PDF Design
 
-- **Fonts**: Space Grotesk (headings, 600-700) + DM Sans (body, 400-500)
+- **Fonts**: Calibri (headings, 700) + DM Sans (body, 400-500)
 - **Fonts self-hosted**: `fonts/`
-- **Header**: name in Space Grotesk 24px bold + gradient line `linear-gradient(to right, hsl(187,74%,32%), hsl(270,70%,45%))` 2px + contact row
-- **Section headers**: Space Grotesk 13px, uppercase, letter-spacing 0.05em, cyan primary color
+- **Header**: name in Calibri 24px bold + gradient line `linear-gradient(to right, hsl(187,74%,32%), #2563b0)` 2px + contact row
+- **Section headers**: Calibri 13px, uppercase, letter-spacing 0.05em, cyan primary color
 - **Body**: DM Sans 11px, line-height 1.5
-- **Company names**: accent purple `hsl(270,70%,45%)`
+- **Company names**: accent blue `#2563b0`
 - **Margins**: 0.6in
 - **Background**: pure white
 
