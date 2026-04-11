@@ -198,7 +198,7 @@ Donde `{company-slug}` es el nombre de empresa en lowercase, sin espacios, con g
 
 ### Paso 4 — Generar PDF
 
-1. Lee `cv.md` + `i18n.ts`
+1. Lee `cv.md`, `article-digest.md` (si existe) + `i18n.ts`
 2. Extrae 15-20 keywords del JD
 3. Detecta idioma del JD → idioma del CV (EN default)
 4. Detecta ubicación empresa → formato papel: US/Canada → `letter`, resto → `a4`
@@ -208,16 +208,18 @@ Donde `{company-slug}` es el nombre de empresa en lowercase, sin espacios, con g
 8. Reordena bullets de experiencia por relevancia al JD
 9. Construye competency grid (6-8 keyword phrases)
 10. Inyecta keywords en logros existentes (**NUNCA inventa**)
-11. Genera HTML completo desde template (lee `templates/cv-template.html`)
-12. Escribe HTML a `/tmp/cv-candidate-{company-slug}.html`
-13. Ejecuta:
+11. Apunta a 2 páginas. Si aún queda espacio visible, recupera experiencia previa relevante en formato compacto (empresa + rol + 1 bullet) antes de dejar huecos vacíos
+12. Si el JD valora implementation, troubleshooting, consulting, QA, requirements, training, documentation o integrations, prioriza añadir experiencia antigua relevante desde `article-digest.md` / `cv.md`
+13. Genera HTML completo desde template (lee `templates/cv-template.html`)
+14. Escribe HTML a `/tmp/cv-candidate-{company-slug}.html`
+15. Ejecuta:
 ```bash
 node generate-pdf.mjs \
   /tmp/cv-candidate-{company-slug}.html \
   output/cv-candidate-{company-slug}-{{DATE}}.pdf \
   --format={letter|a4}
 ```
-14. Reporta: ruta PDF, nº páginas, % cobertura keywords
+16. Reporta: ruta PDF, nº páginas, % cobertura keywords
 
 **Reglas ATS:**
 - Single-column (sin sidebars)
@@ -228,12 +230,12 @@ node generate-pdf.mjs \
 - Keywords distribuidas: Summary (top 5), primer bullet de cada rol, Skills section
 
 **Diseño:**
-- Fonts: Space Grotesk (headings, 600-700) + DM Sans (body, 400-500)
+- Fonts: Calibri (headings, 700) + DM Sans (body, 400-500)
 - Fonts self-hosted: `fonts/`
-- Header: Space Grotesk 24px bold + gradiente cyan→purple 2px + contacto
-- Section headers: Space Grotesk 13px uppercase, color cyan `hsl(187,74%,32%)`
+- Header: Calibri 24px bold + gradient cyan→blue 2px + contact row
+- Section headers: Calibri 13px uppercase, color cyan `hsl(187,74%,32%)`
 - Body: DM Sans 11px, line-height 1.5
-- Company names: purple `hsl(270,70%,45%)`
+- Company names: blue `#2563b0`
 - Márgenes: 0.6in
 - Background: blanco
 
