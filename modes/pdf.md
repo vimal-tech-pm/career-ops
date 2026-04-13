@@ -70,12 +70,7 @@ Usar el template en `cv-template.html`. Reemplazar los placeholders `{{...}}` co
 | `{{LANG}}` | `en` o `es` |
 | `{{PAGE_WIDTH}}` | `8.5in` (letter) o `210mm` (A4) |
 | `{{NAME}}` | (from profile.yml) |
-| `{{EMAIL}}` | (from profile.yml) |
-| `{{LINKEDIN_URL}}` | [from profile.yml] |
-| `{{LINKEDIN_DISPLAY}}` | [from profile.yml] |
-| `{{PORTFOLIO_URL}}` | [from profile.yml] (o /es según idioma) |
-| `{{PORTFOLIO_DISPLAY}}` | [from profile.yml] (o /es según idioma) |
-| `{{LOCATION}}` | [from profile.yml] |
+| `{{CONTACT_ITEMS}}` | Header contact HTML built from `config/profile.yml`: email, phone, LinkedIn, portfolio if present, location |
 | `{{SECTION_SUMMARY}}` | Professional Summary / Resumen Profesional |
 | `{{SUMMARY_TEXT}}` | Summary personalizado con keywords |
 | `{{SECTION_COMPETENCIES}}` | Core Competencies / Competencias Core |
@@ -90,6 +85,18 @@ Usar el template en `cv-template.html`. Reemplazar los placeholders `{{...}}` co
 | `{{CERTIFICATIONS}}` | HTML de certificaciones |
 | `{{SECTION_SKILLS}}` | Skills / Competencias |
 | `{{SKILLS}}` | HTML de skills |
+
+### Contact row generation
+
+Build `{{CONTACT_ITEMS}}` from `candidate` in `config/profile.yml` in this exact order:
+
+1. `candidate.email`
+2. `candidate.phone`
+3. `candidate.linkedin`
+4. `candidate.portfolio_url` if present
+5. `candidate.location`
+
+Render each present item as a `<span>` or `<a>` and render `<span class="separator">|</span>` only between present items. If `phone` or `portfolio_url` is missing, omit that item and its separator. Never leave leading, trailing, doubled, or empty separators.
 
 ## Canva CV Generation (optional)
 
