@@ -86,6 +86,15 @@ narrative:
       hero_metric: "Building AI-native product experiments since 2025 using Claude Code, OpenAI Codex, Replit, and Vercel"
       track: "ai-product"
 
+resume_mapping:
+  # Treat these as work arrangements/capacity labels rather than employer names
+  # when generating company-role maps from cv.md.
+  swap_when_company_is_work_arrangement: true
+  work_arrangement_companies:
+    - "Self-Employed"
+    - "Independent"
+    - "Freelance"
+
 compensation:
   # Compensation is not specified in the source documents; these are reasonable
   # defaults for a Toronto-based senior product target and should be confirmed.
