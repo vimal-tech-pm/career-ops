@@ -1,0 +1,124 @@
+# Career-Ops Profile -- Vimal Sekar
+#
+# Adapted from the dual-track example using the attached candidate source
+# material and master resume. The evidence clearly supports a senior product
+# leadership profile with a meaningful AI-builder lane, so this version does
+# not force the original engineer + instructor framing.
+#
+# Review the assumptions called out below, especially compensation and work
+# authorization preferences.
+
+candidate:
+  full_name: "Vimal Sekar"
+  email: "vimalsekar87@outlook.com"
+  phone: "+1 905 872 1552"
+  location: "Toronto, ON, Canada"
+  linkedin: "linkedin.com/in/vimalsekar"
+  #portfolio_url: ""
+  #github: ""
+  #twitter: ""
+  # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
+  # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
+  # The ID starts with "D" and is 11 characters long.
+  # canva_resume_design_id: "DAxxxxxxxxx"
+
+target_roles:
+  primary:
+    - "Senior Product Manager"
+    - "AI Product Manager"
+    - "Product Manager"
+    - "Product Owner"
+  archetypes:
+    - name: "Senior Product Manager"
+      level: "Senior"
+      fit: "primary"
+      track: "product"
+      sell_when: "JD emphasizes roadmap ownership, cross-functional delivery, migration, KPI-driven prioritization, and executive communication"
+    - name: "AI Product Manager"
+      level: "Senior"
+      fit: "secondary"
+      track: "ai-product"
+      sell_when: "JD emphasizes AI-enabled product strategy, experimentation, agentic workflows, internal AI adoption, or AI-assisted customer experiences"
+    - name: "Product Manager"
+      level: "Senior"
+      fit: "secondary"
+      track: "product"
+      sell_when: "JD focuses on roadmap ownership, customer problems, feature prioritization, launch execution, or cross-functional product delivery"
+    - name: "Product Owner"
+      level: "Senior"
+      fit: "secondary"
+      track: "product"
+      sell_when: "JD emphasizes backlog ownership, user stories, sprint planning, Agile ceremonies, and close partnership with engineering delivery teams"
+    - name: "0-to-1 AI Product Builder"
+      level: "Senior"
+      fit: "adjacent"
+      track: "builder"
+      sell_when: "JD wants hands-on prototyping, fast validation, and product judgment paired with AI-native tooling"
+
+narrative:
+  headline: "Senior Product Manager who modernizes complex platforms and prototypes AI-native products"
+  exit_story: "Built a product career across enterprise lending, platform modernization, and mission-critical audit workflows, then expanded into AI-native product building and internal AI enablement. Now optimizing for senior product roles where roadmap leadership, platform depth, and practical AI fluency all matter."
+  superpowers:
+    - "Turn messy platform constraints into clear roadmaps, releases, and migration plans"
+    - "Lead cross-functional execution across 7+ scrum teams and senior stakeholders"
+    - "Use analytics, experimentation, and KPI dashboards to prioritize what actually moves outcomes"
+    - "Bridge modernization, compliance, and customer experience without losing delivery momentum"
+    - "Prototype AI-enabled product ideas quickly and translate them into practical bets"
+  proof_points:
+    - name: "Thomson Reuters Confirmation Platform"
+      url: "https://www.linkedin.com/in/vimalsekar/"
+      hero_metric: "125,000+ professionals served; NPS improved from 26 to 70"
+      track: "product"
+    - name: "NextGen Launches and Migration"
+      url: "https://www.linkedin.com/in/vimalsekar/"
+      hero_metric: "2 major launches on schedule; 100% customer migration completion with zero data loss"
+      track: "platform"
+    - name: "Bank Forms Automation"
+      url: "https://www.linkedin.com/in/vimalsekar/"
+      hero_metric: "60% faster time-to-market for 200+ critical forms; $420K+ savings"
+      track: "product"
+    - name: "Digital Lending Platform"
+      url: "https://www.linkedin.com/in/vimalsekar/"
+      hero_metric: "$2B+ in loan originations supported; 10% conversion increase across 100,000 users"
+      track: "product"
+    - name: "AI Product Builder"
+      url: "https://www.linkedin.com/in/vimalsekar/"
+      hero_metric: "Building AI-native product experiments since 2025 using Claude Code, OpenAI Codex, Replit, and Vercel"
+      track: "ai-product"
+
+resume_mapping:
+  # Treat these as work arrangements/capacity labels rather than employer names
+  # when generating company-role maps from cv.md.
+  swap_when_company_is_work_arrangement: true
+  work_arrangement_companies:
+    - "Self-Employed"
+    - "Independent"
+    - "Freelance"
+
+compensation:
+  # Compensation is not specified in the source documents; these are reasonable
+  # defaults for a Toronto-based senior product target and should be confirmed.
+  target_range: "CAD 170K-250K"
+  currency: "CAD"
+  minimum: "CAD 150K"
+  location_flexibility: "GTA/Toronto hybrid is fine; Canada roles are fine; US relocation is ideal for the right role; remote work from Canada is acceptable when visa or relocation support is not available; occasional travel is fine"
+  alternate_ranges:
+    - track: "ai-product"
+      target_range: "CAD 150K-250K"
+      minimum: "CAD 150K"
+      note: "Use this when the role expects both senior PM ownership and hands-on AI-native prototyping."
+
+location:
+  country: "Canada"
+  city: "Toronto"
+  timezone: "ET"
+  citizenship: "Canadian citizen"
+  visa_status: "Authorized to work in Canada without sponsorship; US roles may require employer-supported visa or remote-from-Canada arrangement"
+  work_authorization:
+    canada: "Authorized without sponsorship"
+    united_states_current: "Not currently authorized without employer support"
+    united_states_preferred_paths: "TN/L1/other employer-sponsored US visa preferred"
+    united_states_remote_fallback: "Open to remote work from Canada when allowed"
+  us_relocation_goal: "Ideally wants to move to the USA for the right role"
+  sponsorship_policy: "US roles that explicitly sponsor visas are a plus; US roles that require existing US work authorization and forbid sponsorship are soft blockers unless remote from Canada is allowed"
+  onsite_availability: "Greater Toronto Area hybrid is fine; remote preferred"

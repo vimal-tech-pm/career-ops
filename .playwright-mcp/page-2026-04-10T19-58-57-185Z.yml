@@ -1,0 +1,666 @@
+- generic [ref=e1]:
+  - link [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+    - text: Skip to main content
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /?trk=public_jobs_nav-header-logo
+        - generic [ref=e6]: LinkedIn
+        - img [ref=e8]
+      - generic [ref=e19]:
+        - button [ref=e21] [cursor=pointer]:
+          - generic [ref=e22]: Jobs
+          - generic:
+            - img
+        - tabpanel [ref=e23]:
+          - search [ref=e24]:
+            - generic [ref=e25]:
+              - combobox [ref=e26]: Senior Manager, AI Implementation & Innovation
+              - button [ref=e27] [cursor=pointer]:
+                - generic [ref=e28]: Clear text
+                - img [ref=e30]
+            - generic [ref=e34]:
+              - combobox [ref=e35]: Scarborough, ON
+              - button [ref=e36] [cursor=pointer]:
+                - generic [ref=e37]: Clear text
+                - img [ref=e39]
+            - button [ref=e43] [cursor=pointer]:
+              - img [ref=e45]
+        - status [ref=e47]
+      - generic [ref=e48]:
+        - link [ref=e49] [cursor=pointer]:
+          - /url: https://www.linkedin.com/login?emailAddress=&fromSignIn=&fromSignIn=true&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4398573274%2F&trk=public_jobs_nav-header-signin
+          - text: Sign in
+        - link [ref=e50] [cursor=pointer]:
+          - /url: https://www.linkedin.com/signup/cold-join?source=jobs_registration&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4398573274%2F&trk=public_jobs_nav-header-join
+          - text: Join now
+  - main [ref=e51]:
+    - generic [ref=e53]:
+      - generic [ref=e55]:
+        - link [ref=e56] [cursor=pointer]:
+          - /url: https://ca.linkedin.com/company/pelmorexcorp?trk=public_jobs_topcard_logo
+          - img [ref=e57]
+        - generic [ref=e59]:
+          - heading [level=1] [ref=e60]: Senior Manager, AI Implementation & Innovation
+          - heading [level=4] [ref=e61]:
+            - generic [ref=e62]:
+              - link [ref=e64] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/company/pelmorexcorp?trk=public_jobs_topcard-org-name
+                - text: Pelmorex
+              - text: · Oakville, Ontario, Canada
+            - generic [ref=e65]: 3 days ago · 25 applicants
+            - link [ref=e66] [cursor=pointer]:
+              - /url: https://www.linkedin.com/login?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fsearch%2Fresults%2Fpeople%2F%3FfacetCurrentCompany%3D33454495%26title%3DSenior%2BImplementation%2BManager&emailAddress=&fromSignIn=&trk=public_jobs_see-who-was-hired_people-search-link_face-pile-cta
+              - generic [ref=e67]:
+                - img [ref=e68]
+                - img [ref=e69]
+                - img [ref=e70]
+              - paragraph [ref=e72]: See who Pelmorex has hired for this role
+          - generic [ref=e73]:
+            - button [ref=e74] [cursor=pointer]: Apply
+            - link [ref=e75] [cursor=pointer]:
+              - /url: https://www.linkedin.com/login?emailAddress=&fromSignIn=&session_redirect=https%3A%2F%2Fca.linkedin.com%2Fjobs%2Fview%2Fsenior-manager-ai-implementation-innovation-at-pelmorex-4398573274&trk=public_jobs
+              - text: Save
+        - button [ref=e78] [cursor=pointer]:
+          - img [ref=e80]
+        - generic [ref=e83]:
+          - img [ref=e85]
+          - heading [level=3] [ref=e89]: Use AI to assess how you fit
+          - paragraph [ref=e90]: Get AI-powered advice on this job and more exclusive features.
+          - generic [ref=e91]:
+            - button [ref=e92] [cursor=pointer]:
+              - img [ref=e94]
+            - button [ref=e96] [cursor=pointer]:
+              - img [ref=e98]
+              - generic [ref=e100]: Am I a good fit for this job?
+            - button [ref=e101] [cursor=pointer]:
+              - generic [ref=e103]: Tailor my resume
+      - generic [ref=e104]:
+        - generic [ref=e106]:
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - paragraph [ref=e110]:
+                - strong [ref=e111]: ARE YOU INTERESTED IN A WORKPLACE THAT HAS...
+              - paragraph [ref=e112]
+              - paragraph [ref=e113]
+              - paragraph [ref=e114]:
+                - strong [ref=e115]:
+                  - strong [ref=e116]: Flexible Work Environment
+                  - text: 💻
+              - strong [ref=e117]:
+                - paragraph [ref=e118]:
+                  - strong [ref=e119]: Retirement Savings Matching Plan (RRSP). Plan for your future with us!
+                  - text: 💸
+                - paragraph [ref=e120]:
+                  - strong [ref=e121]: Personal Spending Account
+                  - text: 💰
+                - paragraph [ref=e122]: Up to $500 to spend on anything related to physical, mental or financial well-being (in addition to your Health Care Spending Account)
+                - paragraph [ref=e123]:
+                  - strong [ref=e124]: 17 Paid Days Off (in addition to 13 Personal Days)
+                  - text: 🌅
+                - paragraph [ref=e125]: This includes an extra day off during the month of your birthday 🍰- our gift to you!
+                - paragraph [ref=e126]:
+                  - strong [ref=e127]: An IDEAS (Inclusion, Diversity, Equity, Awareness, Solidarity) team ⚖️
+                - paragraph [ref=e128]: Weather is inclusive, we will be too. Our IDEAS team is committed to making this happen!
+                - paragraph [ref=e129]
+                - paragraph [ref=e130]:
+                  - text: 📣
+                  - strong [ref=e131]: HAVE WE GOT YOUR ATTENTION? WANT TO LEARN MORE?
+                - paragraph [ref=e132]
+                - paragraph [ref=e133]: Read about us here! (spoiler alert… we are the home of The Weather Network )📍
+                - paragraph [ref=e134]
+                - paragraph [ref=e135]
+                - paragraph [ref=e136]:
+                  - strong [ref=e137]: WHY WE NEED YOU? GLAD YOU ASKED...
+                - paragraph [ref=e138]
+                - paragraph [ref=e139]: As a key contributor to our AI transformation, you will act as a bridge between business goals and technical execution. We are seeking a hands-on, product-minded leader to support the development of governance frameworks, contribute to roadmap prioritization, and execute on AI initiatives that move AI from a buzzword to a core business advantage.
+                - paragraph [ref=e140]: You are someone who can translate strategy into execution, capable of delivering high-value minimal viable products (MVPs) while supporting the evolution of our AI operating model.
+                - paragraph [ref=e141]
+                - paragraph [ref=e142]:
+                  - emphasis [ref=e143]:
+                    - strong [ref=e144]: Please note we are only considering candidates who are eligible to work in Canada and are currently located in the Greater Toronto Area.
+                - paragraph [ref=e145]
+                - strong [ref=e146]: WHAT IS THE DAY TO DAY LIKE
+                - paragraph [ref=e147]:
+                  - strong [ref=e148]: Strategic Support & Advisory
+                - list [ref=e149]:
+                  - listitem [ref=e150]:
+                    - paragraph [ref=e151]:
+                      - strong [ref=e152]: Steering Committee
+                      - text: ": Support the establishment and facilitation of a cross-functional AI Steering Committee, helping coordinate intake, prioritization, and lifecycle tracking of AI initiatives & enterprise-wide projects"
+                  - listitem [ref=e153]:
+                    - paragraph [ref=e154]:
+                      - strong [ref=e155]: Project Vetting
+                      - text: ": Contribute to the development and refinement of evaluation frameworks for AI initiatives, including ROI, security, technical feasibility, and risk"
+                  - listitem [ref=e156]:
+                    - paragraph [ref=e157]:
+                      - strong [ref=e158]: "AI Ambassador:"
+                      - text: Act as a trusted partner and AI advocate to stakeholders, coaching teams on how to effectively adopt and apply AI tools within their workflows, and helping translate business needs into practical use cases
+                - paragraph [ref=e159]:
+                  - strong [ref=e160]: Execution & Technical Delivery
+                - list [ref=e161]:
+                  - listitem [ref=e162]:
+                    - paragraph [ref=e163]:
+                      - strong [ref=e164]: AI Architecture
+                      - text: ": Lead the implementation of AI tools and solutions, ensuring integration into existing tech systems with strong performance, security, and data flow"
+                  - listitem [ref=e165]:
+                    - paragraph [ref=e166]:
+                      - strong [ref=e167]: Data Alignment
+                      - text: ": Partner closely with Data Engineering teams to execute against a clean and scalable data architecture"
+                  - listitem [ref=e168]:
+                    - paragraph [ref=e169]: Own delivery of Minimal Viable Products (MVPs) and pilot use cases, iterating based on feedback and performance
+                - paragraph [ref=e170]:
+                  - strong [ref=e171]: Organizational Growth & Adoption
+                - list [ref=e172]:
+                  - listitem [ref=e173]:
+                    - paragraph [ref=e174]:
+                      - strong [ref=e175]: "Departmental AI Guilds:"
+                      - text: Lead the rollout and evolution of internal AI enablement initiatives, including launching and facilitating “AI Guilds” across key business units (e.g., Sales, HR, Finance), identifying and mentoring power users to act as local implementation leads
+                  - listitem [ref=e176]:
+                    - paragraph [ref=e177]:
+                      - strong [ref=e178]: Departmental Design
+                      - text: ": Collaborate with Head of AI & stakeholders on organizational planning, providing input into future capability and hiring needs (12-24 months) based on emerging priorities and workload"
+                - paragraph [ref=e179]
+                - strong [ref=e180]: WE ARE HOPING YOU HAVE
+                - paragraph [ref=e181]:
+                  - strong [ref=e182]: Strategic Leadership & "Builder" Experience
+                - list [ref=e183]:
+                  - listitem [ref=e184]:
+                    - paragraph [ref=e185]: 7+ years in technical operations, digital transformation, product, or related fields, with a proven builder mindset and experience contributing to the launch or scaling of new initiatives or functions
+                  - listitem [ref=e186]:
+                    - paragraph [ref=e187]: Demonstrated ability to lead cross-functional initiatives or working groups, manage stakeholder expectations, and influence decision-making related to AI adoption
+                  - listitem [ref=e188]:
+                    - paragraph [ref=e189]: Experience operating in ambiguous, fast-paced environments, with the ability to drive clarity, alignment, and execution
+                - paragraph [ref=e190]:
+                  - strong [ref=e191]: AI Systems Architecture & Lifecycle Management
+                - list [ref=e192]:
+                  - listitem [ref=e193]:
+                    - paragraph [ref=e194]: Hands-on experience supporting or delivering Generative AI solutions from data ingestion and RAG (Retrieval-Augmented Generation) architecture to production-grade deployment.
+                  - listitem [ref=e195]:
+                    - paragraph [ref=e196]: Practical expertise in working across the full AI product lifecycle, including development, deployment, and optimization
+                  - listitem [ref=e197]:
+                    - paragraph [ref=e198]: Familiarity with LLMOps concepts and practices to support scalable, secure AI solutions
+                - paragraph [ref=e199]:
+                  - strong [ref=e200]: Enterprise Integration & Data Synergy
+                - list [ref=e201]:
+                  - listitem [ref=e202]:
+                    - paragraph [ref=e203]: Skilled in bridging AI models with existing business systems (CRM, ERP, etc.) via secure API management, MCPs, and custom middleware.
+                  - listitem [ref=e204]:
+                    - paragraph [ref=e205]: Proven experience partnering with Data Engineering teams to build or utilize unified data layers, ensuring AI tools are powered by a scalable and clean data architecture.
+                  - listitem [ref=e206]:
+                    - paragraph [ref=e207]: Deep proficiency in the Google Gemini Enterprise suite and the Google Cloud / Vertex AI ecosystem or similar platforms.
+                - paragraph [ref=e208]
+                - strong [ref=e209]: YOU ARE MADE FOR THIS IF YOU...
+                - list [ref=e210]:
+                  - listitem [ref=e211]:
+                    - paragraph [ref=e212]: Have a strong passion for AI transformation and proactively stay current on emerging tools, technologies, and industry trends
+                  - listitem [ref=e213]:
+                    - paragraph [ref=e214]: Are execution-oriented and enjoy turning ideas into tangible outcomes, with a focus on delivering measurable business impact
+                  - listitem [ref=e215]:
+                    - paragraph [ref=e216]: Bring experience in developing ROI models and managing a portfolio of initiatives, using data to inform prioritization and decision-making
+                  - listitem [ref=e217]:
+                    - paragraph [ref=e218]: Are results-driven, with a focus on metrics such as time-to-value, efficiency, and scalability, rather than theoretical or exploratory work
+                  - listitem [ref=e219]:
+                    - paragraph [ref=e220]: Can navigate the “messy middle” of building in a new and evolving space, demonstrating sound judgment, adaptability, and comfort with ambiguity
+                  - listitem [ref=e221]:
+                    - paragraph [ref=e222]: Balance speed and rigor, making thoughtful decisions while continuing to move work forward and iterate
+                  - listitem [ref=e223]:
+                    - paragraph [ref=e224]: Bring a collaborative, solutions-oriented mindset, effectively partnering across teams to drive progress and adoption
+                - paragraph [ref=e225]
+                - strong [ref=e226]: INTERESTED? IT GETS BETTER….
+                - list [ref=e227]:
+                  - listitem [ref=e228]: Course Reimbursement Program 📚 We want you to keep learning, so we can too
+                  - listitem [ref=e229]: Open and transparent communication, including All Hands Meetings with our CEO
+                  - listitem [ref=e230]: Pelmorex Learning Academy 🏫
+                  - listitem [ref=e231]: Your mental health is important to us! 🧠 We partner with Inkblot for virtual counseling sessions
+                  - listitem [ref=e232]: Frequent employee pulse surveys 📝 we value your feedback so we can continue to make Pelmorex a great place to work!
+                  - listitem [ref=e233]: Free online doctor visits 👩&zwj;⚕️ with Maple Online Healthcare
+                  - listitem [ref=e234]: While we encourage 1:1 conversations, we recognize that not everyone is comfortable with speaking up 🗣 We have an anonymous reporting platform to ensure everyone’s voice is heard
+                - paragraph [ref=e235]
+                - paragraph [ref=e236]:
+                  - strong [ref=e237]: OUR PROMISE TO YOU...
+                - paragraph [ref=e238]
+                - paragraph [ref=e239]: We’re highly focused on doing the right thing.
+                - paragraph [ref=e240]: We’ll discuss issues and timelines professionally, so you have the time you need to do the best work you can
+                - paragraph [ref=e241]: You will see the result of your work pushed out to real users quickly
+                - paragraph [ref=e242]: We’re a team that enjoys learning new technologies and we’re open to trying new things
+                - paragraph [ref=e243]: We’ll try our best not to bog you down with boring meetings
+                - paragraph [ref=e244]
+                - paragraph [ref=e245]: Weather inspires, protects, and transforms. For 35+ years, Pelmorex has led the way with trusted forecasts and alerts. With innovation at our core, we provide precision, speed, and unmatched reliability—safeguarding lives, powering decisions, and driving business success. Whatever the weather, we turn its potential into action. We’re Pelmorex. Imagine it and we’ll deliver it.
+                - paragraph [ref=e246]
+                - paragraph [ref=e247]:
+                  - strong [ref=e248]:
+                    - emphasis [ref=e249]: Fair and Authentic Interview Experience
+                - paragraph [ref=e250]:
+                  - emphasis [ref=e251]: We welcome candidates using AI tools to prepare for interviews or to learn more about Pelmorex. During the interviews themselves, we expect responses to come from your own experience and thinking.
+                - paragraph [ref=e252]:
+                  - emphasis [ref=e253]: We ask that candidates not use real-time AI assistance, live answer prompts, or automated response tools during interviews. This helps ensure a fair process for everyone and allows us to evaluate how you approach problems and communicate in your own voice.
+                - paragraph [ref=e254]
+                - paragraph [ref=e255]: We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.
+            - button [ref=e256] [cursor=pointer]: Show more
+          - list [ref=e258]:
+            - listitem [ref=e259]:
+              - heading [level=3] [ref=e260]: Seniority level
+              - text: Mid-Senior level
+            - listitem [ref=e261]:
+              - heading [level=3] [ref=e262]: Employment type
+              - text: Full-time
+            - listitem [ref=e263]:
+              - heading [level=3] [ref=e264]: Job function
+              - text: Management and Manufacturing
+            - listitem [ref=e265]:
+              - heading [level=3] [ref=e266]: Industries
+              - text: Information Services
+        - generic [ref=e271]:
+          - paragraph [ref=e272]: Referrals increase your chances of interviewing at Pelmorex by 2x
+          - link [ref=e273] [cursor=pointer]:
+            - /url: https://www.linkedin.com/login?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fsearch%2Fresults%2Fpeople%2F%3FfacetCurrentCompany%3D33454495&emailAddress=&fromSignIn=&trk=public_jobs_find-a-referral-cta
+            - text: See who you know
+      - generic [ref=e275]:
+        - generic [ref=e278]: Get notified when a new job is posted.
+        - generic [ref=e279]:
+          - button [ref=e280]
+          - generic [ref=e281]: Set alert
+      - generic [ref=e282]:
+        - heading [level=2] [ref=e283]: Similar jobs
+        - generic [ref=e285]:
+          - list [ref=e286]:
+            - listitem [ref=e287]:
+              - generic [ref=e288]:
+                - link [ref=e289] [cursor=pointer]:
+                  - /url: https://ca.linkedin.com/jobs/view/director-spm-implementation-at-forma-ai-4384296181?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=IWA1vdmyEmLZqNmvCedTbw%3D%3D
+                  - generic [ref=e290]: Director, SPM Implementation
+                - generic [ref=e291]:
+                  - heading [level=3] [ref=e292]: Director, SPM Implementation
+                  - heading [level=4] [ref=e293]:
+                    - link [ref=e294] [cursor=pointer]:
+                      - /url: https://ca.linkedin.com/company/forma-ai?trk=public_jobs_similar-jobs_main-jobs-card-subtitle
+                      - text: Forma.ai
+                  - generic [ref=e295]:
+                    - generic [ref=e296]: Toronto, Ontario, Canada
+                    - time [ref=e297]: 3 weeks ago
+            - listitem [ref=e298]:
+              - generic [ref=e299]:
+                - link [ref=e300] [cursor=pointer]:
+                  - /url: https://ca.linkedin.com/jobs/view/senior-program-manager-at-rbc-4383866666?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=jDdmPlVbTRK2GvG1lQh2Dw%3D%3D
+                  - generic [ref=e301]: Senior Program Manager
+                - generic [ref=e302]:
+                  - heading [level=3] [ref=e303]: Senior Program Manager
+                  - heading [level=4] [ref=e304]:
+                    - link [ref=e305] [cursor=pointer]:
+                      - /url: https://ca.linkedin.com/company/rbc?trk=public_jobs_similar-jobs_main-jobs-card-subtitle
+                      - text: RBC
+                  - generic [ref=e306]:
+                    - generic [ref=e307]: Toronto, Ontario, Canada
+                    - time [ref=e308]: 1 week ago
+            - listitem [ref=e309]:
+              - generic [ref=e310]:
+                - link [ref=e311] [cursor=pointer]:
+                  - /url: https://ca.linkedin.com/jobs/view/senior-program-manager-at-pagerduty-4371228860?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=wn%2BMfKVnrEg6agqp2FqQnw%3D%3D
+                  - generic [ref=e312]: Senior Program Manager
+                - generic [ref=e313]:
+                  - heading [level=3] [ref=e314]: Senior Program Manager
+                  - heading [level=4] [ref=e315]:
+                    - link [ref=e316] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/pagerduty?trk=public_jobs_similar-jobs_main-jobs-card-subtitle
+                      - text: PagerDuty
+                  - generic [ref=e317]:
+                    - generic [ref=e318]: Toronto, Ontario, Canada
+                    - time [ref=e319]: 1 month ago
+            - listitem [ref=e320]:
+              - generic [ref=e321]:
+                - link [ref=e322] [cursor=pointer]:
+                  - /url: https://ca.linkedin.com/jobs/view/senior-program-manager-at-j-m-group-4255676990?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=FNq1gk1AcZtlKR8W9%2FHmsg%3D%3D
+                  - generic [ref=e323]: Senior Program Manager
+                - generic [ref=e324]:
+                  - heading [level=3] [ref=e325]: Senior Program Manager
+                  - heading [level=4] [ref=e326]:
+                    - link [ref=e327] [cursor=pointer]:
+                      - /url: https://ca.linkedin.com/company/jmgroupinc?trk=public_jobs_similar-jobs_main-jobs-card-subtitle
+                      - text: J&M Group
+                  - generic [ref=e328]:
+                    - generic [ref=e329]: Toronto, Ontario, Canada
+                    - time [ref=e330]: 9 months ago
+            - listitem [ref=e331]:
+              - generic [ref=e332]:
+                - link [ref=e333] [cursor=pointer]:
+                  - /url: https://ca.linkedin.com/jobs/view/senior-program-manager-health-at-bevertec-4399465054?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=NHrUxs%2BnUO%2B27WXuiT01NQ%3D%3D
+                  - generic [ref=e334]: Senior Program Manager- health
+                - generic [ref=e335]:
+                  - heading [level=3] [ref=e336]: Senior Program Manager- health
+                  - heading [level=4] [ref=e337]:
+                    - link [ref=e338] [cursor=pointer]:
+                      - /url: https://ca.linkedin.com/company/bevertec?trk=public_jobs_similar-jobs_main-jobs-card-subtitle
+                      - text: Bevertec
+                  - generic [ref=e339]:
+                    - generic [ref=e340]: Toronto, Ontario, Canada
+                    - time [ref=e341]: 1 day ago
+            - listitem [ref=e342]:
+              - generic [ref=e343]:
+                - link [ref=e344] [cursor=pointer]:
+                  - /url: https://ca.linkedin.com/jobs/view/senior-program-manager-at-kepler-communications-inc-4364637078?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=kvaHgSI32Y19t0jNOM3vzg%3D%3D
+                  - generic [ref=e345]: Senior Program Manager
+                - generic [ref=e346]:
+                  - heading [level=3] [ref=e347]: Senior Program Manager
+                  - heading [level=4] [ref=e348]:
+                    - link [ref=e349] [cursor=pointer]:
+                      - /url: https://ca.linkedin.com/company/kepler-communications-inc-?trk=public_jobs_similar-jobs_main-jobs-card-subtitle
+                      - text: Kepler Communications Inc.
+                  - generic [ref=e350]:
+                    - generic [ref=e351]: Toronto, Ontario, Canada
+                    - time [ref=e352]: 3 weeks ago
+          - button [ref=e353] [cursor=pointer]: Show more jobs like this
+    - generic [ref=e355]:
+      - generic [ref=e356]:
+        - heading [level=2] [ref=e357]: People also viewed
+        - list [ref=e359]:
+          - listitem [ref=e360]:
+            - generic [ref=e361]:
+              - link [ref=e362] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/regional-logistics-manager-at-bimbo-canada-4399049077?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=wpdplNc%2B8khX723FAvfBew%3D%3D
+                - generic [ref=e363]: Regional Logistics Manager
+              - generic [ref=e364]:
+                - heading [level=3] [ref=e365]: Regional Logistics Manager
+                - paragraph [ref=e366]:
+                  - link [ref=e367] [cursor=pointer]:
+                    - /url: https://ca.linkedin.com/company/bimbo-canada?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: Bimbo Canada
+                - generic [ref=e368]:
+                  - generic [ref=e369]: Brampton, Ontario, Canada
+                  - time [ref=e370]: 5 hours ago
+          - listitem [ref=e371]:
+            - generic [ref=e372]:
+              - link [ref=e373] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/systems-engineering-manager-rail-transit-at-aecom-4343920685?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=jnfPdgv9PvTU%2F%2BTjC7wMIw%3D%3D
+                - generic [ref=e374]: Systems Engineering Manager - Rail & Transit
+              - generic [ref=e375]:
+                - heading [level=3] [ref=e376]: Systems Engineering Manager - Rail & Transit
+                - paragraph [ref=e377]:
+                  - link [ref=e378] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/aecom?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: AECOM
+                - generic [ref=e379]:
+                  - generic [ref=e380]: Mississauga, Ontario, Canada
+                  - time [ref=e381]: 3 months ago
+          - listitem [ref=e382]:
+            - generic [ref=e383]:
+              - link [ref=e384] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/treasury-manager-wholesale-liquidity-implementation-at-td-4399467281?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=s2m0LVi2O3aWX%2Fvg8Ffk6w%3D%3D
+                - generic [ref=e385]: Treasury Manager, Wholesale Liquidity Implementation
+              - generic [ref=e386]:
+                - heading [level=3] [ref=e387]: Treasury Manager, Wholesale Liquidity Implementation
+                - paragraph [ref=e388]:
+                  - link [ref=e389] [cursor=pointer]:
+                    - /url: https://ca.linkedin.com/company/td?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: TD
+                - generic [ref=e390]:
+                  - generic [ref=e391]: Toronto, Ontario, Canada
+                  - time [ref=e392]: 1 day ago
+          - listitem [ref=e393]:
+            - generic [ref=e394]:
+              - link [ref=e395] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/senior-construction-manager-at-ericsson-4397288461?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=BOOgj4Oejf6ZMcbfqeAs%2Fg%3D%3D
+                - generic [ref=e396]: Senior Construction Manager
+              - generic [ref=e397]:
+                - heading [level=3] [ref=e398]: Senior Construction Manager
+                - paragraph [ref=e399]:
+                  - link [ref=e400] [cursor=pointer]:
+                    - /url: https://se.linkedin.com/company/ericsson?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: Ericsson
+                - generic [ref=e401]:
+                  - generic [ref=e402]: Toronto, Ontario, Canada
+                  - time [ref=e403]: 1 day ago
+          - listitem [ref=e404]:
+            - generic [ref=e405]:
+              - link [ref=e406] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/senior-manager-iwm-wealth-insurance-spanish-english-at-scotiabank-4392421574?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=xxovAS7HAWT1G54VH86hZQ%3D%3D
+                - generic [ref=e407]: Senior Manager, IWM Wealth Insurance (Spanish/English)
+              - generic [ref=e408]:
+                - heading [level=3] [ref=e409]: Senior Manager, IWM Wealth Insurance (Spanish/English)
+                - paragraph [ref=e410]:
+                  - link [ref=e411] [cursor=pointer]:
+                    - /url: https://ca.linkedin.com/company/scotiabank?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: Scotiabank
+                - generic [ref=e412]:
+                  - generic [ref=e413]: Toronto, Ontario, Canada
+                  - time [ref=e414]: 1 week ago
+          - listitem [ref=e415]:
+            - generic [ref=e416]:
+              - link [ref=e417] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/directeur-principal-analyse-commerce-interreli%C3%A9-et-marketing-at-the-home-depot-canada-4392805070?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=6reBBW4jDXfRKPMUGlA78w%3D%3D
+                - generic [ref=e418]: directeur principal, Analyse, Commerce interrelié et Marketing
+              - generic [ref=e419]:
+                - heading [level=3] [ref=e420]: directeur principal, Analyse, Commerce interrelié et Marketing
+                - paragraph [ref=e421]:
+                  - link [ref=e422] [cursor=pointer]:
+                    - /url: https://ca.linkedin.com/company/the-home-depot-canada?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: The Home Depot Canada
+                - generic [ref=e423]:
+                  - generic [ref=e424]: Toronto, Ontario, Canada
+                  - time [ref=e425]: 1 week ago
+          - listitem [ref=e426]:
+            - generic [ref=e427]:
+              - link [ref=e428] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/mawm-implementation-manager-at-fulfillment-iq-4400563069?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=QA%2Ba6nIHt75Ckgj%2FgnPTYA%3D%3D
+                - generic [ref=e429]: MAWM Implementation Manager
+              - generic [ref=e430]:
+                - heading [level=3] [ref=e431]: MAWM Implementation Manager
+                - paragraph [ref=e432]:
+                  - link [ref=e433] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/fulfillmentiq?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: Fulfillment IQ
+                - generic [ref=e434]:
+                  - generic [ref=e435]: Toronto, Ontario, Canada
+                  - time [ref=e436]: 5 hours ago
+          - listitem [ref=e437]:
+            - generic [ref=e438]:
+              - link [ref=e439] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/job-id-%2331892-senior-project-manager-homelessness-systems-and-operations-at-city-of-hamilton-4400280555?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=FKsNRjzmoeHcbEBjDOMIig%3D%3D
+                - generic [ref=e440]: "Job ID #31892: Senior Project Manager, Homelessness Systems and Operations"
+              - generic [ref=e441]:
+                - heading [level=3] [ref=e442]: "Job ID #31892: Senior Project Manager, Homelessness Systems and Operations"
+                - paragraph [ref=e443]:
+                  - link [ref=e444] [cursor=pointer]:
+                    - /url: https://ca.linkedin.com/company/city-of-hamilton?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: City Of Hamilton
+                - generic [ref=e445]:
+                  - generic [ref=e446]: Hamilton, Ontario, Canada
+                  - time [ref=e447]: 1 day ago
+          - listitem [ref=e448]:
+            - generic [ref=e449]:
+              - link [ref=e450] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/senior-project-manager-at-empire-life-4385254266?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=OM03fEXHSZfsuTzhZswpYg%3D%3D
+                - generic [ref=e451]: Senior Project Manager
+              - generic [ref=e452]:
+                - heading [level=3] [ref=e453]: Senior Project Manager
+                - paragraph [ref=e454]:
+                  - link [ref=e455] [cursor=pointer]:
+                    - /url: https://ca.linkedin.com/company/empire-life?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: Empire Life
+                - generic [ref=e456]:
+                  - generic [ref=e457]: Greater Toronto Area, Canada
+                  - time [ref=e458]: 3 weeks ago
+          - listitem [ref=e459]:
+            - generic [ref=e460]:
+              - link [ref=e461] [cursor=pointer]:
+                - /url: https://ca.linkedin.com/jobs/view/senior-project-manager-extended-warehouse-management-implementation-at-city-of-toronto-4394786006?refId=rQNWMh%2FxxyUcpF6RKMxlcQ%3D%3D&trackingId=GsfGS6UpVVWDLnY%2BjOHP0A%3D%3D
+                - generic [ref=e462]: SENIOR PROJECT MANAGER (Extended Warehouse Management Implementation)
+              - generic [ref=e463]:
+                - heading [level=3] [ref=e464]: SENIOR PROJECT MANAGER (Extended Warehouse Management Implementation)
+                - paragraph [ref=e465]:
+                  - link [ref=e466] [cursor=pointer]:
+                    - /url: https://ca.linkedin.com/company/city-of-toronto?trk=public_jobs_people-also-viewed_aside-job-card-subtitle
+                    - text: City of Toronto
+                - generic [ref=e467]:
+                  - generic [ref=e468]: Toronto, Ontario, Canada
+                  - time [ref=e469]: 1 day ago
+      - generic [ref=e470]:
+        - heading [level=2] [ref=e471]: Similar Searches
+        - generic [ref=e473]:
+          - list [ref=e474]:
+            - listitem [ref=e475]:
+              - link [ref=e476] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/productivity-consultant-jobs?trk=public_jobs_full-click
+                - generic [ref=e477]:
+                  - heading [level=3] [ref=e478]: Productivity Consultant jobs
+                  - generic [ref=e479]: 77 open jobs
+            - listitem [ref=e480]:
+              - link [ref=e481] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/strength-coach-jobs?trk=public_jobs_full-click
+                - generic [ref=e482]:
+                  - heading [level=3] [ref=e483]: Strength Coach jobs
+                  - generic [ref=e484]: 262 open jobs
+            - listitem [ref=e485]:
+              - link [ref=e486] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/senior-engagement-manager-jobs?trk=public_jobs_full-click
+                - generic [ref=e487]:
+                  - heading [level=3] [ref=e488]: Senior Engagement Manager jobs
+                  - generic [ref=e489]: 1,498 open jobs
+            - listitem [ref=e490]:
+              - link [ref=e491] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/chief-quality-officer-jobs?trk=public_jobs_full-click
+                - generic [ref=e492]:
+                  - heading [level=3] [ref=e493]: Chief Quality Officer jobs
+                  - generic [ref=e494]: 37 open jobs
+            - listitem [ref=e495]:
+              - link [ref=e496] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/game-designer-jobs?trk=public_jobs_full-click
+                - generic [ref=e497]:
+                  - heading [level=3] [ref=e498]: Game Designer jobs
+                  - generic [ref=e499]: 604 open jobs
+            - listitem [ref=e500]:
+              - link [ref=e501] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/leadership-coach-jobs?trk=public_jobs_full-click
+                - generic [ref=e502]:
+                  - heading [level=3] [ref=e503]: Leadership Coach jobs
+                  - generic [ref=e504]: 1,989 open jobs
+            - listitem [ref=e505]:
+              - link [ref=e506] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/analytics-manager-jobs?trk=public_jobs_full-click
+                - generic [ref=e507]:
+                  - heading [level=3] [ref=e508]: Analytics Manager jobs
+                  - generic [ref=e509]: 3,801 open jobs
+            - listitem [ref=e510]:
+              - link [ref=e511] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/human-resources-supervisor-jobs?trk=public_jobs_full-click
+                - generic [ref=e512]:
+                  - heading [level=3] [ref=e513]: Human Resources Supervisor jobs
+                  - generic [ref=e514]: 1,258 open jobs
+            - listitem [ref=e515]:
+              - link [ref=e516] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/sap-project-manager-jobs?trk=public_jobs_full-click
+                - generic [ref=e517]:
+                  - heading [level=3] [ref=e518]: SAP Project Manager jobs
+                  - generic [ref=e519]: 1,141 open jobs
+            - listitem [ref=e520]:
+              - link [ref=e521] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/health-services-manager-jobs?trk=public_jobs_full-click
+                - generic [ref=e522]:
+                  - heading [level=3] [ref=e523]: Health Services Manager jobs
+                  - generic [ref=e524]: 2,238 open jobs
+            - listitem [ref=e525]:
+              - link [ref=e526] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/digital-product-manager-jobs?trk=public_jobs_full-click
+                - generic [ref=e527]:
+                  - heading [level=3] [ref=e528]: Digital Product Manager jobs
+                  - generic [ref=e529]: 1,168 open jobs
+            - listitem [ref=e530]:
+              - link [ref=e531] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/technology-project-manager-jobs?trk=public_jobs_full-click
+                - generic [ref=e532]:
+                  - heading [level=3] [ref=e533]: Technology Project Manager jobs
+                  - generic [ref=e534]: 2,040 open jobs
+          - button [ref=e535] [cursor=pointer]: Show more
+      - generic [ref=e539]:
+        - heading [level=2] [ref=e541]: Explore top content on LinkedIn
+        - paragraph [ref=e542]: Find curated posts and insights for relevant topics all in one place.
+        - link [ref=e543] [cursor=pointer]:
+          - /url: https://www.linkedin.com/top-content/
+          - text: View top content
+  - button [ref=e548] [cursor=pointer]: More searches
+  - contentinfo [ref=e550]:
+    - list [ref=e551]:
+      - listitem [ref=e552]:
+        - generic [ref=e553]: LinkedIn
+        - generic [ref=e555]: © 2026
+      - listitem [ref=e556]:
+        - link [ref=e557] [cursor=pointer]:
+          - /url: https://about.linkedin.com?trk=d_jobs_guest_details_footer-about
+          - text: About
+      - listitem [ref=e558]:
+        - link [ref=e559] [cursor=pointer]:
+          - /url: https://www.linkedin.com/accessibility?trk=d_jobs_guest_details_footer-accessibility
+          - text: Accessibility
+      - listitem [ref=e560]:
+        - link [ref=e561] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/user-agreement?trk=d_jobs_guest_details_footer-user-agreement
+          - text: User Agreement
+      - listitem [ref=e562]:
+        - link [ref=e563] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/privacy-policy?trk=d_jobs_guest_details_footer-privacy-policy
+          - text: Privacy Policy
+      - listitem [ref=e564]:
+        - link [ref=e565] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/cookie-policy?trk=d_jobs_guest_details_footer-cookie-policy
+          - text: Cookie Policy
+      - listitem [ref=e566]:
+        - link [ref=e567] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/copyright-policy?trk=d_jobs_guest_details_footer-copyright-policy
+          - text: Copyright Policy
+      - listitem [ref=e568]:
+        - link [ref=e569] [cursor=pointer]:
+          - /url: https://brand.linkedin.com/policies?trk=d_jobs_guest_details_footer-brand-policy
+          - text: Brand Policy
+      - listitem [ref=e570]:
+        - link [ref=e571] [cursor=pointer]:
+          - /url: https://www.linkedin.com/psettings/guest-controls?trk=d_jobs_guest_details_footer-guest-controls
+          - text: Guest Controls
+      - listitem [ref=e572]:
+        - link [ref=e573] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/professional-community-policies?trk=d_jobs_guest_details_footer-community-guide
+          - text: Community Guidelines
+      - listitem [ref=e574]:
+        - button [ref=e576]: Language
+  - dialog "Join now to see who you already know at Pelmorex" [active] [ref=e579]:
+    - button "Dismiss" [ref=e580] [cursor=pointer]:
+      - img [ref=e582]
+    - generic [ref=e585]:
+      - generic [ref=e586]:
+        - img [ref=e587]
+        - heading "Join now to see who you already know at Pelmorex" [level=2] [ref=e588]
+      - generic [ref=e589]:
+        - button "Continue with google" [ref=e592]:
+          - generic [ref=e593]:
+            - button "Continue with Google" [ref=e595] [cursor=pointer]:
+              - generic [ref=e597]:
+                - img [ref=e600]
+                - generic [ref=e607]: Continue with Google
+            - iframe
+        - link "Join with email" [ref=e608] [cursor=pointer]:
+          - /url: https://www.linkedin.com/signup/cold-join?source=jobs_registration&trk=public_jobs_contextual-sign-in-modal_join-with-email-cta
+          - img [ref=e610]
+          - generic [ref=e612]: Join with email
+        - paragraph [ref=e614]: or
+        - button "Continue with google" [ref=e616]:
+          - generic [ref=e617]:
+            - button "Continue with Google" [ref=e619] [cursor=pointer]:
+              - generic [ref=e621]:
+                - img [ref=e623]
+                - generic [ref=e630]: Continue with Google
+            - iframe
+        - paragraph [ref=e631]:
+          - text: Already on LinkedIn?
+          - link "Sign in" [ref=e632] [cursor=pointer]:
+            - /url: https://www.linkedin.com/login?trk=public_jobs_contextual-sign-in-modal_sign-in-link
+        - paragraph [ref=e633]:
+          - text: By clicking Continue to join or sign in, you agree to LinkedIn’s
+          - link "User Agreement" [ref=e634] [cursor=pointer]:
+            - /url: /legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement
+          - text: ","
+          - link "Privacy Policy" [ref=e635] [cursor=pointer]:
+            - /url: /legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy
+          - text: ", and"
+          - link "Cookie Policy" [ref=e636] [cursor=pointer]:
+            - /url: /legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy
+          - text: .

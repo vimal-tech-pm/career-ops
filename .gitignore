@@ -22,6 +22,10 @@ modes/_profile.md
 .update-dismissed
 .update-lock
 
+# LinkedIn credentials and session (NEVER commit)
+.env
+.linkedin-session/
+
 # Generated
 .resolved-prompt-*
 node_modules/
@@ -34,4 +38,5 @@ node_modules/
 # Claude Code local
 .claude/settings.local.json
 .claude/memory/
+.claude/worktrees/
 career-dashboard

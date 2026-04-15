@@ -10,15 +10,61 @@
    - US/Canada → `letter`
    - Resto del mundo → `a4`
 6. Detecta arquetipo del rol → adapta framing
-7. Reescribe Professional Summary inyectando keywords del JD + exit narrative bridge ("Built and sold a business. Now applying systems thinking to [domain del JD].")
+7. Adapta el Professional Summary para este JD:
+   - PARTE del resumen existente en `cv.md` — NO reescribas desde cero
+   - Inyecta keywords del JD QUIRÚRGICAMENTE: inserta un keyword en una frase existente o añádelo al final; no reestructures frases enteras
+   - Reglas de voz (ver también `_shared.md` sección "Professional Writing & ATS Compatibility"):
+     * Primera persona implícita: empieza con verbos de acción fuertes; sin sujeto "I"; NUNCA en tercera persona (p. ej. "He led…", "She built…", "[Candidate name] is…", "The candidate…")
+     * Sin voz pasiva ("was responsible for" → "owned", "built", "led")
+     * Sin corporate filler (ver lista en `_shared.md`: leveraged, spearheaded, facilitated, passionate about, proven track record, robust, seamless, cutting-edge, synergies, best practices, etc.)
+   - Preserva TODAS las métricas y números de `cv.md` exactamente como aparecen — no redondees, no parafrasees, no inventes
+   - Si el candidato tiene una "exit narrative" definida en `modes/_profile.md` y encaja con el JD, añádela como frase de cierre. Si no, cierra con una frase que conecte la experiencia del candidato con el dominio del JD.
+   - Máximo 4 líneas / ~70 palabras
 8. Selecciona top 3-4 proyectos más relevantes para la oferta
-9. Reordena bullets de experiencia por relevancia al JD
+
+8a. Aplica content budget ANTES de seleccionar bullets (objetivo: exactamente 2 páginas PDF).
+
+    Clasifica cada rol de `cv.md` por su antigüedad relativa a la fecha de hoy y aplica el máximo de bullets correspondiente:
+
+    | Antigüedad del rol          | Máx. bullets |
+    |-----------------------------|--------------|
+    | Actual (0–2 años)           | 6            |
+    | Reciente (2–5 años)         | 4            |
+    | Anterior (5–10 años)        | 3            |
+    | Primera carrera (10+ años)  | 2            |
+
+    Procedimiento:
+    1. Parsea la fecha de inicio de cada rol desde `cv.md` (formato `Mon YYYY`). Trata "Present" como la fecha de hoy.
+    2. Calcula antigüedad = años transcurridos desde la fecha de inicio.
+    3. Si el rol tiene más bullets que su máximo, elige los top-N por relevancia al JD.
+    4. Si el rol tiene menos bullets que su máximo, conserva todos.
+
+    Si tras aplicar los máximos el contenido aún desborda 2 páginas, aplica este trim sequence en orden:
+    1. Reduce los roles de "primera carrera" (10+ años) a 1 bullet cada uno
+    2. Reduce los roles "anteriores" (5–10 años) a 2 bullets
+    3. Reduce los roles "recientes" (2–5 años) a 3 bullets
+    Nunca reduzcas los roles "actuales" (0–2 años) por debajo de su selección por relevancia.
+
+9. Reordena bullets DENTRO de cada trabajo por relevancia al JD. El orden de los trabajos en sí DEBE coincidir EXACTAMENTE con el orden del archivo `cv.md` — NO intercambies, muevas ni reordenes bloques de trabajo completos. Solo los bullets dentro de un mismo trabajo pueden reordenarse.
+
+9a. Regla de orden de experiencia (aplicable a cualquier CV):
+    - El orden visual en el PDF = el orden de aparición en `cv.md` (de arriba abajo).
+    - El usuario decide deliberadamente el orden en `cv.md` (por ejemplo, puede priorizar el rol principal sobre un rol paralelo más reciente). NO reordenes por fecha, relevancia, duración ni ningún otro criterio.
+    - Antes de escribir el HTML a disco, verifica que la lista de trabajos en `{{EXPERIENCE}}` siga el mismo orden que los `###` headings de la sección `PROFESSIONAL EXPERIENCE` de `cv.md`.
 10. Construye competency grid desde requisitos del JD (6-8 keyword phrases)
 11. Inyecta keywords naturalmente en logros existentes (NUNCA inventa)
 12. Genera HTML completo desde template + contenido personalizado
-13. Escribe HTML a `/tmp/cv-candidate-{company}.html`
-14. Ejecuta: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
-15. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
+13. Lee `name` de `config/profile.yml` → normaliza a kebab-case lowercase (e.g. "John Doe" → "john-doe") → `{candidate}`
+14. Escribe HTML a `/tmp/cv-{candidate}-{company}.html`
+15. Ejecuta: `node generate-pdf.mjs /tmp/cv-{candidate}-{company}.html output/cv-{candidate}-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
+
+15a. Verifica el número de páginas en la salida de generate-pdf.mjs (línea "📊 Pages: N"):
+     - Pages = 2 → continúa al reporte
+     - Pages = 1 → contenido escaso; relaja los máximos del Step 8a (añade +2 bullets a cada rol "actual", +1 a cada rol "reciente"), regenera HTML y vuelve a ejecutar
+     - Pages ≥ 3 → desbordamiento; aplica la secuencia de trim del Step 8a, regenera HTML y vuelve a ejecutar
+     - Máximo 2 intentos de regeneración; si sigue siendo incorrecto tras el intento 2, reporta al usuario el número de páginas actual y pregunta qué sección prefiere recortar o expandir
+
+16. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
 
 ## Reglas ATS (parseo limpio)
 
@@ -69,12 +115,7 @@ Usar el template en `cv-template.html`. Reemplazar los placeholders `{{...}}` co
 | `{{LANG}}` | `en` o `es` |
 | `{{PAGE_WIDTH}}` | `8.5in` (letter) o `210mm` (A4) |
 | `{{NAME}}` | (from profile.yml) |
-| `{{EMAIL}}` | (from profile.yml) |
-| `{{LINKEDIN_URL}}` | [from profile.yml] |
-| `{{LINKEDIN_DISPLAY}}` | [from profile.yml] |
-| `{{PORTFOLIO_URL}}` | [from profile.yml] (o /es según idioma) |
-| `{{PORTFOLIO_DISPLAY}}` | [from profile.yml] (o /es según idioma) |
-| `{{LOCATION}}` | [from profile.yml] |
+| `{{CONTACT_ITEMS}}` | Header contact HTML built from `config/profile.yml`: email, phone, LinkedIn, portfolio if present, location |
 | `{{SECTION_SUMMARY}}` | Professional Summary / Resumen Profesional |
 | `{{SUMMARY_TEXT}}` | Summary personalizado con keywords |
 | `{{SECTION_COMPETENCIES}}` | Core Competencies / Competencias Core |
@@ -89,6 +130,18 @@ Usar el template en `cv-template.html`. Reemplazar los placeholders `{{...}}` co
 | `{{CERTIFICATIONS}}` | HTML de certificaciones |
 | `{{SECTION_SKILLS}}` | Skills / Competencias |
 | `{{SKILLS}}` | HTML de skills |
+
+### Contact row generation
+
+Build `{{CONTACT_ITEMS}}` from `candidate` in `config/profile.yml` in this exact order:
+
+1. `candidate.email`
+2. `candidate.phone`
+3. `candidate.linkedin`
+4. `candidate.portfolio_url` if present
+5. `candidate.location`
+
+Render each present item as a `<span>` or `<a>` and render `<span class="separator">|</span>` only between present items. If `phone` or `portfolio_url` is missing, omit that item and its separator. Never leave leading, trailing, doubled, or empty separators.
 
 ## Canva CV Generation (optional)
 

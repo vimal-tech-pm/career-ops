@@ -1,0 +1,888 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - button "Skip to search" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Skip to search
+      - button "Skip to main content" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Close jump menu
+    - banner "Global Navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "LinkedIn" [ref=e20] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e23]:
+            - img [ref=e24]
+        - button "Click to start a search" [ref=e28] [cursor=pointer]:
+          - img [ref=e30]
+          - generic [ref=e32]: Search
+        - navigation "Primary Navigation" [ref=e33]:
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - link "new feed updates notifications Home" [ref=e36] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e37]:
+                  - generic [ref=e40]: new feed updates notifications
+                  - img [ref=e44]
+                - generic "Home" [ref=e46]
+            - listitem [ref=e47]:
+              - link "My Network" [ref=e48] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - img [ref=e52]
+                - generic "My Network" [ref=e54]
+            - listitem [ref=e55]:
+              - link "Jobs" [ref=e56] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e60]
+                - generic "Jobs" [ref=e62]
+            - listitem [ref=e63]:
+              - link "Messaging" [ref=e64] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e68]
+                - generic "Messaging" [ref=e70]
+            - listitem [ref=e71]:
+              - link "4 new notifications Notifications" [ref=e72] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - generic [ref=e73]:
+                  - generic [ref=e74]:
+                    - generic [ref=e75]: "4"
+                    - generic [ref=e76]: 4 new notifications
+                  - img [ref=e80]
+                - generic "Notifications" [ref=e82]
+            - listitem [ref=e83]:
+              - button "Vimal Sekar Me" [ref=e85] [cursor=pointer]:
+                - img "Vimal Sekar" [ref=e86]
+                - generic [ref=e87]:
+                  - text: Me
+                  - img [ref=e88]
+            - listitem [ref=e90]:
+              - button "For Business" [ref=e92] [cursor=pointer]:
+                - img [ref=e96]
+                - generic "For Business" [ref=e98]:
+                  - text: For Business
+                  - img [ref=e99]
+            - listitem [ref=e101]:
+              - link "Learning" [ref=e102] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/?trk=nav_neptune_learning&
+                - img [ref=e106]
+                - generic "Learning" [ref=e111]
+    - generic [ref=e115]:
+      - main [ref=e116]:
+        - generic [ref=e119]:
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - generic [ref=e125]:
+                - link "Pelmorex logo" [ref=e126] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/pelmorexcorp/life
+                  - img "Pelmorex logo" [ref=e129]
+                - link "Pelmorex" [ref=e131] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/pelmorexcorp/life
+              - generic [ref=e132]:
+                - button "Share" [ref=e135] [cursor=pointer]:
+                  - img [ref=e136]
+                  - generic [ref=e138]: Share
+                - button "Show more options" [ref=e140] [cursor=pointer]:
+                  - img [ref=e141]
+                  - generic [ref=e143]: Show more options
+            - generic [ref=e145]:
+              - heading "Senior Manager, AI Implementation & Innovation" [level=1] [ref=e146]
+              - button "View verified hiring modal" [ref=e148] [cursor=pointer]:
+                - img [ref=e151]
+            - generic [ref=e155]:
+              - generic [ref=e156]: Oakville, ON
+              - generic [ref=e157]: ·
+              - generic [ref=e159]: 3 days ago
+              - generic [ref=e160]: ·
+              - generic [ref=e161]: 32 applicants
+              - paragraph [ref=e162]:
+                - generic [ref=e163]: Promoted by hirer
+                - generic [ref=e164]: ·
+                - generic [ref=e165]: No response insights available yet
+            - generic [ref=e166]:
+              - button "Matches your job preferences, workplace type is Hybrid." [ref=e167] [cursor=pointer]:
+                - strong [ref=e170]:
+                  - img [ref=e172]
+                  - text: Hybrid
+                - generic [ref=e174]: Matches your job preferences, workplace type is Hybrid.
+              - button "Matches your job preferences, job type is Full-time." [ref=e175] [cursor=pointer]:
+                - strong [ref=e178]:
+                  - img [ref=e180]
+                  - text: Full-time
+                - generic [ref=e182]: Matches your job preferences, job type is Full-time.
+            - generic [ref=e184]:
+              - button "Easy Apply to Senior Manager, AI Implementation &amp; Innovation at Pelmorex" [ref=e187] [cursor=pointer]:
+                - img [ref=e188]
+                - generic [ref=e190]: Easy Apply
+              - button "Saved Senior Manager, AI Implementation & Innovation at Pelmorex" [ref=e191] [cursor=pointer]:
+                - generic [ref=e192]: Saved
+                - generic [ref=e193]: Saved Senior Manager, AI Implementation & Innovation at Pelmorex
+            - img [ref=e194]
+          - generic [ref=e195]:
+            - img "Premium" [ref=e197]:
+              - img [ref=e198]
+            - heading "Your AI-powered job assessment" [level=2] [ref=e200]
+            - generic [ref=e204]:
+              - list [ref=e205]:
+                - listitem [ref=e206]:
+                  - button "Show match details" [ref=e207] [cursor=pointer]:
+                    - img [ref=e208]
+                    - generic [ref=e209]: Show match details
+                - listitem [ref=e210]:
+                  - button "Tailor my resume" [ref=e211] [cursor=pointer]:
+                    - img [ref=e212]
+                    - generic [ref=e213]: Tailor my resume
+                - listitem [ref=e214]:
+                  - button "Create cover letter" [ref=e215] [cursor=pointer]:
+                    - img [ref=e216]
+                    - generic [ref=e217]: Create cover letter
+                - listitem [ref=e218]:
+                  - button "Help me stand out" [ref=e219] [cursor=pointer]:
+                    - img [ref=e220]
+                    - generic [ref=e221]: Help me stand out
+              - button "Scroll right" [ref=e854] [cursor=pointer]:
+                - img [ref=e855]
+          - generic [ref=e222]:
+            - article [ref=e223]:
+              - generic [ref=e225]:
+                - heading "About the job" [level=2] [ref=e226]
+                - paragraph [ref=e228]:
+                  - paragraph [ref=e230]:
+                    - strong [ref=e232]: ARE YOU INTERESTED IN A WORKPLACE THAT HAS...
+                  - paragraph [ref=e234]:
+                    - generic:
+                      - strong
+                  - paragraph [ref=e236]:
+                    - generic:
+                      - strong
+                  - paragraph [ref=e238]:
+                    - strong [ref=e240]:
+                      - strong [ref=e242]: Flexible Work Environment
+                      - text: 💻
+                  - strong [ref=e244]:
+                    - paragraph [ref=e246]:
+                      - strong [ref=e248]: Retirement Savings Matching Plan (RRSP). Plan for your future with us!
+                      - text: 💸
+                    - paragraph [ref=e250]:
+                      - strong [ref=e252]: Personal Spending Account
+                      - text: 💰
+                    - paragraph [ref=e254]: Up to $500 to spend on anything related to physical, mental or financial well-being (in addition to your Health Care Spending Account)
+                    - paragraph [ref=e256]:
+                      - strong [ref=e258]: 17 Paid Days Off (in addition to 13 Personal Days)
+                      - text: 🌅
+                    - paragraph [ref=e260]: This includes an extra day off during the month of your birthday 🍰- our gift to you!
+                    - paragraph [ref=e262]:
+                      - strong [ref=e264]: An IDEAS (Inclusion, Diversity, Equity, Awareness, Solidarity) team ⚖️
+                    - paragraph [ref=e266]: Weather is inclusive, we will be too. Our IDEAS team is committed to making this happen!
+                    - paragraph [ref=e268]
+                    - paragraph [ref=e270]:
+                      - text: 📣
+                      - strong [ref=e272]: HAVE WE GOT YOUR ATTENTION? WANT TO LEARN MORE?
+                    - paragraph [ref=e274]
+                    - paragraph [ref=e276]:
+                      - text: Read about us
+                      - link "here" [ref=e277] [cursor=pointer]:
+                        - /url: https://www.pelmorex.com/en/
+                      - text: "! (spoiler alert… we are the home of The Weather Network )📍"
+                    - paragraph [ref=e279]
+                    - paragraph [ref=e281]
+                    - paragraph [ref=e283]:
+                      - strong [ref=e285]: WHY WE NEED YOU? GLAD YOU ASKED...
+                    - paragraph [ref=e287]
+                    - paragraph [ref=e289]: As a key contributor to our AI transformation, you will act as a bridge between business goals and technical execution. We are seeking a hands-on, product-minded leader to support the development of governance frameworks, contribute to roadmap prioritization, and execute on AI initiatives that move AI from a buzzword to a core business advantage.
+                    - paragraph [ref=e291]: You are someone who can translate strategy into execution, capable of delivering high-value minimal viable products (MVPs) while supporting the evolution of our AI operating model.
+                    - paragraph [ref=e293]
+                    - paragraph [ref=e295]:
+                      - strong [ref=e297]:
+                        - emphasis [ref=e299]: Please note we are only considering candidates who are eligible to work in Canada and are currently located in the Greater Toronto Area.
+                    - paragraph [ref=e301]
+                    - strong [ref=e303]: WHAT IS THE DAY TO DAY LIKE
+                    - paragraph [ref=e305]:
+                      - strong [ref=e307]: Strategic Support & Advisory
+                    - list [ref=e309]:
+                      - listitem [ref=e310]:
+                        - paragraph [ref=e312]:
+                          - strong [ref=e314]: Steering Committee
+                          - text: ": Support the establishment and facilitation of a cross-functional AI Steering Committee, helping coordinate intake, prioritization, and lifecycle tracking of AI initiatives & enterprise-wide projects"
+                      - listitem [ref=e315]:
+                        - paragraph [ref=e317]:
+                          - strong [ref=e319]: Project Vetting
+                          - text: ": Contribute to the development and refinement of evaluation frameworks for AI initiatives, including ROI, security, technical feasibility, and risk"
+                      - listitem [ref=e320]:
+                        - paragraph [ref=e322]:
+                          - strong [ref=e324]: "AI Ambassador:"
+                          - text: Act as a trusted partner and AI advocate to stakeholders, coaching teams on how to effectively adopt and apply AI tools within their workflows, and helping translate business needs into practical use cases
+                    - paragraph [ref=e326]:
+                      - strong [ref=e328]: Execution & Technical Delivery
+                    - list [ref=e330]:
+                      - listitem [ref=e331]:
+                        - paragraph [ref=e333]:
+                          - strong [ref=e335]: AI Architecture
+                          - text: ": Lead the implementation of AI tools and solutions, ensuring integration into existing tech systems with strong performance, security, and data flow"
+                      - listitem [ref=e336]:
+                        - paragraph [ref=e338]:
+                          - strong [ref=e340]: Data Alignment
+                          - text: ": Partner closely with Data Engineering teams to execute against a clean and scalable data architecture"
+                      - listitem [ref=e341]:
+                        - paragraph [ref=e343]: Own delivery of Minimal Viable Products (MVPs) and pilot use cases, iterating based on feedback and performance
+                    - paragraph [ref=e345]:
+                      - strong [ref=e347]: Organizational Growth & Adoption
+                    - list [ref=e349]:
+                      - listitem [ref=e350]:
+                        - paragraph [ref=e352]:
+                          - strong [ref=e354]: "Departmental AI Guilds:"
+                          - text: Lead the rollout and evolution of internal AI enablement initiatives, including launching and facilitating “AI Guilds” across key business units (e.g., Sales, HR, Finance), identifying and mentoring power users to act as local implementation leads
+                      - listitem [ref=e355]:
+                        - paragraph [ref=e357]:
+                          - strong [ref=e359]: Departmental Design
+                          - text: ": Collaborate with Head of AI & stakeholders on organizational planning, providing input into future capability and hiring needs (12-24 months) based on emerging priorities and workload"
+                    - paragraph [ref=e361]
+                    - strong [ref=e363]: WE ARE HOPING YOU HAVE
+                    - paragraph [ref=e365]:
+                      - strong [ref=e367]: Strategic Leadership & "Builder" Experience
+                    - list [ref=e369]:
+                      - listitem [ref=e370]:
+                        - paragraph [ref=e372]: 7+ years in technical operations, digital transformation, product, or related fields, with a proven builder mindset and experience contributing to the launch or scaling of new initiatives or functions
+                      - listitem [ref=e373]:
+                        - paragraph [ref=e375]: Demonstrated ability to lead cross-functional initiatives or working groups, manage stakeholder expectations, and influence decision-making related to AI adoption
+                      - listitem [ref=e376]:
+                        - paragraph [ref=e378]: Experience operating in ambiguous, fast-paced environments, with the ability to drive clarity, alignment, and execution
+                    - paragraph [ref=e380]:
+                      - strong [ref=e382]: AI Systems Architecture & Lifecycle Management
+                    - list [ref=e384]:
+                      - listitem [ref=e385]:
+                        - paragraph [ref=e387]: Hands-on experience supporting or delivering Generative AI solutions from data ingestion and RAG (Retrieval-Augmented Generation) architecture to production-grade deployment.
+                      - listitem [ref=e388]:
+                        - paragraph [ref=e390]: Practical expertise in working across the full AI product lifecycle, including development, deployment, and optimization
+                      - listitem [ref=e391]:
+                        - paragraph [ref=e393]: Familiarity with LLMOps concepts and practices to support scalable, secure AI solutions
+                    - paragraph [ref=e395]:
+                      - strong [ref=e397]: Enterprise Integration & Data Synergy
+                    - list [ref=e399]:
+                      - listitem [ref=e400]:
+                        - paragraph [ref=e402]: Skilled in bridging AI models with existing business systems (CRM, ERP, etc.) via secure API management, MCPs, and custom middleware.
+                      - listitem [ref=e403]:
+                        - paragraph [ref=e405]: Proven experience partnering with Data Engineering teams to build or utilize unified data layers, ensuring AI tools are powered by a scalable and clean data architecture.
+                      - listitem [ref=e406]:
+                        - paragraph [ref=e408]: Deep proficiency in the Google Gemini Enterprise suite and the Google Cloud / Vertex AI ecosystem or similar platforms.
+                    - paragraph [ref=e410]
+                    - strong [ref=e412]: YOU ARE MADE FOR THIS IF YOU...
+                    - list [ref=e414]:
+                      - listitem [ref=e415]:
+                        - paragraph [ref=e417]: Have a strong passion for AI transformation and proactively stay current on emerging tools, technologies, and industry trends
+                      - listitem [ref=e418]:
+                        - paragraph [ref=e420]: Are execution-oriented and enjoy turning ideas into tangible outcomes, with a focus on delivering measurable business impact
+                      - listitem [ref=e421]:
+                        - paragraph [ref=e423]: Bring experience in developing ROI models and managing a portfolio of initiatives, using data to inform prioritization and decision-making
+                      - listitem [ref=e424]:
+                        - paragraph [ref=e426]: Are results-driven, with a focus on metrics such as time-to-value, efficiency, and scalability, rather than theoretical or exploratory work
+                      - listitem [ref=e427]:
+                        - paragraph [ref=e429]: Can navigate the “messy middle” of building in a new and evolving space, demonstrating sound judgment, adaptability, and comfort with ambiguity
+                      - listitem [ref=e430]:
+                        - paragraph [ref=e432]: Balance speed and rigor, making thoughtful decisions while continuing to move work forward and iterate
+                      - listitem [ref=e433]:
+                        - paragraph [ref=e435]: Bring a collaborative, solutions-oriented mindset, effectively partnering across teams to drive progress and adoption
+                    - paragraph [ref=e437]
+                    - strong [ref=e439]: INTERESTED? IT GETS BETTER….
+                    - list [ref=e441]:
+                      - listitem [ref=e442]: Course Reimbursement Program 📚 We want you to keep learning, so we can too
+                      - listitem [ref=e443]: Open and transparent communication, including All Hands Meetings with our CEO
+                      - listitem [ref=e444]: Pelmorex Learning Academy 🏫
+                      - listitem [ref=e445]: Your mental health is important to us! 🧠 We partner with Inkblot for virtual counseling sessions
+                      - listitem [ref=e446]: Frequent employee pulse surveys 📝 we value your feedback so we can continue to make Pelmorex a great place to work!
+                      - listitem [ref=e447]: Free online doctor visits 👩&zwj;⚕️ with Maple Online Healthcare
+                      - listitem [ref=e448]: While we encourage 1:1 conversations, we recognize that not everyone is comfortable with speaking up 🗣 We have an anonymous reporting platform to ensure everyone’s voice is heard
+                    - paragraph [ref=e450]
+                    - paragraph [ref=e452]:
+                      - strong [ref=e454]: OUR PROMISE TO YOU...
+                    - paragraph [ref=e456]
+                    - paragraph [ref=e458]: We’re highly focused on doing the right thing.
+                    - paragraph [ref=e460]: We’ll discuss issues and timelines professionally, so you have the time you need to do the best work you can
+                    - paragraph [ref=e462]: You will see the result of your work pushed out to real users quickly
+                    - paragraph [ref=e464]: We’re a team that enjoys learning new technologies and we’re open to trying new things
+                    - paragraph [ref=e466]: We’ll try our best not to bog you down with boring meetings
+                    - paragraph [ref=e468]
+                    - paragraph [ref=e470]: Weather inspires, protects, and transforms. For 35+ years, Pelmorex has led the way with trusted forecasts and alerts. With innovation at our core, we provide precision, speed, and unmatched reliability—safeguarding lives, powering decisions, and driving business success. Whatever the weather, we turn its potential into action. We’re Pelmorex. Imagine it and we’ll deliver it.
+                    - paragraph [ref=e472]
+                    - paragraph [ref=e474]:
+                      - emphasis [ref=e476]:
+                        - strong [ref=e478]: Fair and Authentic Interview Experience
+                    - paragraph [ref=e480]:
+                      - emphasis [ref=e482]: We welcome candidates using AI tools to prepare for interviews or to learn more about Pelmorex. During the interviews themselves, we expect responses to come from your own experience and thinking.
+                    - paragraph [ref=e484]:
+                      - emphasis [ref=e486]: We ask that candidates not use real-time AI assistance, live answer prompts, or automated response tools during interviews. This helps ensure a fair process for everyone and allows us to evaluate how you approach problems and communicate in your own voice.
+                    - paragraph [ref=e488]
+                    - paragraph [ref=e490]: We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.
+            - button "Click to see more description" [ref=e492] [cursor=pointer]:
+              - img [ref=e493]
+              - generic [ref=e495]: See more
+          - generic [ref=e497]:
+            - generic [ref=e498]:
+              - heading "Set alert for similar jobs" [level=2] [ref=e499]
+              - generic [ref=e501]: Senior Implementation Manager, Oakville, Ontario, Canada
+            - generic [ref=e503] [cursor=pointer]:
+              - generic [ref=e504]: "Off"
+              - generic [ref=e505]: Set alert
+              - switch "Set alert"
+          - generic [ref=e506]:
+            - button "Dismiss services promo card" [ref=e507] [cursor=pointer]:
+              - img [ref=e508]
+              - generic [ref=e510]: Dismiss services promo card
+            - generic [ref=e512]:
+              - heading "See curated AI tools for your job search" [level=2] [ref=e513]
+              - paragraph [ref=e514]: Get hired faster with the help of AI tools built by verified companies like Kickresume, Exponent Interview Prep, and more.
+              - link "Get started" [ref=e515] [cursor=pointer]:
+                - /url: https://www.linkedin.com/ai-tools/?sectionType=career-coaching
+                - generic [ref=e516]: Get started
+          - generic [ref=e517]:
+            - generic [ref=e518]:
+              - generic [ref=e519]:
+                - img "Premium" [ref=e521]:
+                  - img [ref=e522]
+                - button "Learn more about applicant insights" [ref=e525] [cursor=pointer]:
+                  - img [ref=e526]
+              - heading "See how you compare to other applicants" [level=2] [ref=e528]
+              - generic [ref=e530]:
+                - heading "Applicants for this job" [level=3] [ref=e531]
+                - list [ref=e532]:
+                  - listitem [ref=e533]:
+                    - generic [ref=e534]: "32"
+                    - generic [ref=e535]: Applicants
+                  - listitem [ref=e536]:
+                    - generic [ref=e537]: "11"
+                    - generic [ref=e538]: Applicants in the past day
+              - generic [ref=e539]:
+                - generic [ref=e540]:
+                  - heading "Applicant seniority level" [level=3] [ref=e541]
+                  - list [ref=e542]:
+                    - listitem [ref=e543]:
+                      - paragraph [ref=e544]: 48% Senior level applicants
+                      - progressbar [ref=e545]
+                    - listitem [ref=e546]:
+                      - paragraph [ref=e547]: 15% Manager level applicants
+                      - progressbar [ref=e548]
+                    - listitem [ref=e549]:
+                      - paragraph [ref=e550]: 11% Director level applicants
+                      - progressbar [ref=e551]
+                    - listitem [ref=e552]:
+                      - paragraph [ref=e553]: 7% CXO level applicants
+                      - progressbar [ref=e554]
+                - generic [ref=e555]:
+                  - heading "Applicant education level" [level=3] [ref=e556]
+                  - list [ref=e557]:
+                    - listitem [ref=e558]:
+                      - generic [ref=e559]: 42%
+                      - generic [ref=e560]: have a Master of Business Administration (Similar to you)
+                    - listitem [ref=e561]:
+                      - generic [ref=e562]: 32%
+                      - generic [ref=e563]: have a Master's Degree
+                    - listitem [ref=e564]:
+                      - generic [ref=e565]: 10%
+                      - generic [ref=e566]: have a Bachelor of Engineering
+                    - listitem [ref=e567]:
+                      - generic [ref=e568]: 16%
+                      - generic [ref=e569]: have other degrees
+            - generic [ref=e570]:
+              - generic [ref=e571]:
+                - img "Premium" [ref=e572]:
+                  - img [ref=e573]
+                - button "Learn more about company insights" [ref=e576] [cursor=pointer]:
+                  - img "Learn more about company insights" [ref=e577]
+              - heading "Exclusive Job Seeker Insights about Pelmorex" [level=2] [ref=e579]
+              - heading "Powered by Bing" [level=3] [ref=e580]
+              - generic [ref=e581]:
+                - generic [ref=e582]:
+                  - heading "Company focus areas" [level=3] [ref=e583]
+                  - generic [ref=e585]:
+                    - list [ref=e586]:
+                      - listitem [ref=e587]:
+                        - strong [ref=e588]: "Weather Intelligence and Data Services:"
+                        - text: Enhance weather intelligence and data services to help businesses turn weather uncertainties into strategic advantages. This is achieved through Pelmorex Weather Source, its enterprise division.
+                      - listitem [ref=e589]:
+                        - strong [ref=e590]: "Public Safety and Emergency Alerts:"
+                        - text: Strengthen public safety by operating Canada’s National Alert Aggregation and Dissemination System, part of the Alert Ready emergency alert system, ensuring Canadians receive immediate emergency alerts.
+                    - button "show more, visually reveals content which is already detected by screen readers" [ref=e591] [cursor=pointer]:
+                      - generic [ref=e592]: …show more
+                - generic [ref=e593]:
+                  - generic [ref=e595]: "Sources: pelmorex.com"
+                  - generic [ref=e597]:
+                    - button "Mark feedback as good" [ref=e598] [cursor=pointer]:
+                      - img [ref=e599]
+                    - button "Mark feedback as bad" [ref=e601] [cursor=pointer]:
+                      - img [ref=e602]
+              - generic [ref=e604]:
+                - generic [ref=e605]:
+                  - heading "Hiring & headcount" [level=3] [ref=e606]
+                  - paragraph [ref=e607]:
+                    - generic [ref=e608]:
+                      - text: "Focus on Product Management and Customer Success: The 'Product Management' and 'Customer Success and Support' departments have both seen a 50% increase in headcount, indicating significant investment in these areas, which could suggest new product launches or enhancements and a focus on customer retention and satisfaction. Growth in Marketing: The 'Marketing' department has experienced a 6% increase in headcount, reflecting a strategic push towards enhancing brand presence and market reach, which could lead to increased demand for marketing tools and services. Decline in Engineering and IT: The 'Engineering' and 'Information Technology' departments have seen a decrease in headcount by 16% and 12% respectively, suggesting potential cost-cutting measures or a shift in focus away from these areas, which might impact the company's technological innovation and infrastructure. Stable Operations with Minor Fluctuations: Overall headcount has remained relatively stable with minor fluctuations, indicating a steady state of operations with no major expansions or contractions, which could imply a balanced approach to growth and resource allocation."
+                      - generic [ref=e609]:
+                        - generic [ref=e610]: …
+                        - button "Show more about Hiring &amp; headcount" [ref=e611] [cursor=pointer]: show more
+                - generic [ref=e613]:
+                  - button "Mark feedback as good" [ref=e614] [cursor=pointer]:
+                    - img [ref=e615]
+                  - button "Mark feedback as bad" [ref=e617] [cursor=pointer]:
+                    - img [ref=e618]
+              - generic [ref=e620]:
+                - heading "The latest hiring trend" [level=3] [ref=e621]
+                - generic [ref=e622]:
+                  - list [ref=e623]:
+                    - listitem [ref=e624]:
+                      - paragraph [ref=e625]: "519"
+                      - paragraph [ref=e626]: Total employees
+                    - listitem [ref=e627]:
+                      - paragraph [ref=e628]: 5%
+                      - paragraph [ref=e630]: Company-wide
+                      - paragraph [ref=e631]: 2 year growth
+                      - generic [ref=e632]: 5% decrease
+                    - listitem [ref=e633]:
+                      - paragraph [ref=e634]: 0%
+                      - paragraph [ref=e636]: Management
+                      - paragraph [ref=e637]: 2 year growth
+                      - generic [ref=e638]: No change
+                  - region "Chart. Highcharts interactive chart." [ref=e641]:
+                    - region "Chart screen reader information.":
+                      - generic [ref=e642]:
+                        - heading "Chart" [level=4] [ref=e643]
+                        - generic [ref=e644]: Chart with 25 data points.
+                        - generic [ref=e645]: "The chart has 1 X axis displaying Time. Range: 2023-12-13 12:00:00 to 2026-05-07 12:00:00."
+                        - generic [ref=e646]: "The chart has 1 Y axis displaying values. Range: 0 to 750."
+                    - img "Interactive chart" [ref=e651]:
+                      - generic [ref=e663]:
+                        - img "1. April 2024, 545 employees" [ref=e664]
+                        - img "2. May 2024, 545 employees, neutral 0% from last month" [ref=e665]
+                        - img "3. June 2024, 543 employees, neutral 0% from last month" [ref=e666]
+                        - img "4. July 2024, 551 employees, increase 1% from last month" [ref=e667]
+                        - img "5. August 2024, 544 employees, decrease 1% from last month" [ref=e668]
+                        - img "6. September 2024, 550 employees, increase 1% from last month" [ref=e669]
+                        - img "7. October 2024, 541 employees, decrease 2% from last month" [ref=e670]
+                        - img "8. November 2024, 538 employees, decrease 1% from last month" [ref=e671]
+                        - img "9. December 2024, 538 employees, neutral 0% from last month" [ref=e672]
+                        - img "10. January 2025, 540 employees, neutral 0% from last month" [ref=e673]
+                        - img "11. February 2025, 539 employees, neutral 0% from last month" [ref=e674]
+                        - img "12. March 2025, 536 employees, decrease 1% from last month" [ref=e675]
+                        - img "13. April 2025, 530 employees, decrease 1% from last month" [ref=e676]
+                        - img "14. May 2025, 535 employees, increase 1% from last month" [ref=e677]
+                        - img "15. June 2025, 531 employees, decrease 1% from last month" [ref=e678]
+                        - img "16. July 2025, 521 employees, decrease 2% from last month" [ref=e679]
+                        - img "17. August 2025, 521 employees, neutral 0% from last month" [ref=e680]
+                        - img "18. September 2025, 522 employees, neutral 0% from last month" [ref=e681]
+                        - img "19. October 2025, 524 employees, neutral 0% from last month" [ref=e682]
+                        - img "20. November 2025, 524 employees, neutral 0% from last month" [ref=e683]
+                        - img "21. December 2025, 526 employees, neutral 0% from last month" [ref=e684]
+                        - img "22. January 2026, 523 employees, decrease 1% from last month" [ref=e685]
+                        - img "23. February 2026, 519 employees, decrease 1% from last month" [ref=e686]
+                        - img "24. March 2026, 519 employees, neutral 0% from last month" [ref=e687]
+                        - img "25. April 2026, 519 employees, neutral 0% from last month" [ref=e688]
+                      - generic [ref=e689]:
+                        - generic [ref=e690]: Apr 2024
+                        - generic [ref=e691]: Oct 2024
+                        - generic [ref=e692]: Apr 2025
+                        - generic [ref=e693]: Oct 2025
+                        - generic [ref=e694]: Apr 2026
+                      - generic [ref=e695]:
+                        - generic [ref=e696]: "0"
+                        - generic [ref=e697]: "250"
+                        - generic [ref=e698]: "500"
+                        - generic [ref=e699]: "750"
+                    - generic [ref=e701]: End of interactive chart.
+                  - generic [ref=e702]:
+                    - img [ref=e703]
+                    - text: Median employee tenure ‧
+                    - strong [ref=e705]: 4.9 years
+              - generic [ref=e706]:
+                - generic [ref=e707]:
+                  - heading "Competitors" [level=3] [ref=e708]
+                  - paragraph [ref=e709]:
+                    - generic [ref=e710]:
+                      - text: Pelmorex operates in a highly competitive weather forecasting and data services market. Key competitors include AccuWeather, The Weather Company, and DTN, all of which offer advanced weather data and forecasting services. Pelmorex distinguishes itself through its trusted brands like The Weather Network and MétéoMédia, and its focus on providing accurate, personalized weather insights and critical alerts. The market is characterized by rapid technological advancements and the integration of AI and data analytics to enhance forecasting accuracy and service delivery.
+                      - generic [ref=e711]:
+                        - generic [ref=e712]: …
+                        - button "Show more about Competitors" [ref=e713] [cursor=pointer]: show more
+                  - generic [ref=e714]:
+                    - link "DTN" [ref=e716] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/dtnllc/
+                      - generic "DTN" [ref=e719]
+                    - link "AccuWeather" [ref=e722] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/accuweather/
+                      - generic "AccuWeather" [ref=e725]
+                    - link "The Weather Company" [ref=e728] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/weather-company/
+                      - generic "The Weather Company" [ref=e731]
+                - generic [ref=e733]:
+                  - generic [ref=e735]: "Sources: einpresswire.com +3 more"
+                  - generic [ref=e737]:
+                    - button "Mark feedback as good" [ref=e738] [cursor=pointer]:
+                      - img [ref=e739]
+                    - button "Mark feedback as bad" [ref=e741] [cursor=pointer]:
+                      - img [ref=e742]
+              - link "Show more Premium insights" [ref=e744] [cursor=pointer]:
+                - /url: /company/pelmorexcorp/insights/?insightType=HEADCOUNT
+          - generic [ref=e746]:
+            - generic [ref=e747]:
+              - heading "About the company" [level=2] [ref=e748]
+              - generic [ref=e749]:
+                - generic [ref=e750]:
+                  - link "Pelmorex company logo" [ref=e752] [cursor=pointer]:
+                    - /url: /company/pelmorexcorp/life/
+                    - img "Pelmorex company logo" [ref=e753]
+                  - generic [ref=e754]:
+                    - link "Pelmorex" [ref=e756] [cursor=pointer]:
+                      - /url: /company/pelmorexcorp/life/
+                    - generic [ref=e757]: 15,076 followers
+                - button "Follow" [ref=e758] [cursor=pointer]:
+                  - img [ref=e759]
+                  - generic [ref=e761]: Follow
+              - generic [ref=e762]:
+                - text: Information Services
+                - generic [ref=e763]: • 201-500 employees
+                - generic [ref=e764]: • 519 on LinkedIn
+              - paragraph [ref=e765]:
+                - generic [ref=e766]:
+                  - text: Pelmorex is the company behind the well-known trusted weather brands, The Weather Network, MétéoMédia, Eltiempo, Otempo and Clima. Its mission is to provide fast, accurate weather forecasts, personalized insights and critical weather alerts, empowering people, communities and businesses worldwide to make informed decisions amidst the changing weather. This core intelligence is extended through Pelmorex Weather Source, its enterprise division, which helps companies turn weather uncertainties into strategic advantages. Pelmorex is also a key public safety partner and operates Canada’s National Alert Aggregation and Dissemination System, part of the Alert Ready emergency alert system.
+                  - generic [ref=e767]:
+                    - generic [ref=e768]: …
+                    - button "show more" [ref=e769] [cursor=pointer]
+            - link "Show more about the company" [ref=e771] [cursor=pointer]:
+              - /url: /company/pelmorexcorp/life/
+              - text: Show more
+          - heading "More jobs" [level=2] [ref=e866]
+          - list [ref=e868]:
+            - listitem [ref=e869]:
+              - link "Cornaglia Canada – Abcor Filters Inc. logo Program Manager (Manufacturing) Cornaglia Canada – Abcor Filters Inc. Toronto, ON (Hybrid) Company review time is typically 1 week Company review time is typically 1 week 54 minutes ago Easy Apply" [ref=e871] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4400603369&referenceJobId=4398573274&originToLandingJobPostings=4400603369&trackingId=LBDR%2FanxQ5BFdBlWGVrBSg%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx1wMqhsBWDJ5NFA6s-UW3tNoCMpD7r4BTfIIYaJ56MFm9NaKuxkk4M2cXEDoe4UnpOpqml4GwqcAbjPxsvJBdVWAVtrj1OyfmbL3TtYClr3jqCLZd7f_5PaX7fWUYrFK7H2groIewKxLRT-5MXfoPKCLZ-aB4tKN3sI71TTQsVWR4RK1gmibH0Oj2XiOY7zXfujSSH6ZFoCYYw2jmtua275DZ_6TQAzmbdN_BbDk0AhI8FKwNrM8FVmJhPoq-aEboXzrQMpv5RxZ3U1fDnHhgO365UwCcfeBnSDqn9D3d8U5EKRGqjKQGuR35HbtxA8gri-SNWWFwe3pTazZQzp2GjiyPJNqKZpeXa5SZ2N8PbYnmSz2e3a5w3a2JuVyM9Ks-VRGiRlWm_AAc5i1NbLu4RBwKv_C9D3esHVduGhmC_mG2CGe-Ns5_hbrKCTQAqZgqIAe6nJCW_UVLWWk6g4saPRml-bL9_Uj9aunbusHFU2a30KyONWNZ8pW1ztA-plAYvURhrkyhX7RXsFd51tW2r0U2eadSgr6g2yuB
+                - generic [ref=e873]:
+                  - img "Cornaglia Canada – Abcor Filters Inc. logo" [ref=e878]
+                  - generic [ref=e879]:
+                    - generic [ref=e880]:
+                      - generic [ref=e881]:
+                        - strong [ref=e883]: Program Manager (Manufacturing)
+                        - generic [ref=e884]: Program Manager (Manufacturing)
+                      - generic [ref=e886]: Cornaglia Canada – Abcor Filters Inc.
+                      - generic [ref=e888]: Toronto, ON (Hybrid)
+                      - list [ref=e890]:
+                        - listitem [ref=e891]:
+                          - img "Company review time is typically 1 week" [ref=e894]
+                          - generic [ref=e896]: Company review time is typically 1 week
+                    - list [ref=e898]:
+                      - listitem [ref=e899]:
+                        - time [ref=e900]: 54 minutes ago
+                      - listitem [ref=e901]:
+                        - img [ref=e902]:
+                          - img [ref=e903]
+                        - generic [ref=e905]: Easy Apply
+            - listitem [ref=e906]:
+              - link "Rippling logo Senior Manager, Implementation (Canada) with verification Rippling Toronto, ON (Hybrid) You’d be a top applicant You’d be a top applicant 1 week ago" [ref=e908] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4392059743&referenceJobId=4398573274&originToLandingJobPostings=4392059743&trackingId=UBEPD5aa2XOqGoBDhpbk7g%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx10fCNO2SFkBGU3Fvq1TswG_sQHG46TF6h4sJglaiOfJJvJkJMGWYR7UFLafwFsNM-X8BFOt8XpaMh7Ip0DuSshuaObDqLCWsBpn1XxSxVFg19HPz3sudFIPjiE8vfDPMod7Kk_yelzqKixuGyMYDC4x4pa612YzWcdy6gbwozDiFMNiU7ABRULarTdt1KDqkb8t-q4e8i6cUqJ8CJc-OlT-GG_FsRrbpL1PmGo7ARCNTC7NK7lAIF39DQrSDCbwsQtm0vv8m9YK00WJLKJhcd5hd30z9DLUzGeG4KjGmytQuGWJusVq5pu1MNGBPq91jgQBcBHvn-_7MdDiHepdq_pAXcuBv4ov7O6H3aBttMpYd9lrhlotyPWIbgWZsKNw62Bd3lPFrQNY6v1rqcYXjL-FOq_xXKcOrKaCZD2lxz6P2MlsuREm4Ve4iad6LgPkGI0NoC2ACzf7etXYpPsa_qzF4dsUUPSKvz5F34G4PNDdd3uLW8Esk
+                - generic [ref=e910]:
+                  - img "Rippling logo" [ref=e915]
+                  - generic [ref=e916]:
+                    - generic [ref=e917]:
+                      - generic [ref=e918]:
+                        - generic [ref=e919]:
+                          - strong [ref=e920]: Senior Manager, Implementation (Canada)
+                          - img [ref=e922]
+                        - generic [ref=e924]: Senior Manager, Implementation (Canada) with verification
+                      - generic [ref=e926]: Rippling
+                      - generic [ref=e928]: Toronto, ON (Hybrid)
+                      - list [ref=e930]:
+                        - listitem [ref=e931]:
+                          - img "You’d be a top applicant" [ref=e934]:
+                            - img [ref=e935]
+                          - generic [ref=e938]: You’d be a top applicant
+                    - list [ref=e940]:
+                      - listitem [ref=e941]:
+                        - time [ref=e942]: 1 week ago
+            - listitem [ref=e943]:
+              - link "Radical Data Science logo Product and Delivery Coordinator Radical Data Science Winnipeg, MB (Hybrid) 6 minutes ago Easy Apply" [ref=e945] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4400617284&referenceJobId=4398573274&originToLandingJobPostings=4400617284&trackingId=qgY2A2Z5wnncSBI%2F4YWSZQ%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx14M6R1lj-5lJUmY40lcx1NCHli80D8qu0br3G5rUe2yngp6OXLEh_2po4iq2Dwr87K9F1bOovQF5JhKn1GhZs-Pgi2PBGdH0_zvojjXxU7o8Unid5IveXS595XFJcpRTTmmNIJ4uV7b0Nelo1zk_OcJIC69XVVSolQGomrtXRYTY5saHu9o-LjQQ48mS_Hh4ouS-URBiSkeKK4sZCQqqzt4O63kTN5gDCWtxHb9rSWyzlDP2oxPWGkC2m7IK_JFCx95HhyiYG-yuD5rmZGnG_6cGCEmtizkfENfBtcYX9gVp6L67d4ef54teQaXNWg1DcMUdTR4iGleEQaUdR6XKoLuoSYbS5B593Uk3XqTisC_lyUu23MddU66BrIRjkGHtPdtsYrmHZrjg9Z1A3GbjrB8eHK5ie1fIr0R0b9xTtSEjHjgpjBMNwUF21_NluDRihF070UX1EIBsoxTxknzv2p3bGMlKSDmX1BfGskCYFOjpSB9tburPRqh2tHV_scJ-D0Zl9MQzdoLc_MhL44KIf0uP7aDzkUC4B6HX
+                - generic [ref=e947]:
+                  - img "Radical Data Science logo" [ref=e952]
+                  - generic [ref=e953]:
+                    - generic [ref=e954]:
+                      - generic [ref=e955]:
+                        - strong [ref=e957]: Product and Delivery Coordinator
+                        - generic [ref=e958]: Product and Delivery Coordinator
+                      - generic [ref=e960]: Radical Data Science
+                      - generic [ref=e962]: Winnipeg, MB (Hybrid)
+                    - list [ref=e964]:
+                      - listitem [ref=e965]:
+                        - time [ref=e966]: 6 minutes ago
+                      - listitem [ref=e967]:
+                        - img [ref=e968]:
+                          - img [ref=e969]
+                        - generic [ref=e971]: Easy Apply
+            - listitem [ref=e972]:
+              - link "Airtable logo Director, Technical Account Management with verification Airtable Canada (Remote) 2 Thomson Reuters company alumni work here 1 week ago" [ref=e974] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4392497168&referenceJobId=4398573274&originToLandingJobPostings=4392497168&trackingId=mg0P7oE1fMHmV8wP3Fy9mg%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx13cbsbZ7C3UMZ-mSe7w1QwnoqzjFNCi8ufjr1e8qYHQQv3m3GO5SnuF4bAmL7Nkbt3_aYxCLICeXtuWb0T6OsXEIMe4eoDfL_dOpEk6dfmfTVuwalcpVo9H2GiuxJnncFMsHC-G5I2mcln9Yu2ZxSSxAXlphv-POE0YlpLUWbtl85FVgtiR9WjRbnksKb6YzUe7TaXqqL42qp_UHU80izp0_dCRxh9bgRf2dTdrDcmo7dE69IklEN8ej3XKzl2yz7aa6XtGs5Y7_F27MiFSip9Oj-CkoIdDDfDhew0VqQRHYKUBauIEOjwuJSsuoYYGDBtcEdruGKQb2kBDtS6ZHeWHZBh-6AEJJo6K1RLbOLVMdCyXZ_Jdd1Xa7ycXSehhAO_Jp5xcgcaLP2To_ExOKth5J1cBwexkhagmR3bhY3lwjwkmQEaww-fiuIdHf47o8lXKoyZr8yhwmxsV1jiAz4xO4AHzim2NtOkLMMwAM-SyXhBdh9J0Hc3DWPovZ3UW66B3MmcPb63tpldqyqdGG_cqL0Q
+                - generic [ref=e976]:
+                  - img "Airtable logo" [ref=e981]
+                  - generic [ref=e982]:
+                    - generic [ref=e983]:
+                      - generic [ref=e984]:
+                        - generic [ref=e985]:
+                          - strong [ref=e986]: Director, Technical Account Management
+                          - img [ref=e988]
+                        - generic [ref=e990]: Director, Technical Account Management with verification
+                      - generic [ref=e992]: Airtable
+                      - generic [ref=e994]: Canada (Remote)
+                      - list [ref=e996]:
+                        - listitem [ref=e997]:
+                          - generic [ref=e1000]:
+                            - generic [ref=e1001]: 2 company alumni work here
+                            - generic [ref=e1002]: 2 Thomson Reuters company alumni work here
+                    - list [ref=e1004]:
+                      - listitem [ref=e1005]:
+                        - time [ref=e1006]: 1 week ago
+            - listitem [ref=e1007]:
+              - link "Softchoice logo Manager, AI Product with verification Softchoice Toronto, ON (On-site) Sahil Sharma 1 connection works here 59 minutes ago" [ref=e1009] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4398140969&referenceJobId=4398573274&originToLandingJobPostings=4398140969&trackingId=A%2F0uLwPLR5IQCJpFjnAMlA%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx10BZi43eHfg7UYb7rGXde_CBICTyQ_nBHhXqE1VMLxCQmvzATid5PZR1-HNbDP3BXQkqf9SPjYRmQowSR_Im_PJ8J6E-1EzHKbmLCLqMYu7cPetSrLpv3c7Ci84_mT1wRe2dU7ZxQJ-mVTqdXnpsOEY57c-XDz5EytEuGauKlUbUfPipj5KhbRyer8gr6iI52Oh7KzLDbD71i2kZa61rUX4g9dg-v8QNqUk6OB91JMeuHDsJsdpZJ31frbDK3xztwNnhnatqMHPZBRL_-7oNXiCND_T9updydRUWL9ESeBco9eXYkMqJLCCRP7i-GhWglNLA74XCGAuHHx0_Ma3aCv17SUM1fnf2zId_lmu2-OovNdRwkZKfM3JUFGNPqlf4cmddyt41vv6GpCRhkIaGwM0X6OH71Tl-jZZfR6rnmCK_gurSFJoXQByONrtOZ_mHnPr9eeDqYjo4QICwtGJQYliztOehIdjbsRLqBWYplVTVk-xOpRJxiop8FliK_IWyxB8fC_R3Sq8D5hOCcbvl
+                - generic [ref=e1011]:
+                  - img "Softchoice logo" [ref=e1016]
+                  - generic [ref=e1017]:
+                    - generic [ref=e1018]:
+                      - generic [ref=e1019]:
+                        - generic [ref=e1020]:
+                          - strong [ref=e1021]: Manager, AI Product
+                          - img [ref=e1023]
+                        - generic [ref=e1025]: Manager, AI Product with verification
+                      - generic [ref=e1027]: Softchoice
+                      - generic [ref=e1029]: Toronto, ON (On-site)
+                      - list [ref=e1031]:
+                        - listitem [ref=e1032]:
+                          - img "Sahil Sharma" [ref=e1035]
+                          - generic [ref=e1036]: 1 connection works here
+                    - list [ref=e1038]:
+                      - listitem [ref=e1039]:
+                        - time [ref=e1040]: 59 minutes ago
+            - listitem [ref=e1041]:
+              - link "Haventree Bank logo Director, Product Management with verification Haventree Bank Toronto, ON (Hybrid) 1 hour ago" [ref=e1043] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4400580660&referenceJobId=4398573274&originToLandingJobPostings=4400580660&trackingId=z7CDlkHIt8yiCvowkiY1rA%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx15fPIbtWnsdcbMluvdeY1NysOF1oNxtZHuBl_SnajKEh1vDntWp_Y05MjEWG2NWgyAaFY8nkPzfI3X1rWNa7jNNAv-kKFQqtgqnUdGb9Pl5yWsmsLJRQUnIZNTetJEFMFB4CCYtlEVKzWJonfP6Hfe9I8DjDJgbzKdyyOrYfMCLgn5D_6rXGdS6-VO-NNs-aYE-yS4pJaZhl0Bb0Kf3F4EBBt0BerdvmCqAV6deWtMY4_b3M2QNVM-hGBwAIzPXA6I0FpeVoLEOsYy_o9YlWXJsEGjebgAk5J_5wrJnu-99xADPLVJuKzGBsE915ZhwOVtXvA6PIL7MP1DYqGdPdGp5Q0L2i-inhnfzh_mgD_bHLzAexKQo4vOpSLG-_cl1W36RBjC12oG-_n3vEHpsM0lNhs6iviSaLI13sjYupDuX5TFXMqNSUJLcND1jEXEidGVPNOTNVkXHNXZB8SO4RQEPrjwguZ5cNTm9T2l973kj-Rppiigcc
+                - generic [ref=e1045]:
+                  - img "Haventree Bank logo" [ref=e1050]
+                  - generic [ref=e1051]:
+                    - generic [ref=e1052]:
+                      - generic [ref=e1053]:
+                        - generic [ref=e1054]:
+                          - strong [ref=e1055]: Director, Product Management
+                          - img [ref=e1057]
+                        - generic [ref=e1059]: Director, Product Management with verification
+                      - generic [ref=e1061]: Haventree Bank
+                      - generic [ref=e1063]: Toronto, ON (Hybrid)
+                    - list [ref=e1065]:
+                      - listitem [ref=e1066]:
+                        - time [ref=e1067]: 1 hour ago
+            - listitem [ref=e1068]:
+              - link "GitLab logo CX Services Program Manager with verification GitLab Canada (Remote) 6 Thomson Reuters company alumni work here 2 weeks ago" [ref=e1070] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4391162318&referenceJobId=4398573274&originToLandingJobPostings=4391162318&trackingId=%2Fyuf0pMnlocGL7vdzob6UA%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx1_fyziDMBCdNmvRQmQrmnCdQVIjEliH1UUIkuLzFwfSlH-QuTGfwwvx4RfGYl6DCHhJMxASDAuXPsMxN7xtAA69Xp2iJnttAP_PAhMVQ4DD8EpTtaMnBSwKKVMhV4jnRgkp4slslTIDud0Cqh-XtLwFGGf-35-7lcnXfSLQFpRV2ysXoIeYdT6IPRZf5HHfkYI8wKMunKLMZk07gnWDpVz2X4YvqiL-6V_fFixtHwL5abJT0XhzQ4tkGLySQIBSlMbw27NUKIcK47Fl1OjWuFHSSf6Ypr8owFcLkIJzWsJ7bcsoa1glxdPG-VB2Vca-w6t09ici_vL2uVLzVQiV6QRFNQeWBxH7GHYegVXgPEZ8TXkFNw7YQRkE1prwWoamtYWepd5MpddcVRKBWW14eseQKrXpDnRpNyYAHWcxRtlSuXQ_e4yQg_sf6f7STcYSyXPbBlKcgq7yVpWPzMAHNL46pFzOSBuAvk18ORapFUqgkpe-SlHhmLqRo3n6lpWSLFI2Rrle93RYwwUC-fI2X
+                - generic [ref=e1072]:
+                  - img "GitLab logo" [ref=e1077]
+                  - generic [ref=e1078]:
+                    - generic [ref=e1079]:
+                      - generic [ref=e1080]:
+                        - generic [ref=e1081]:
+                          - strong [ref=e1082]: CX Services Program Manager
+                          - img [ref=e1084]
+                        - generic [ref=e1086]: CX Services Program Manager with verification
+                      - generic [ref=e1088]: GitLab
+                      - generic [ref=e1090]: Canada (Remote)
+                      - list [ref=e1092]:
+                        - listitem [ref=e1093]:
+                          - generic [ref=e1096]:
+                            - generic [ref=e1097]: 6 company alumni work here
+                            - generic [ref=e1098]: 6 Thomson Reuters company alumni work here
+                    - list [ref=e1100]:
+                      - listitem [ref=e1101]:
+                        - time [ref=e1102]: 2 weeks ago
+            - listitem [ref=e1103]:
+              - link "TekRek logo Vice President of Product TekRek Canada (Remote) CA$200K/yr - CA$250K/yr Actively reviewing applicants Actively reviewing applicants 2 weeks ago Easy Apply" [ref=e1105] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4390404119&referenceJobId=4398573274&originToLandingJobPostings=4390404119&trackingId=Dsila%2F5fm1EP3GxeI1EBvQ%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx1-3A2-p-YSD5zd9_byeEVRRgAS_havGMrQcfolkaKGg5ZOErIlQwQdJ4ba6Sp6kMG64XtsPYdJ1UaAHTfWIfLPJ241SHD6a59JqGPoNoqKkfqnCPS6D14Aq60Z2vpwMWZPKdF1lvSsyvsz4tKDIZhZAwX-Plzu3BBlwz4F5pSJyycw8dHvvHcflC_5wGUCTdijLCLKHsxMAVKTl1-q1oinRV03uz0kEtFb-XcazCvX3eLEZ_1HZh7tQAKgTdjmM1WRoCRHleZOqq6-eiPFT-LoK25l7f9cS6U9QIcZS9dEAbn4ilwQYvdRHaNZhKYdakXU0t1dMyW4N8ceOjzKpiAYymUbsDBEL-spd3I-NmOz6YZrDWxvGJNg1o8sP8i3YdSSnXzKdHDa8Yau0RGcjBGEtugN5yt7iKbVjwk7785iEw5Ibrt-Vux-m0dVGxtjpxRxfd9R8Yawbq8ZPN2jI-hVXAlpjMd5lk6fXJS10FuOUMlhnc94oMl3U08Q1QpZl9NsJUV3AjumCIhuz3XfV5CZhPNlDukYAZMpI5OBdCqx7P1g
+                - generic [ref=e1107]:
+                  - img "TekRek logo" [ref=e1112]
+                  - generic [ref=e1113]:
+                    - generic [ref=e1114]:
+                      - generic [ref=e1115]:
+                        - strong [ref=e1117]: Vice President of Product
+                        - generic [ref=e1118]: Vice President of Product
+                      - generic [ref=e1120]: TekRek
+                      - generic [ref=e1122]: Canada (Remote)
+                      - generic [ref=e1123]:
+                        - generic [ref=e1124]: CA$200K/yr - CA$250K/yr
+                        - list [ref=e1125]:
+                          - listitem [ref=e1126]:
+                            - img "Actively reviewing applicants" [ref=e1129]
+                            - generic [ref=e1131]: Actively reviewing applicants
+                    - list [ref=e1133]:
+                      - listitem [ref=e1134]:
+                        - time [ref=e1135]: 2 weeks ago
+                      - listitem [ref=e1136]:
+                        - img [ref=e1137]:
+                          - img [ref=e1138]
+                        - generic [ref=e1140]: Easy Apply
+            - listitem [ref=e1141]:
+              - link "Lactalis Canada logo Director, IT Digital Innovation with verification Lactalis Canada Greater Toronto Area, Canada (Hybrid) Company review time is typically 1 week Company review time is typically 1 week 1 hour ago Easy Apply" [ref=e1143] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4398158536&referenceJobId=4398573274&originToLandingJobPostings=4398158536&trackingId=u%2F00nutBsn7LfT5b%2Bch0OQ%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx17y3nK0ybLzDxR6ysoegE_78v4SNq3WzqOwzmlJEY-FldkuiELh8xH0Qby28RD-FmdhZuHAT5BH-t8xdIbzfm6oCMroIqgONjmfbhDc_dpzWoLJiChHAEof3gKd_d1fmKEIvQ7OQAwNfR5CQyZNgybWYwA2rhXbtlXWCXEZSfcohwxd_lhcT4VgPfGlsDxgmvLvBo-vATgUisGDln05V3lvOIzbV-Z2z4RCPfB8JiXeYcNWGkcEKdneogmdxRegcqfJQYh0jzAyqDAkJx12oJ8wbdkVEU2Ltgzn-V5Qp11h798eVT47vKFJR8OxNfNqL9dz5wtbaKFPXJEkmwUkuE-FOG0KNlhzIbasAn91LgqOXbvKvvASfpFkSa0H2mkQgjz0ylLM3coPPzq4nuWdKvS1OxxFGvcQOudEdnM8MoPeJh7D7dLmb2_d6T7yh1OIM0zAUVDb83rUNT0CfcbDdDg49o8ezDKzSVrZzyGHJSwUM3IbHBQ
+                - generic [ref=e1145]:
+                  - img "Lactalis Canada logo" [ref=e1150]
+                  - generic [ref=e1151]:
+                    - generic [ref=e1152]:
+                      - generic [ref=e1153]:
+                        - generic [ref=e1154]:
+                          - strong [ref=e1155]: Director, IT Digital Innovation
+                          - img [ref=e1157]
+                        - generic [ref=e1159]: Director, IT Digital Innovation with verification
+                      - generic [ref=e1161]: Lactalis Canada
+                      - generic [ref=e1163]: Greater Toronto Area, Canada (Hybrid)
+                      - list [ref=e1165]:
+                        - listitem [ref=e1166]:
+                          - img "Company review time is typically 1 week" [ref=e1169]
+                          - generic [ref=e1171]: Company review time is typically 1 week
+                    - list [ref=e1173]:
+                      - listitem [ref=e1174]:
+                        - time [ref=e1175]: 1 hour ago
+                      - listitem [ref=e1176]:
+                        - img [ref=e1177]:
+                          - img [ref=e1178]
+                        - generic [ref=e1180]: Easy Apply
+            - listitem [ref=e1181]:
+              - link "Rippling logo Implementation Manager, Managed (Canada) with verification Rippling Toronto, ON (Hybrid) 1 Indian Institute of Foreign Trade school alum works here 1 week ago" [ref=e1183] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4384156702&referenceJobId=4398573274&originToLandingJobPostings=4384156702&trackingId=IlTH20yL0jWI6RrT6vtWCg%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx19mqCbo6TRlXi5bSRa2sLyRd-fKaWW8hF_Ol64jbnmpFRpQV40F1kAhcP3NUr6RKR-UPMAMH--7SjB23_pgChVR30793nUmytLjeCWcDR3uPvsn-fByg5EtTWZL10jUDpW0WeVN_NS1i-F_Af5uVlhWPeZOlGfucalGbum70tjEy_rgWbb8ivvGKedgeVIHf_ggSGLk0elJUVpOT4x1qaZFLaboCr9RJnl6OVh_IJEJqBMl6jDCflHGNrKmsxMX9hQs4dHCNer9NPuWeanMm6dOwSU2Rkc7G8z6-ncE-X7t3WG-piAeJ3nlgTgzAjWhSQN44ZCkVZQlItnL_IDrC2tpjrEvOfJbutAzP4z0shcdyP2SvGo_oIsf8Kz1Vtll8Y9JU6fB4kucQhBWl47O3rhhD9q2fYNsfKEOSi-fsMGPL5bFj_HKmXoNMZfQKPQfXiKeJSZzLIQQVMGJuI96gA4IjMI3i39TsyWP8wXx-KWtU1w7VS7LlA1aV4cdnOPIr0ltdNd711rMVYki4BWKvmC4
+                - generic [ref=e1185]:
+                  - img "Rippling logo" [ref=e1190]
+                  - generic [ref=e1191]:
+                    - generic [ref=e1192]:
+                      - generic [ref=e1193]:
+                        - generic [ref=e1194]:
+                          - strong [ref=e1195]: Implementation Manager, Managed (Canada)
+                          - img [ref=e1197]
+                        - generic [ref=e1199]: Implementation Manager, Managed (Canada) with verification
+                      - generic [ref=e1201]: Rippling
+                      - generic [ref=e1203]: Toronto, ON (Hybrid)
+                      - list [ref=e1205]:
+                        - listitem [ref=e1206]:
+                          - generic [ref=e1209]:
+                            - generic [ref=e1210]: 1 school alum works here
+                            - generic [ref=e1211]: 1 Indian Institute of Foreign Trade school alum works here
+                    - list [ref=e1213]:
+                      - listitem [ref=e1214]:
+                        - time [ref=e1215]: 1 week ago
+            - listitem [ref=e1216]:
+              - link "Google logo Consulting Account Lead IV, Google Cloud with verification Google Toronto, ON (On-site) 16 connections work here 27 minutes ago" [ref=e1218] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4398174692&referenceJobId=4398573274&originToLandingJobPostings=4398174692&trackingId=F0R1M%2BS1bBPApoo7leo%2FJw%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx14nugBc6J-n6WzS4uRpzGuVuvAlCVvcnvZfcnshhBVkSslDFfeaDyZ7oFXD8_276w5duz10KBD-eQ1gYl_fkWo7QHP18_SLuFYgBYeRDNbYULEQ40wA5TOlIF6jxX7OVY-dw8GmdKvfVDL_kNh6CW03xbxv0LDTfuG0CYdQVPk0MvAnj5b1NL_z-a5dD3eFmLJm-LnGWGW4Odp7bG3k5FBgNYLru0yrjHpUwOgdQyAoHrCFVS7Ylo-YFX9H8yUlTwwpGASfasjDuodSIuSOgIaK80RT5TNL78SKxZHXG_cmA8aOUV7uKOOmbynYtnP0VAMcWQTFxX_ofpz4YKXa9W2YfesNjLeVNMnsxyJyjzaQXtaQHjg1DiYlcD9O8Ywcv7R05zmEQeb07gi-NIkBCu-Yf2YX2TbDQhJ3vj1dI-p504urAB7A8-ZxitEupktK7Ss5vwWQj_UMKxBga15zIFUhvVdZ_IbXqNWB2JUksc0mswq-stg07Hay6hju4R-UfQ4LHlc1kgqpmOYpdeA
+                - generic [ref=e1220]:
+                  - img "Google logo" [ref=e1225]
+                  - generic [ref=e1226]:
+                    - generic [ref=e1227]:
+                      - generic [ref=e1228]:
+                        - generic [ref=e1229]:
+                          - strong [ref=e1230]: Consulting Account Lead IV, Google Cloud
+                          - img [ref=e1232]
+                        - generic [ref=e1234]: Consulting Account Lead IV, Google Cloud with verification
+                      - generic [ref=e1236]: Google
+                      - generic [ref=e1238]: Toronto, ON (On-site)
+                      - list [ref=e1240]:
+                        - listitem [ref=e1241]:
+                          - list [ref=e1243]:
+                            - listitem [ref=e1244]
+                            - listitem [ref=e1246]
+                            - listitem [ref=e1248]
+                          - generic [ref=e1250]: 16 connections work here
+                    - list [ref=e1252]:
+                      - listitem [ref=e1253]:
+                        - time [ref=e1254]: 27 minutes ago
+            - listitem [ref=e1255]:
+              - link "Clio logo Manager, Professional Services with verification Clio Canada (Remote) 15 Thomson Reuters company alumni work here 2 weeks ago" [ref=e1257] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4389834431&referenceJobId=4398573274&originToLandingJobPostings=4389834431&trackingId=AM36YjLEBdxKJX%2BZ8pEaIw%3D%3D&refId=mOfc7O1w4827LxPlQ16VAA%3D%3D&eBP=CwEAAAGdePxx1zlF143SKye2LVU7LSm5Qp1HruyXbSd0cloQn7PpJDT_drAaB-obE1_o_4fKIxEuCBousJ2xecwnSbJ82SUiwfnnTlDefDmh6RHFcxzEqmmog0oarAEgdDTgaR__9EUKqHDuOoBZiBuF0SX8IVVvxyFLQBDyoNnsLqRQSwwNCI4-HOP6quIxIBLIX7vN8mn01gRiqSFvdBm9bsEVvMF26Tdo2dwoNmm9ba2BgPFY5NaCxYWDcTsOWzh6UbBVRnbj7O2DNHzc7KopTQjEjIa0q72leDf1r7HmSI48lbnXKxAvaOUqbCTljr9n7DRceOGM8ieYyzeUiCO8K5sZEX8ciYh5cN2JTX336Z8DCNGLwiI3c1uFrh15hnv5D2HTZqcJq0Ziur6M02Ap6PzjcLdhLTr6AHSi5MYk01w7Gae44HEIsCcfW6aSkNaHTcL9bzr72oBVuPVKQiLhSNCDmSH0bMmunaoNDMaxUkj9u3w8BbljvU0wi4DxC5W3ag2u5KlEljauQSYU2igQTHzqD0tWgyc
+                - generic [ref=e1259]:
+                  - img "Clio logo" [ref=e1264]
+                  - generic [ref=e1265]:
+                    - generic [ref=e1266]:
+                      - generic [ref=e1267]:
+                        - generic [ref=e1268]:
+                          - strong [ref=e1269]: Manager, Professional Services
+                          - img [ref=e1271]
+                        - generic [ref=e1273]: Manager, Professional Services with verification
+                      - generic [ref=e1275]: Clio
+                      - generic [ref=e1277]: Canada (Remote)
+                      - list [ref=e1279]:
+                        - listitem [ref=e1280]:
+                          - generic [ref=e1283]:
+                            - generic [ref=e1284]: 15 company alumni work here
+                            - generic [ref=e1285]: 15 Thomson Reuters company alumni work here
+                    - list [ref=e1287]:
+                      - listitem [ref=e1288]:
+                        - time [ref=e1289]: 2 weeks ago
+          - link "See more jobs like this" [ref=e1291] [cursor=pointer]:
+            - /url: https://www.linkedin.com/jobs/collections/similar-jobs?referenceJobId=4398573274
+      - complementary [ref=e772]:
+        - generic [ref=e773]:
+          - generic [ref=e774]:
+            - img "Premium" [ref=e776]:
+              - img [ref=e777]
+            - heading "Learn skills to get a new job with these courses" [level=2] [ref=e779]
+            - listitem [ref=e780]:
+              - link "Finding Your Leadership Vocabulary with Doug Conant" [ref=e781] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/finding-your-leadership-vocabulary-with-doug-conant?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_2739116_learning
+                - img "Finding Your Leadership Vocabulary with Doug Conant" [ref=e784]
+                - img [ref=e786]
+              - generic [ref=e788]:
+                - link "Finding Your Leadership Vocabulary with Doug Conant" [ref=e789] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/learning/finding-your-leadership-vocabulary-with-doug-conant?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_2739116_learning
+                  - generic [ref=e790]: Finding Your Leadership Vocabulary with Doug Conant
+                - generic [ref=e792]: 13,098 viewers
+            - listitem [ref=e793]:
+              - link "Leadership Live with Dorie Clark" [ref=e794] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/leadership-live-with-dorie-clark?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_8008021_learning
+                - img "Leadership Live with Dorie Clark" [ref=e797]
+                - img [ref=e799]
+              - generic [ref=e801]:
+                - link "Leadership Live with Dorie Clark" [ref=e802] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/learning/leadership-live-with-dorie-clark?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_8008021_learning
+                  - generic [ref=e803]: Leadership Live with Dorie Clark
+                - generic [ref=e805]: 3,002 viewers
+            - listitem [ref=e806]:
+              - 'link "Sales Strategy: Key Account Growth with AI" [ref=e807] [cursor=pointer]':
+                - /url: https://www.linkedin.com/learning/sales-strategy-key-account-growth-with-ai?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_5964084_learning
+                - 'img "Sales Strategy: Key Account Growth with AI" [ref=e810]'
+                - img [ref=e812]
+              - generic [ref=e814]:
+                - 'link "Sales Strategy: Key Account Growth with AI" [ref=e815] [cursor=pointer]':
+                  - /url: https://www.linkedin.com/learning/sales-strategy-key-account-growth-with-ai?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_5964084_learning
+                  - generic [ref=e816]: "Sales Strategy: Key Account Growth with AI"
+                - generic [ref=e818]: 13,011 viewers
+            - link "Show more on LinkedIn Learning" [ref=e820] [cursor=pointer]:
+              - /url: /learning?trk=jobdetails_learning_awareness
+          - generic [ref=e821]:
+            - paragraph [ref=e822]: Looking for talent?
+            - link "Post a job" [ref=e823] [cursor=pointer]:
+              - /url: https://www.linkedin.com/talent/job-posting-redirect?trk=flagship3_job_detail
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e825]:
+            - generic [ref=e827] [cursor=pointer]:
+              - generic [ref=e828]:
+                - img "Vimal Sekar" [ref=e829]
+                - generic [ref=e831]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e832]:
+                - generic [ref=e833]:
+                  - generic [ref=e834]: Messaging
+                  - generic [ref=e835]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e836]:
+              - button "Open messenger dropdown menu" [ref=e838] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e839]
+              - button "Compose message" [ref=e842] [cursor=pointer]:
+                - img [ref=e843]
+                - generic [ref=e845]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e846] [cursor=pointer]:
+                - img [ref=e847]
+                - generic [ref=e849]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"
