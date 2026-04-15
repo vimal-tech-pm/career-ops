@@ -10,16 +10,67 @@
    - US/Canada → `letter`
    - Resto del mundo → `a4`
 6. Detecta arquetipo del rol → adapta framing
-7. Reescribe Professional Summary inyectando keywords del JD + exit narrative bridge ("Built and sold a business. Now applying systems thinking to [domain del JD].")
+7. Adapta el Professional Summary para este JD:
+   - PARTE del resumen existente en cv.md — NO reescribas desde cero
+   - Inyecta keywords del JD QUIRÚRGICAMENTE: inserta un keyword en una frase existente o añádelo al final; no reestructures frases enteras
+   - Reglas de voz (ver también _shared.md "Professional Writing & ATS Compatibility"):
+     * Primera persona implícita: empieza con verbos de acción fuertes; sin sujeto "I"; NUNCA en tercera persona ("He led...", "Vimal is...", "The candidate...")
+     * Sin voz pasiva ("was responsible for" → "owned", "built", "led")
+     * Sin corporate filler (ver lista en _shared.md: leveraged, spearheaded, facilitated, passionate about, proven track record, robust, seamless, cutting-edge, synergies, best practices, etc.)
+   - Preserva todas las métricas de cv.md exactamente como están (14+ years, 125,000+, NPS 26→70, $420K+)
+   - Closing bridge cuando sea relevante al JD: "Building AI-native products independently since 2025. Now applying that end-to-end product thinking to [JD domain]."
+   - Máximo 4 líneas / ~70 palabras
 8. Selecciona top 3-4 proyectos más relevantes para la oferta
-9. Reordena bullets de experiencia por relevancia al JD
+
+8a. Aplica content budget ANTES de seleccionar bullets (objetivo: exactamente 2 páginas PDF):
+
+    | Antigüedad del rol       | Máx. bullets |
+    |--------------------------|--------------|
+    | Actual (0–2 años)        | 6            |
+    | Reciente (2–5 años)      | 4            |
+    | Anterior (5–10 años)     | 3            |
+    | Primera carrera (10+ años) | 2          |
+
+    Aplicado al orden canónico de este CV:
+    - Thomson Reuters (Jun 2021, actual):       máx. 6 bullets — elige top 6 por relevancia al JD
+    - Self-Employed (Jun 2025, actual):         máx. 4 bullets — tiene 3, conserva todos, añade 1 si hay espacio
+    - Cognizant PO (Jul 2016, reciente):        máx. 4 bullets — elige top 4 por relevancia al JD
+    - Cognizant Sr BA (Apr 2014, anterior):     máx. 3 bullets — tiene 3, conserva todos
+    - HCL Technologies (May 2012, anterior):    máx. 3 bullets — elige top 3 por relevancia al JD
+    - Murugappa Group (Apr 2011, +15 años):     máx. 2 bullets — tiene 2, conserva todos
+    - Infosys (Jul 2008, +15 años):             máx. 2 bullets — elige top 2 por relevancia al JD
+
+    Si el contenido sigue desbordando 2 páginas tras aplicar los límites:
+    1. Reduce Murugappa + Infosys a 1 bullet cada uno
+    2. Reduce HCL a 2 bullets
+    3. Reduce Cognizant Sr BA a 2 bullets
+    Nunca reduzcas los dos roles actuales (Thomson Reuters y Self-Employed) por debajo de su selección.
+
+9. Reordena bullets DENTRO de cada trabajo por relevancia al JD. El orden de los trabajos en sí DEBE coincidir exactamente con el orden de cv.md — NO intercambies, muevas ni reordenes bloques de trabajo completos. Solo los bullets dentro de un mismo trabajo pueden reordenarse.
+
+9a. Orden canónico de experiencia para este CV (coincide con el orden del archivo cv.md — no modificar):
+    1. Thomson Reuters | Product Manager            | Jun 2021 – Present  ← siempre primero
+    2. Self-Employed   | AI Product Builder          | Jun 2025 – Present
+    3. Cognizant       | Product Owner & Consultant  | Jul 2016 – Jun 2021
+    4. Cognizant       | Senior BA & BD Lead         | Apr 2014 – Jul 2016
+    5. HCL Technologies| BA & Solution Consultant    | May 2012 – Mar 2014
+    6. Murugappa Group | Mgmt Consultant Intern      | Apr 2011 – Jun 2011
+    7. Infosys         | Software Test Engineer      | Jul 2008 – Jun 2010
+    Verifica este orden en el HTML generado antes de escribirlo a disco.
 10. Construye competency grid desde requisitos del JD (6-8 keyword phrases)
 11. Inyecta keywords naturalmente en logros existentes (NUNCA inventa)
 12. Genera HTML completo desde template + contenido personalizado
 13. Lee `name` de `config/profile.yml` → normaliza a kebab-case lowercase (e.g. "John Doe" → "john-doe") → `{candidate}`
 14. Escribe HTML a `/tmp/cv-{candidate}-{company}.html`
 15. Ejecuta: `node generate-pdf.mjs /tmp/cv-{candidate}-{company}.html output/cv-{candidate}-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
-15. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
+
+15a. Verifica el número de páginas en la salida de generate-pdf.mjs (línea "📊 Pages: N"):
+     - Pages = 2 → continúa al reporte
+     - Pages = 1 → contenido escaso; amplía Thomson Reuters a 8 bullets, Self-Employed a 4, regenera HTML y vuelve a ejecutar
+     - Pages ≥ 3 → desbordamiento; aplica la secuencia de trim del Step 8a, regenera HTML y vuelve a ejecutar
+     - Máximo 2 intentos de regeneración; si sigue siendo incorrecto tras el intento 2, reporta el número de páginas actual y las secciones específicas a recortar al usuario
+
+16. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
 
 ## Reglas ATS (parseo limpio)
 
