@@ -1,0 +1,833 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - button "Skip to search" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Skip to search
+      - button "Skip to main content" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Close jump menu
+    - banner "Global Navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "LinkedIn" [ref=e20] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e23]:
+            - img [ref=e24]
+        - button "Click to start a search" [ref=e28] [cursor=pointer]:
+          - img [ref=e30]
+          - generic [ref=e32]: Search
+        - navigation "Primary Navigation" [ref=e33]:
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - link "new feed updates notifications Home" [ref=e36] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e37]:
+                  - generic [ref=e40]: new feed updates notifications
+                  - img [ref=e44]
+                - generic "Home" [ref=e46]
+            - listitem [ref=e47]:
+              - link "My Network" [ref=e48] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - img [ref=e52]
+                - generic "My Network" [ref=e54]
+            - listitem [ref=e55]:
+              - link "Jobs" [ref=e56] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e60]
+                - generic "Jobs" [ref=e62]
+            - listitem [ref=e63]:
+              - link "Messaging" [ref=e64] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e68]
+                - generic "Messaging" [ref=e70]
+            - listitem [ref=e71]:
+              - link "4 new notifications Notifications" [ref=e72] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - generic [ref=e73]:
+                  - generic [ref=e74]:
+                    - generic [ref=e75]: "4"
+                    - generic [ref=e76]: 4 new notifications
+                  - img [ref=e80]
+                - generic "Notifications" [ref=e82]
+            - listitem [ref=e83]:
+              - button "Vimal Sekar Me" [ref=e85] [cursor=pointer]:
+                - img "Vimal Sekar" [ref=e86]
+                - generic [ref=e87]:
+                  - text: Me
+                  - img [ref=e88]
+            - listitem [ref=e90]:
+              - button "For Business" [ref=e92] [cursor=pointer]:
+                - img [ref=e96]
+                - generic "For Business" [ref=e98]:
+                  - text: For Business
+                  - img [ref=e99]
+            - listitem [ref=e101]:
+              - link "Learning" [ref=e102] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/?trk=nav_neptune_learning&
+                - img [ref=e106]
+                - generic "Learning" [ref=e111]
+    - generic [ref=e115]:
+      - main [ref=e116]:
+        - generic [ref=e119]:
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - generic [ref=e125]:
+                - link "Dropbox logo" [ref=e126] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/dropbox/life
+                  - img "Dropbox logo" [ref=e129]
+                - link "Dropbox" [ref=e131] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/dropbox/life
+              - generic [ref=e132]:
+                - button "Share" [ref=e135] [cursor=pointer]:
+                  - img [ref=e136]
+                  - generic [ref=e138]: Share
+                - button "Show more options" [ref=e140] [cursor=pointer]:
+                  - img [ref=e141]
+                  - generic [ref=e143]: Show more options
+            - generic [ref=e145]:
+              - heading "Senior Product Manager, Growth" [level=1] [ref=e146]
+              - button "View verified hiring modal" [ref=e148] [cursor=pointer]:
+                - img [ref=e151]
+            - generic [ref=e155]:
+              - generic [ref=e156]: Canada
+              - generic [ref=e157]: ·
+              - generic [ref=e159]: 2 weeks ago
+              - generic [ref=e160]: ·
+              - generic [ref=e161]: Over 100 people clicked apply
+              - paragraph [ref=e162]:
+                - generic [ref=e163]: Promoted by hirer
+                - generic [ref=e164]: ·
+                - generic [ref=e165]: Responses managed off LinkedIn
+            - generic [ref=e166]:
+              - button "Matches your job preferences, workplace type is Remote." [ref=e167] [cursor=pointer]:
+                - strong [ref=e170]:
+                  - img [ref=e172]
+                  - text: Remote
+                - generic [ref=e174]: Matches your job preferences, workplace type is Remote.
+              - button "Matches your job preferences, job type is Full-time." [ref=e175] [cursor=pointer]:
+                - strong [ref=e178]:
+                  - img [ref=e180]
+                  - text: Full-time
+                - generic [ref=e182]: Matches your job preferences, job type is Full-time.
+            - generic [ref=e184]:
+              - link "Apply to Senior Product Manager, Growth on company website" [ref=e187] [cursor=pointer]:
+                - img [ref=e188]
+                - generic [ref=e190]: Apply
+              - button "Save Senior Product Manager, Growth at Dropbox" [ref=e191] [cursor=pointer]:
+                - generic [ref=e192]: Save
+                - generic [ref=e193]: Save Senior Product Manager, Growth at Dropbox
+          - generic [ref=e194]:
+            - img "Premium" [ref=e196]:
+              - img [ref=e197]
+            - heading "Your AI-powered job assessment" [level=2] [ref=e199]
+            - generic [ref=e203]:
+              - list [ref=e204]:
+                - listitem [ref=e205]:
+                  - button "Show match details" [ref=e206] [cursor=pointer]:
+                    - img [ref=e207]
+                    - generic [ref=e209]: Show match details
+                - listitem [ref=e210]:
+                  - button "Tailor my resume" [ref=e211] [cursor=pointer]:
+                    - img [ref=e212]
+                    - generic [ref=e214]: Tailor my resume
+                - listitem [ref=e215]:
+                  - button "Create cover letter" [ref=e216] [cursor=pointer]:
+                    - img [ref=e217]
+                    - generic [ref=e219]: Create cover letter
+                - listitem [ref=e220]:
+                  - button "Help me stand out" [ref=e221] [cursor=pointer]:
+                    - img [ref=e222]
+                    - generic [ref=e224]: Help me stand out
+              - button "Scroll right" [ref=e225] [cursor=pointer]:
+                - img [ref=e226]
+          - generic [ref=e229]:
+            - heading "People you can reach out to" [level=2] [ref=e230]
+            - generic [ref=e233]:
+              - generic [ref=e234]:
+                - generic [ref=e235]:
+                  - list [ref=e236]:
+                    - listitem [ref=e237]:
+                      - img "Thomson Reuters logo" [ref=e239]
+                  - generic [ref=e240]: Thomson Reuters logo
+                - generic [ref=e241]: Company alumni from Thomson Reuters
+              - button "Show all" [ref=e242] [cursor=pointer]:
+                - generic [ref=e243]: Show all
+          - generic [ref=e244]:
+            - article [ref=e245]:
+              - generic [ref=e247]:
+                - heading "About the job" [level=2] [ref=e248]
+                - paragraph [ref=e250]:
+                  - text: Dropbox is a
+                  - link "Virtual First" [ref=e251] [cursor=pointer]:
+                    - /url: http:///en/virtual-first/
+                  - text: "company. For this role, we are currently only authorized to hire candidates from the following provinces: Alberta, British Columbia, Ontario, and Saskatchewan."
+                  - text: Role Description
+                  - text: We’re looking for a Senior Product Manager to lead Growth initiatives across top-of-funnel optimization and pricing & packaging tests across geolocations and platforms. You’ll own the strategy and execution for improving the funnel from website visits to signups to conversions by building customer-centric experiences and running rigorous experimentation across key journeys.
+                  - text: As a Senior Product Manager in the Growth organization, you will lead your cross functional team (engineering, design, data science, research, marketing) to inflect Dropbox growth across our evolving product portfolio, as we expand beyond our $2B core file storage and sync business.
+                  - text: As a senior member of the Product team, you will contribute directly to the company strategy and be responsible influencing revenue driving metrics. You will have the responsibility to engage with executives across the company to ensure alignment between our platform, experiences, and growth teams. You will own high visibility initiatives that drive company’s long-term strategy and roadmap for new growth directions. The role requires a mix of analytical horsepower, relentless execution, and well-honed customer understanding and judgment.
+                  - strong [ref=e253]: Responsibilities
+                  - list [ref=e255]:
+                    - listitem [ref=e256]: Own the growth roadmap for top-of-funnel optimization and pricing & packaging tests across geolocations and platforms.
+                    - listitem [ref=e257]: Identify and prioritize the highest-impact opportunities across landing pages, sign-up, onboarding, upgrade flows, and plan selection.
+                    - listitem [ref=e258]: Lead structured experimentation (A/B and multivariate testing), define success metrics, and translate results into product decisions.
+                    - listitem [ref=e259]: Partner with Design and Engineering to build and iterate on growth components (upgrade surfaces, pricing modules, offer, onboarding experience).
+                    - listitem [ref=e260]: "Drive pricing and packaging strategy: run pricing experiments, evaluate packaging changes, and improve plan positioning and upgrade paths."
+                    - listitem [ref=e261]: Expand growth globally by improving localized acquisition and conversion, addressing country-specific payment and platform considerations, and tailoring offers by market.
+                    - listitem [ref=e262]: Improve mobile monetization by optimizing mobile upgrade journeys, experimenting with placements and messaging, and partnering on app-store/platform constraints and opportunities.
+                    - listitem [ref=e263]: Monitor funnel health and cohort performance, balancing conversion gains with long-term retention, trust, and user experience quality.
+                  - strong [ref=e265]: Requirements
+                  - list [ref=e267]:
+                    - listitem [ref=e268]: 10+ years of product management experience in Growth, Monetization, or product-led environments.
+                    - listitem [ref=e269]: BS/MS in Computer Science, Engineering, Business, Information Systems, Applied Math or Statistics, or relevant experience.
+                    - listitem [ref=e270]: Proven track record driving measurable improvements in acquisition, activation, conversion, and/or revenue through product changes and experimentation.
+                    - listitem [ref=e271]: Strong quantitative and analytical skills, including comfort defining metrics, interpreting test results, and making tradeoffs under uncertainty.
+                    - listitem [ref=e272]: Experience partnering closely with Engineering, Design, Data Science/Analytics, and Marketing to ship cross-functional initiatives.
+                    - listitem [ref=e273]: Clear written and verbal communication skills, including ability to align stakeholders around a roadmap and make decisions with data.
+                  - strong [ref=e275]: Preferred Qualifications
+                  - list [ref=e277]:
+                    - listitem [ref=e278]: Experience leveraging AI/LLM-powered tools and workflows to improve product experiences, accelerate experimentation/analysis, and inform product decision-making (e.g., prototyping, AI-assisted analytics/insight generation).
+                    - listitem [ref=e279]: Experience with experimentation platforms (e.g., GrowthBook) and analytics tools (e.g., Amplitude)
+                    - listitem [ref=e280]: Experience with international growth (localization, regional funnel differences, payments, offer strategy).
+                    - listitem [ref=e281]: Mobile growth/monetization experience (iOS/Android purchase flows, paywall optimization, platform policy considerations).
+                  - strong [ref=e283]: Compensation
+                  - text: Canada Pay Range
+                  - text: $185,300—$250,700 CAD
+                  - text: The range listed above is the expected annual salary/OTE (On-Target Earnings) for this role, subject to change.
+                  - text: Salary/OTE is just one component of Dropbox’s total rewards package. All regular employees are also eligible for the corporate bonus program or a sales incentive (target included in OTE) as well as stock in the form of Restricted Stock Units (RSUs).
+                  - strong [ref=e285]: Company Description
+                  - text: Read more about our benefits
+                  - link "here" [ref=e286] [cursor=pointer]:
+                    - /url: http:///en/canada/
+                  - text: .
+                  - text: Dropbox isn’t just a workplace—it’s a living lab for designing a more enlightened way of working. We’re a global community of bold visionaries and resourceful doers shaping the future of Dropbox and, in turn, the future of work. Our Virtual First model combines the autonomy of a distributed workplace with the power of human connection, creating space for meaningful work and lasting relationships. With a startup mindset and enterprise-level opportunities, we expect Dropbox employees to think critically, stay curious, and use modern tools, including AI, to improve how work gets done. Here, you can be who you are and grow into who you’re meant to be. You own your impact, helping make work more intuitive, joyful, and human for yourself and hundreds of millions of people worldwide. If you’re ready to push boundaries and challenge yourself, Dropbox is ready for you.
+                  - strong [ref=e288]: Team Description
+                  - text: Dropbox Product Managers are systems thinkers, problem solvers, and communicators who translate complex workplace challenges into intuitive, scalable solutions. Our PMs lead with insight and empathy, shaping the future of work through tools that help individuals and teams within businesses stay organized, collaborate seamlessly, and tap into the power of AI. We work across the full product lifecycle, from 0→1 vision setting to iterative evolution, partnering closely with design, engineering, research, and go-to-market teams to deliver products that millions of people trust. As part of our PM team, you’ll help shape ambitious bets that are redefining how teams work, like Dropbox Dash, a new AI-powered way to find and organize knowledge, or evolve the core Dropbox experience used by millions of users to adapt to how work gets done in the future. If you're excited by the challenge of reimagining how the world works from first principles and scaling delightful, high-impact products, we’d love to meet you.
+                  - strong [ref=e290]: Virtual First
+                  - text: Dropbox’s Virtual First way of working is designed to help people do their best work with flexibility, autonomy, and connection. Day to day, teams work remotely with nonlinear schedules and core collaboration hours that support deep focus and individual working styles. We prioritize asynchronous communication to improve clarity, respect deep work time, and reduce unnecessary meetings. While remote work is the primary experience for our employees, we also prioritize intentional, in-person connection. We bring teams together through regular team gatherings, on-demand workspaces, and Dropbox Neighborhood events in order to strengthen team cohesion, foster creativity, and enhance momentum. Virtual First is built to provide the same access to opportunity, growth, and impact for everyone, regardless of location.
+                  - text: This role requires travel to offsites and various other team gatherings (approximately 5-10% of the year or 2-3 days per quarter). We provide advance notice when possible and encourage candidates to discuss any accommodation needs during the interview process.
+                  - text: Dropbox supports responsible use of AI for preparation, but misrepresentation of skills or experience is not permitted. See our
+                  - link "AI Principles" [ref=e291] [cursor=pointer]:
+                    - /url: https://www.dropbox.com/ai-principles
+                  - text: .
+                  - text: Dropbox is an equal opportunity employer. We are a welcoming place for everyone, and we do our best to make sure all people feel supported and connected at work.
+            - button "Click to see more description" [ref=e293] [cursor=pointer]:
+              - img [ref=e294]
+              - generic [ref=e296]: See more
+          - generic [ref=e298]:
+            - generic [ref=e299]:
+              - heading "This job alert is on" [level=2] [ref=e300]:
+                - img [ref=e301]
+                - text: This job alert is on
+              - generic [ref=e304]: Senior Product Manager, Canada
+            - generic [ref=e306] [cursor=pointer]:
+              - generic [ref=e307]: "On"
+              - generic [ref=e308]: Alert on
+              - switch "Alert on" [checked]
+          - generic [ref=e309]:
+            - button "Dismiss services promo card" [ref=e310] [cursor=pointer]:
+              - img [ref=e311]
+              - generic [ref=e313]: Dismiss services promo card
+            - generic [ref=e315]:
+              - heading "See curated AI tools for your job search" [level=2] [ref=e316]
+              - paragraph [ref=e317]: Get hired faster with the help of AI tools built by verified companies like Kickresume, Exponent Interview Prep, and more.
+              - link "Get started" [ref=e318] [cursor=pointer]:
+                - /url: https://www.linkedin.com/ai-tools/?sectionType=career-coaching
+                - generic [ref=e319]: Get started
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - generic [ref=e322]:
+                - img "Premium" [ref=e324]:
+                  - img [ref=e325]
+                - button "Learn more about applicant insights" [ref=e328] [cursor=pointer]:
+                  - img [ref=e329]
+              - heading "See how you compare to others who clicked apply" [level=2] [ref=e331]
+              - generic [ref=e333]:
+                - heading "Candidates who clicked apply" [level=3] [ref=e334]
+                - list [ref=e335]:
+                  - listitem [ref=e336]:
+                    - generic [ref=e337]: "178"
+                    - generic [ref=e338]: total
+                  - listitem [ref=e339]:
+                    - generic [ref=e340]: "6"
+                    - generic [ref=e341]: in the past day
+              - generic [ref=e342]:
+                - generic [ref=e343]:
+                  - heading "Candidate seniority level" [level=3] [ref=e344]
+                  - list [ref=e345]:
+                    - listitem [ref=e346]:
+                      - paragraph [ref=e347]: 56% Senior level candidates
+                      - progressbar [ref=e348]
+                    - listitem [ref=e349]:
+                      - paragraph [ref=e350]: 26% Entry level candidates
+                      - progressbar [ref=e351]
+                    - listitem [ref=e352]:
+                      - paragraph [ref=e353]: 10% Manager level candidates
+                      - progressbar [ref=e354]
+                    - listitem [ref=e355]:
+                      - paragraph [ref=e356]: 5% Director level candidates
+                      - progressbar [ref=e357]
+                - generic [ref=e358]:
+                  - heading "Candidate education level" [level=3] [ref=e359]
+                  - list [ref=e360]:
+                    - listitem [ref=e361]:
+                      - generic [ref=e362]: 41%
+                      - generic [ref=e363]: have a Master of Business Administration (Similar to you)
+                    - listitem [ref=e364]:
+                      - generic [ref=e365]: 16%
+                      - generic [ref=e366]: have a Master's Degree
+                    - listitem [ref=e367]:
+                      - generic [ref=e368]: 11%
+                      - generic [ref=e369]: have a Bachelor's Degree
+                    - listitem [ref=e370]:
+                      - generic [ref=e371]: 32%
+                      - generic [ref=e372]: have other degrees
+            - generic [ref=e373]:
+              - generic [ref=e374]:
+                - img "Premium" [ref=e375]:
+                  - img [ref=e376]
+                - button "Learn more about company insights" [ref=e379] [cursor=pointer]:
+                  - img "Learn more about company insights" [ref=e380]
+              - heading "Exclusive Job Seeker Insights about Dropbox" [level=2] [ref=e382]
+              - heading "Powered by Bing" [level=3] [ref=e383]
+              - generic [ref=e384]:
+                - generic [ref=e385]:
+                  - heading "Company focus areas" [level=3] [ref=e386]
+                  - generic [ref=e388]:
+                    - list [ref=e389]:
+                      - listitem [ref=e390]:
+                        - strong [ref=e391]: "Drive new signups:"
+                        - text: Dropbox focuses on acquiring users efficiently through word-of-mouth referrals, direct in-product referrals, and sharing of content. This strategy helps attract new signups into their network.
+                      - listitem [ref=e392]:
+                        - strong [ref=e393]: "Virtual First 2025:"
+                        - text: Transform company culture by fostering collaboration, innovation, and employee well-being in a remote work environment through the 'Virtual First 2025' initiative.
+                    - button "show more, visually reveals content which is already detected by screen readers" [ref=e394] [cursor=pointer]:
+                      - generic [ref=e395]: …show more
+                - generic [ref=e396]:
+                  - generic [ref=e398]: "Sources: bizsugar.com +1 more"
+                  - generic [ref=e400]:
+                    - button "Mark feedback as good" [ref=e401] [cursor=pointer]:
+                      - img [ref=e402]
+                    - button "Mark feedback as bad" [ref=e405] [cursor=pointer]:
+                      - img [ref=e406]
+              - generic [ref=e409]:
+                - generic [ref=e410]:
+                  - heading "Hiring & headcount" [level=3] [ref=e411]
+                  - paragraph [ref=e412]:
+                    - generic [ref=e413]:
+                      - text: "Focus on Engineering and IT: The 'Engineering' and 'Information Technology' departments have seen significant growth with 14% and 16% increases respectively, indicating a strong focus on technological development and innovation. Expansion in Operations: The 'Operations' department has experienced a 22% increase in headcount, suggesting an emphasis on improving operational efficiency and scaling business processes. Growth in Education and Real Estate: The 'Education' and 'Real Estate' departments have shown substantial growth with 44% and 80% increases respectively, pointing towards new initiatives in training and property management. Stability in Sales and Marketing: The 'Sales' and 'Marketing' departments have seen moderate growth with 6% and 9% increases respectively, indicating steady investment in market expansion and customer acquisition strategies."
+                      - generic [ref=e414]:
+                        - generic [ref=e415]: …
+                        - button "Show more about Hiring &amp; headcount" [ref=e416] [cursor=pointer]: show more
+                - generic [ref=e418]:
+                  - button "Mark feedback as good" [ref=e419] [cursor=pointer]:
+                    - img [ref=e420]
+                  - button "Mark feedback as bad" [ref=e423] [cursor=pointer]:
+                    - img [ref=e424]
+              - generic [ref=e427]:
+                - heading "The latest hiring trend" [level=3] [ref=e428]
+                - generic [ref=e429]:
+                  - list [ref=e430]:
+                    - listitem [ref=e431]:
+                      - paragraph [ref=e432]: 4,052
+                      - paragraph [ref=e433]: Total employees
+                    - listitem [ref=e434]:
+                      - paragraph [ref=e435]: 10%
+                      - paragraph [ref=e437]: Company-wide
+                      - paragraph [ref=e438]: 2 year growth
+                      - generic [ref=e439]: 10% increase
+                    - listitem [ref=e440]:
+                      - paragraph [ref=e441]: 17%
+                      - paragraph [ref=e443]: Product Management
+                      - paragraph [ref=e444]: 2 year growth
+                      - generic [ref=e445]: 17% decrease
+                  - region "Chart. Highcharts interactive chart." [ref=e448]:
+                    - region "Chart screen reader information.":
+                      - generic [ref=e449]:
+                        - heading "Chart" [level=4] [ref=e450]
+                        - generic [ref=e451]: Chart with 25 data points.
+                        - generic [ref=e452]: "The chart has 1 X axis displaying Time. Range: 2023-12-13 12:00:00 to 2026-05-07 12:00:00."
+                        - generic [ref=e453]: "The chart has 1 Y axis displaying values. Range: 0 to 6000."
+                    - img "Interactive chart" [ref=e458]:
+                      - generic [ref=e470]:
+                        - img "1. April 2024, 3,690 employees" [ref=e471]
+                        - img "2. May 2024, 3,725 employees, increase 1% from last month" [ref=e472]
+                        - img "3. June 2024, 3,759 employees, increase 1% from last month" [ref=e473]
+                        - img "4. July 2024, 3,787 employees, increase 1% from last month" [ref=e474]
+                        - img "5. August 2024, 3,768 employees, decrease 1% from last month" [ref=e475]
+                        - img "6. September 2024, 3,760 employees, neutral 0% from last month" [ref=e476]
+                        - img "7. October 2024, 3,712 employees, decrease 1% from last month" [ref=e477]
+                        - img "8. November 2024, 3,479 employees, decrease 6% from last month" [ref=e478]
+                        - img "9. December 2024, 3,424 employees, decrease 2% from last month" [ref=e479]
+                        - img "10. January 2025, 3,450 employees, increase 1% from last month" [ref=e480]
+                        - img "11. February 2025, 3,499 employees, increase 1% from last month" [ref=e481]
+                        - img "12. March 2025, 3,531 employees, increase 1% from last month" [ref=e482]
+                        - img "13. April 2025, 3,585 employees, increase 2% from last month" [ref=e483]
+                        - img "14. May 2025, 3,678 employees, increase 3% from last month" [ref=e484]
+                        - img "15. June 2025, 3,730 employees, increase 1% from last month" [ref=e485]
+                        - img "16. July 2025, 3,769 employees, increase 1% from last month" [ref=e486]
+                        - img "17. August 2025, 3,755 employees, neutral 0% from last month" [ref=e487]
+                        - img "18. September 2025, 3,810 employees, increase 1% from last month" [ref=e488]
+                        - img "19. October 2025, 3,881 employees, increase 2% from last month" [ref=e489]
+                        - img "20. November 2025, 3,916 employees, increase 1% from last month" [ref=e490]
+                        - img "21. December 2025, 3,909 employees, neutral 0% from last month" [ref=e491]
+                        - img "22. January 2026, 3,934 employees, increase 1% from last month" [ref=e492]
+                        - img "23. February 2026, 3,997 employees, increase 2% from last month" [ref=e493]
+                        - img "24. March 2026, 4,044 employees, increase 1% from last month" [ref=e494]
+                        - img "25. April 2026, 4,052 employees, neutral 0% from last month" [ref=e495]
+                      - generic [ref=e496]:
+                        - generic [ref=e497]: Apr 2024
+                        - generic [ref=e498]: Oct 2024
+                        - generic [ref=e499]: Apr 2025
+                        - generic [ref=e500]: Oct 2025
+                        - generic [ref=e501]: Apr 2026
+                      - generic [ref=e502]:
+                        - generic [ref=e503]: "0"
+                        - generic [ref=e504]: 2,000
+                        - generic [ref=e505]: 4,000
+                        - generic [ref=e506]: 6,000
+                    - generic [ref=e508]: End of interactive chart.
+                  - generic [ref=e509]:
+                    - img [ref=e510]
+                    - text: Median employee tenure ‧
+                    - strong [ref=e513]: 3.5 years
+              - generic [ref=e514]:
+                - heading "Dropbox hires candidates from some of these companies and schools" [level=3] [ref=e515]
+                - list [ref=e517]:
+                  - listitem [ref=e518]:
+                    - generic [ref=e519]:
+                      - figure [ref=e520]:
+                        - img "Thomson Reuters" [ref=e521]
+                      - paragraph [ref=e522]:
+                        - text: Dropbox hired 122 people from Thomson Reuters.
+                        - link "See all" [ref=e523] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/search/results/people/?origin=JOB_PAGE_CANNED_SEARCH&currentCompany=167251&pastCompany=1400
+                          - strong [ref=e524]: See all
+              - generic [ref=e525]:
+                - generic [ref=e526]:
+                  - heading "Competitors" [level=3] [ref=e527]
+                  - paragraph [ref=e528]:
+                    - generic [ref=e529]:
+                      - text: Dropbox operates in a highly competitive cloud storage and collaboration market. The company faces significant competition from major players like Google Drive and Microsoft OneDrive, which offer integrated productivity tools and robust AI capabilities. Dropbox's challenges include higher pricing, limited free storage, and a lag in AI integration, which have led to market share losses. To maintain its position, Dropbox needs to focus on enhancing its AI capabilities, improving pricing strategies, and expanding its feature set to meet evolving customer needs.
+                      - generic [ref=e530]:
+                        - generic [ref=e531]: …
+                        - button "Show more about Competitors" [ref=e532] [cursor=pointer]: show more
+                  - generic [ref=e533]:
+                    - link "Tresorit | Swiss Post Digital" [ref=e535] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/tresorit/
+                      - generic "Tresorit | Swiss Post Digital" [ref=e538]
+                    - 'link "flareAI : Drive Sales from Google AI Search, Without SEO or Ads. With AI Tailor-made for Your Brand" [ref=e541] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/company/flareai/
+                      - 'generic "flareAI : Drive Sales from Google AI Search, Without SEO or Ads. With AI Tailor-made for Your Brand" [ref=e544]'
+                - generic [ref=e546]:
+                  - generic [ref=e548]: "Sources: cloudwards.net +2 more"
+                  - generic [ref=e550]:
+                    - button "Mark feedback as good" [ref=e551] [cursor=pointer]:
+                      - img [ref=e552]
+                    - button "Mark feedback as bad" [ref=e555] [cursor=pointer]:
+                      - img [ref=e556]
+              - link "Show more Premium insights" [ref=e559] [cursor=pointer]:
+                - /url: /company/dropbox/insights/?insightType=HEADCOUNT
+          - generic [ref=e561]:
+            - generic [ref=e562]:
+              - heading "About the company" [level=2] [ref=e563]
+              - generic [ref=e564]:
+                - generic [ref=e565]:
+                  - link "Dropbox company logo" [ref=e567] [cursor=pointer]:
+                    - /url: /company/dropbox/life/
+                    - img "Dropbox company logo" [ref=e568]
+                  - generic [ref=e569]:
+                    - link "Dropbox" [ref=e571] [cursor=pointer]:
+                      - /url: /company/dropbox/life/
+                    - generic [ref=e572]: 519,028 followers
+                - button "Following" [pressed] [ref=e573] [cursor=pointer]:
+                  - img [ref=e574]
+                  - generic [ref=e576]: Following
+              - generic [ref=e577]:
+                - text: Software Development
+                - generic [ref=e578]: • 1,001-5,000 employees
+                - generic [ref=e579]: • 4,052 on LinkedIn
+              - paragraph [ref=e580]:
+                - generic [ref=e581]:
+                  - text: Dropbox is the one place to keep life organized and keep work moving. With more than 700 million registered users across 180 countries, we're on a mission to design a more enlightened way of working.
+                  - text: To learn more about working at Dropbox, visit jobs.dropbox.com
+                  - text: "We also have a few simple guidelines to keep this space respectful and productive. Please avoid:"
+                  - text: "- Harassing other people or using language that’s hateful, offensive, vulgar, or advocates violence"
+                  - text: "- Trolling, fraud and spamming"
+                  - text: "- Violating someone else’s rights or privacy"
+                  - text: "- Advertising or soliciting donations"
+                  - text: "- Link baiting"
+                  - text: "- Posting off topic comments or thread hijacking"
+                  - text: We may remove comments that violate these guidelines.
+                  - generic [ref=e583]:
+                    - generic [ref=e584]: …
+                    - button "show more" [ref=e585] [cursor=pointer]
+              - generic [ref=e586]:
+                - generic [ref=e587]:
+                  - heading "Commitments" [level=3] [ref=e588]
+                  - button "Learn more about company commitments" [ref=e590] [cursor=pointer]:
+                    - img [ref=e591]
+                - generic [ref=e594]:
+                  - heading "Social impact" [level=4] [ref=e596]
+                  - generic [ref=e597]:
+                    - text: The Social Impact and Sustainability Team works across teams to harness the power of our people, product, and resources to give back. Through volunteerism and philanthropy, we enable Dropboxers to align with the causes they care about, and build community and culture in the process.
+                    - generic [ref=e598]:
+                      - generic [ref=e599]: …
+                      - button "Show more Social impact" [ref=e600] [cursor=pointer]: Show more
+                  - heading "Environmental sustainability" [level=4] [ref=e602]
+                  - generic [ref=e603]:
+                    - text: We believe our long-term success depends on supporting equity and sustainability for our users, employees, shareholders, and communities. Dropbox only succeeds if our stakeholders succeed. And we believe accomplishing our environmental, social, and governance objectives is essential to that success. The mission at Dropbox is to design a more enlightened way of working—and we’re committed to achieving our sustainability goals, investing in social-good initiatives, and being a force for positive change. We have sourced 100% renewable electricity for all of our data center IT electricity in 2021 and 2022 and achieved 98% YoY reduction in Scope 1, Scope 2 (market-based), and Scope 3 business travel emissions from 2020 to 2021. By 2030, Dropbox will achieve carbon neutrality in Scope 1 and Scope 2 emissions and in Scope 3 business-travel emissions, use 100% renewable energy for operation, and fund organizations working for climate action.
+                    - generic [ref=e604]:
+                      - generic [ref=e605]: …
+                      - button "Show more Environmental sustainability" [ref=e606] [cursor=pointer]: Show more
+                - link "Learn more about company commitments" [ref=e607] [cursor=pointer]:
+                  - /url: /company/dropbox/about/?scrollTo=commitments
+                  - text: Learn more
+              - generic [ref=e611]:
+                - heading "Interested in working with us in the future?" [level=3] [ref=e612]
+                - paragraph [ref=e613]:
+                  - generic [ref=e614]:
+                    - text: Members who share that they’re interested in a company may be 2x as likely to get a message from a recruiter than those who don’t.
+                    - link [ref=e615] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/answer/a1380509
+                      - text: Learn more
+                  - generic [ref=e616]: Learn more about Interested in working for our company
+                - button "I’m interested" [ref=e617] [cursor=pointer]:
+                  - generic [ref=e618]: I’m interested
+            - link "Show more about the company" [ref=e620] [cursor=pointer]:
+              - /url: /company/dropbox/life/
+              - text: Show more
+          - heading "More jobs" [level=2] [ref=e622]
+          - list [ref=e624]:
+            - listitem [ref=e625]:
+              - link "Akkodis logo Senior Product Manager with verification Akkodis Calgary, AB (Remote) Actively reviewing applicants Actively reviewing applicants 2 weeks ago Easy Apply" [ref=e627] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4390731675&referenceJobId=4389413744&originToLandingJobPostings=4390731675&trackingId=%2BQV5cxGbWXbNtkWnX0S8oA%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7LQb0hZZVuvXcdGbB_hlApXBz78OQJPUEVXh5oiwQ4hTKWeuF09UWqsMkmYBXDd7qVNjN74NThscAEB9DvcwE3kfSohJZJabPnlQtuiZ-YNcGM7Aa8WQRXOqMgHa2f7bR4KTVNaOadUVfbwYxOvFu-Fr8Ar5J2bU0cPavZtKpH89PCdUp3Ctrycnq7ILA2EyW8HS_sNobqx_UarcJaFpwLTyMjqWqWs3lBza8Smrfk-pe2xQQcMhTpTyvEwiEamaXX22Nefv0hio-87ge0bPxgvJEPg9wrHkF71P2iFfo4PxZJwTuB8PQQXwmXVVol4N_8T7n4JOspP4elsNLxp_6PPrEUr0GsC6AcWm6cJ1n01nZYf-orMtyoJBciTCOC5OijAmDjSva0uHYHmPCbSmKKzaXJXxWLTU2-f2_fHWYEMMhohWdaZXBE4-HwNU6elPq_etByj_30D0KMmzOqUtT0HsYRfqrGE-NxxihEcosyqSjFK0UO6QhzXI4ZdNe9kkbJCFG_rQ3dkm7LDHk0WIG
+                - generic [ref=e629]:
+                  - img "Akkodis logo" [ref=e634]
+                  - generic [ref=e635]:
+                    - generic [ref=e636]:
+                      - generic [ref=e637]:
+                        - generic [ref=e638]:
+                          - strong [ref=e639]: Senior Product Manager
+                          - img [ref=e641]
+                        - generic [ref=e643]: Senior Product Manager with verification
+                      - generic [ref=e645]: Akkodis
+                      - generic [ref=e647]: Calgary, AB (Remote)
+                      - list [ref=e649]:
+                        - listitem [ref=e650]:
+                          - img "Actively reviewing applicants" [ref=e653]
+                          - generic [ref=e655]: Actively reviewing applicants
+                    - list [ref=e657]:
+                      - listitem [ref=e658]:
+                        - time [ref=e659]: 2 weeks ago
+                      - listitem [ref=e660]:
+                        - img [ref=e661]:
+                          - img [ref=e662]
+                        - generic [ref=e664]: Easy Apply
+            - listitem [ref=e665]:
+              - link "Forward Financing logo Senior Product Manager - Data Platform and Integrity with verification Forward Financing Ontario, Canada (Remote) 1 day ago" [ref=e667] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4345933358&referenceJobId=4389413744&originToLandingJobPostings=4345933358&trackingId=YDQ5elQguvwyfWo6gANtKQ%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7LQfBn6OSsfm-2gqYIhgbs6K5rXxgyw48PinrT-imMVd_KQzphE6HhhP4zBpcOkPiBJvPbqlUsbKRQDGCgm3M556oqrKYcAyLvQw5JQmsihvUD4fPK51Gn2Ermhs81nk4zD0xeFtVRH_YfFJMup2F14o-V4DB1ptKUlIg8IaqTTKa6RKDrmcMOUCaVjtcEnvUS7g6CLNWI8Osw2sTcWZKiYBO6P0N8Bstrk_GeW3Gv9hue03SS-v619_ShwYJl9u43QdZWV4KDo16s41lpfdF-6UomMQ-20jLbLAsknYxRWsny2-swvWQjMclpMMXlrwFVGKRSpiif0lJNl6L3PkPRRBy_3T25M6vq7Q4JUYbQWYZosNxLEtLqAvuC3wGj_UF_c0LFV-dz694AXFX0P1mU3sPu6oJIU94cP_-Igi2GTDRgaI6GHPQkFqS314-sXhzlcjBxhf-jvV3nxiNa8xhcuuGIE3-xiItZT8iNYeeBfD5-I9HSVOFf0nClN4H4l8HHcatLkGt4Y3QcRzVMmew
+                - generic [ref=e669]:
+                  - img "Forward Financing logo" [ref=e674]
+                  - generic [ref=e675]:
+                    - generic [ref=e676]:
+                      - generic [ref=e677]:
+                        - generic [ref=e678]:
+                          - strong [ref=e679]: Senior Product Manager - Data Platform and Integrity
+                          - img [ref=e681]
+                        - generic [ref=e683]: Senior Product Manager - Data Platform and Integrity with verification
+                      - generic [ref=e685]: Forward Financing
+                      - generic [ref=e687]: Ontario, Canada (Remote)
+                    - list [ref=e689]:
+                      - listitem [ref=e690]:
+                        - time [ref=e691]: 1 day ago
+            - listitem [ref=e692]:
+              - link "Kraken logo Senior Product Manager - Platform with verification Kraken Canada (Remote) 3 Thomson Reuters company alumni work here 2 days ago" [ref=e694] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4386232275&referenceJobId=4389413744&originToLandingJobPostings=4386232275&trackingId=TZE7A4QMeCxk4g%2FVeIiuaQ%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7LVXeXHF4XRUIzmwFpENi6KyDzPoOZA2wNNIiwVINMIjJbDHKPZnehl1QEQcxdOdK-ibtjqbsQWLgW0aTcJtGZDFl2HTqtOy9lZk4VfWlXOeK_HazsqBMD1VxeCYeKNApSXodOh9PKhwLPMCyr3HEanUXmHtC5PCkeP4Ih1zFYPKA6CiZqz0YcQq-AxVyU9vHsRiFixvreSKyxK-u78vSYlRxnjsbeUlFzS6l5ROAb8E1nYSAN7iJolHvP_BpJbrtAhfcIdPV8URfaPEAan7SRdaqNGROs4wO3Gk9X5L4WMqxADN8rtNngjmXLGn4NoljPdKcZ8EQIWriG6OHHLYUvWOBbGNBzspSRNE_gjGfPdDRz6909IApFkPgZ69BtMato3PTF_bAUo8pE77fVGfCv2w1JBo9mSXMKpKV74DVwVc81t1H5wtO9_lnRewypeFMTB56SIxwG75BLeAqbgeNJAq_u3CTXjfn2ZgX2USosPT23sdi2Pa8ocG87I29-jXczkdjOZr8Hl_W
+                - generic [ref=e696]:
+                  - img "Kraken logo" [ref=e701]
+                  - generic [ref=e702]:
+                    - generic [ref=e703]:
+                      - generic [ref=e704]:
+                        - generic [ref=e705]:
+                          - strong [ref=e706]: Senior Product Manager - Platform
+                          - img [ref=e708]
+                        - generic [ref=e710]: Senior Product Manager - Platform with verification
+                      - generic [ref=e712]: Kraken
+                      - generic [ref=e714]: Canada (Remote)
+                      - list [ref=e716]:
+                        - listitem [ref=e717]:
+                          - generic [ref=e720]:
+                            - generic [ref=e721]: 3 company alumni work here
+                            - generic [ref=e722]: 3 Thomson Reuters company alumni work here
+                    - list [ref=e724]:
+                      - listitem [ref=e725]:
+                        - time [ref=e726]: 2 days ago
+            - listitem [ref=e727]:
+              - link "nesto logo Senior Product Manager, Mortgage Origination with verification nesto Canada (Remote) You’d be a top applicant You’d be a top applicant 2 weeks ago" [ref=e729] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4391902335&referenceJobId=4389413744&originToLandingJobPostings=4391902335&trackingId=hYF2kOdwLhNJKtRXD39J%2Bw%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7LnMyipr5h5iHFjc7VdMlEP7dsnJSPtUm2oxLn-g8TNCsiQq1go4imvTAzIFo7eG1yI915kako1uD5vhHMRlHfZBZXgbFWdWgKoFH9jZskER80ct2W1AyauaNuUyatc04fEaI2J3--y6SNx-LzfUUPMaaLo0Xf2P556ewbE5pmIymLCOW-JUun8IaDWJBoS5AeiahGSQVQbIQMu1TLQK23b2OT9BzO62nhB6Z4L6TI9U97XJbP3Cd_B7buKTKRAFBZ_AE1ZdwFF5tDyapFYv_tFCoM_I3PW5C1ptJ7sr8S_I6tbT_yV61lWEBfWW7BMfu4a5q_A0qOWFqeMNa6t5B9K1xrLKs5stiIiZk23XPlwUr1-Cf7aKYZa2E_d3pYntDkqRaLaC8RF7FzwZCdZjiMGQdqyGauSIT0tl30t57DeJVYDy6rARiRlFnuszzduzziI5yHEFHF0x6GdtydV7ix7tBodj9EhyXIIzIR1xS80wb0Fu9eEm8P_aZlptENcNCsnGVqWBZW0_u1Njjcg
+                - generic [ref=e731]:
+                  - img "nesto logo" [ref=e736]
+                  - generic [ref=e737]:
+                    - generic [ref=e738]:
+                      - generic [ref=e739]:
+                        - generic [ref=e740]:
+                          - strong [ref=e741]: Senior Product Manager, Mortgage Origination
+                          - img [ref=e743]
+                        - generic [ref=e745]: Senior Product Manager, Mortgage Origination with verification
+                      - generic [ref=e747]: nesto
+                      - generic [ref=e749]: Canada (Remote)
+                      - list [ref=e751]:
+                        - listitem [ref=e752]:
+                          - img "You’d be a top applicant" [ref=e755]:
+                            - img [ref=e756]
+                          - generic [ref=e759]: You’d be a top applicant
+                    - list [ref=e761]:
+                      - listitem [ref=e762]:
+                        - time [ref=e763]: 2 weeks ago
+            - listitem [ref=e764]:
+              - link "SimCorp logo Lead Principal Product Manager - Private Markets with verification SimCorp Toronto, ON (Remote) 60 Thomson Reuters company alumni work here 2 weeks ago" [ref=e766] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4391380675&referenceJobId=4389413744&originToLandingJobPostings=4391380675&trackingId=cOfosLJgy4Ro11tN7JWLdA%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7Ln8e-vmF0WTbFLZFAqOwova9WVPQHM5Y4Fn93uor_JHZp1-dD9NJ4dPoq_ezibub-vU853urLZnJcjnKRm4OgRn57zQHitrJ_TPWPFUnDLf9qh27r9hSvkx5qOGq1XWXfXWIjUfZYqsI0Q1_Q3tpCLE7lBNdrbL_yM3xVnHFc4IEXo5OLcSSv5nLBhtTyo1O52F30QE7fXh9C6LvaL5IsOMbQ0IXC0sRhGezLncd08gs_25RJgUkEjoabRZKc4H61RQutqT_sDOV-mIO0FZ0UUhKzQnd1zs-UyuValhlrHiUXdHnd-2cDlmxk0JOQs88uzSQ3k0UNl-iiQHU5VnEtd3RoRFDcWdDQLhC-FVxSwfOaw842EwkRoSSuJcDJoYV34CtVJdlWWek7wA_5MoucjaRpWjv8Zsd3Jfl55Zrp_di0epc0gG0eHTzDjvuEo_mTbngIzmLQNmqQfyZ4W4V5G_4sBKuISHCATDUGfKafbYP59Gq43amXpX7H-eP-nolEqiaeSvzevIFtckNrA
+                - generic [ref=e768]:
+                  - img "SimCorp logo" [ref=e773]
+                  - generic [ref=e774]:
+                    - generic [ref=e775]:
+                      - generic [ref=e776]:
+                        - generic [ref=e777]:
+                          - strong [ref=e778]: Lead Principal Product Manager - Private Markets
+                          - img [ref=e780]
+                        - generic [ref=e782]: Lead Principal Product Manager - Private Markets with verification
+                      - generic [ref=e784]: SimCorp
+                      - generic [ref=e786]: Toronto, ON (Remote)
+                      - list [ref=e788]:
+                        - listitem [ref=e789]:
+                          - generic [ref=e792]:
+                            - generic [ref=e793]: 60 company alumni work here
+                            - generic [ref=e794]: 60 Thomson Reuters company alumni work here
+                    - list [ref=e796]:
+                      - listitem [ref=e797]:
+                        - time [ref=e798]: 2 weeks ago
+            - listitem [ref=e799]:
+              - link "KOHO logo Senior Product Manager with verification KOHO Canada (Remote) 1 week ago" [ref=e801] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4365388361&referenceJobId=4389413744&originToLandingJobPostings=4365388361&trackingId=TA50OMRNNq6F2SXx6OkfHg%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7LoZ2c_YqaRQiOwljgh9759m0uCivGMtwd4L8bBMtN9x63Mj4VOxTMSVHpJte0r6xm8qfeZUkcLhs5QIrjvqC-dRHM33O7O3WZQgEjXKaN5RYJF6zJkH8x-NAwRWQ4Onl8x5iLCkA1mFft1ECyPIaQ7EQMdqzG0fiKBf2Xt1YkJXXAy0LU3sXWzpHnO_UHfQbNp0wvg7SneB2VOTzDJoHC3F3yLXz1ixA34ngT9rvHl9cHeD4lY_4qd-hlRo4x7r28AfWZkP8E0NyP8OGkTlYb3RDOl0d4sP27EqAL3C-_0Z5f5vY4lzg-t6woZkcQVXFr0JSBiG21R-26VtfFX5pzQwNBMFX53sG-F1wfXrHyBmGTzQlFtVrREeI0fvZzW2AOkDDlsm84mKU8tt-78PMnhTgOHZLt6MtnG04ftZtvIW2h3xHi2CiN0kEzjwF3f5RL1Zb3mOLmbKR3IQL2mgwR0J6Ypj64bR-mKjQ_WLR7V7mm2JtqTOdLzEXMiZRslVDvgCI3pf3ZRT7
+                - generic [ref=e803]:
+                  - img "KOHO logo" [ref=e808]
+                  - generic [ref=e809]:
+                    - generic [ref=e810]:
+                      - generic [ref=e811]:
+                        - generic [ref=e812]:
+                          - strong [ref=e813]: Senior Product Manager
+                          - img [ref=e815]
+                        - generic [ref=e817]: Senior Product Manager with verification
+                      - generic [ref=e819]: KOHO
+                      - generic [ref=e821]: Canada (Remote)
+                    - list [ref=e823]:
+                      - listitem [ref=e824]:
+                        - time [ref=e825]: 1 week ago
+            - listitem [ref=e826]:
+              - link "Gen II Fund Services logo Sr. Technical Product Manager with verification Gen II Fund Services Vancouver, BC (Remote) 4 Thomson Reuters company alumni work here 1 week ago" [ref=e828] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4382477460&referenceJobId=4389413744&originToLandingJobPostings=4382477460&trackingId=JQdvzqKQf1pD9Iz0vuEuPA%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7Ljw5zWPaUL1O-sF2PwF0vdXYLTw1g1K2nmGXynTNw78tyVUendzcgoK29CDkpNSmsIsfh72RHEbo-gD8c3EA54gkOQkJ9JsVQPl4nACwyIVObQO44MhPEyFhK-sSYHIisWsLpUPEeUrnLixOlTvPpOvPlFFWWOBNz64tz1Znnu_6RBJ7DceqqMkilaAdwcsVqPkk5mwGL1ro8ioTVtGgP35KjycHrxP2sIRB1VxkA3eMoy725XUw-8sRkn4wwJuvQLs8GC-9jUz-sxJx1UrGdKUntnHKSqlOWtPDnE7ElWMDY3SHo-Ey1hBnPeyMOud4APoi604oasqvHGGUHAyyAUbcwhWe9lCbW_xD_Jh4Tndjjz2QT8l_LROpHGGJeug99U0zjwi9kRzuhwcaD822taHlc9jaeTlva0nbTBcdMo0QjpJuPVit8Xf3oiD3UiLqbcY8dShzgL2BZwkLTU6RYIJgBBsG_4K9jcsxePAZDv4tdJZMwRW7FS22spq0DaB6DVhJ_TBZqbCoMJcVisaC
+                - generic [ref=e830]:
+                  - img "Gen II Fund Services logo" [ref=e835]
+                  - generic [ref=e836]:
+                    - generic [ref=e837]:
+                      - generic [ref=e838]:
+                        - generic [ref=e839]:
+                          - strong [ref=e840]: Sr. Technical Product Manager
+                          - img [ref=e842]
+                        - generic [ref=e844]: Sr. Technical Product Manager with verification
+                      - generic [ref=e846]: Gen II Fund Services
+                      - generic [ref=e848]: Vancouver, BC (Remote)
+                      - list [ref=e850]:
+                        - listitem [ref=e851]:
+                          - generic [ref=e854]:
+                            - generic [ref=e855]: 4 company alumni work here
+                            - generic [ref=e856]: 4 Thomson Reuters company alumni work here
+                    - list [ref=e858]:
+                      - listitem [ref=e859]:
+                        - time [ref=e860]: 1 week ago
+            - listitem [ref=e861]:
+              - link "Wealthsimple logo Senior Product Manager, Activities & Balances with verification Wealthsimple Canada (Remote) CA$151.2K/yr - CA$189K/yr 3 Thomson Reuters company alumni work here 3 days ago" [ref=e863] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4385266413&referenceJobId=4389413744&originToLandingJobPostings=4385266413&trackingId=AJ44xRWZXSvV0o3vx83%2Blg%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7Lhl2srMd2h9DHNYT3Zorw12OlBq4Vp2LIu-xloX1gwdEyY6BayMqUg3EwaGpQiizdEHGfnUzDdlQP01L5htxGh32lxwb3o9rovjTAY9Icyh_sn9HmLnDOjmzQbRX_oGvFxwat80vQKprIO-y01HOsZeQyV6ZPn5qx6hdZ0zBETMY6P0wfz8Lpb81PZVME-InhL7V0Kh5eUC6YkqpOWH_RDjAPC5edukI0lDW3bu55jKhimozBl-qPu-FGRS5gT3wEm1k6zSZ6mwNvLLE_rw13Bh5k8A_miAWkDnd1hHSjLi8-pXN7nEdhkDCZgFkSj1_LsPkvsMZvRdS7CR-uFL1RbK7PhWQjArT9ZPVyW1djfA7WRfQs-HL_EL90T7WupuOhstcQ6tWrzEMWWe-l26-IAxEQOKOEiRUA8owRmX54RNu0s1_ff0zEL9UV6FoWbeXscJLScQ1Tqw27stixNBZ3Pv4Find_vOTHzpElqLXgPQO7o3ES5c5IasyEOk73LmLapkWmN7ffbaIpc_Za5qq
+                - generic [ref=e865]:
+                  - img "Wealthsimple logo" [ref=e870]
+                  - generic [ref=e871]:
+                    - generic [ref=e872]:
+                      - generic [ref=e873]:
+                        - generic [ref=e874]:
+                          - strong [ref=e875]: Senior Product Manager, Activities & Balances
+                          - img [ref=e877]
+                        - generic [ref=e879]: Senior Product Manager, Activities & Balances with verification
+                      - generic [ref=e881]: Wealthsimple
+                      - generic [ref=e883]: Canada (Remote)
+                      - generic [ref=e884]:
+                        - generic [ref=e885]: CA$151.2K/yr - CA$189K/yr
+                        - list [ref=e886]:
+                          - listitem [ref=e887]:
+                            - generic [ref=e890]:
+                              - generic [ref=e891]: 3 company alumni work here
+                              - generic [ref=e892]: 3 Thomson Reuters company alumni work here
+                    - list [ref=e894]:
+                      - listitem [ref=e895]:
+                        - time [ref=e896]: 3 days ago
+            - listitem [ref=e897]:
+              - link "Dayforce logo Product Manager Sr – Dayforce Wallet with verification Dayforce Canada (Remote) CA$107.5K/yr - CA$157.5K/yr 25 Thomson Reuters company alumni work here 1 week ago" [ref=e899] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4392757866&referenceJobId=4389413744&originToLandingJobPostings=4392757866&trackingId=UhphI%2BxYRtaM0RXDX%2BQKmw%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7Lk-n1k1d2bNZ6S6P7mVYguT8sZOVAsHVkmX4BL891L41OK1B7WTf5mVzT1_8X3IgV6mM29I5romiX0s88x5DkFznrlcT6Ld8PPwSVbFTjTZml6Nr4StXGMN3CW1iBGnFEcAaZuaMA_ol3Q9yIvDRr4kQ3_WhsBdSkoHSAQGgufqNi2STwpolS3vYKMiU8DOMkFFoqh1Oko4IAmbdN7BDTkqRnxIeHcPcTb_LLRc361uluVur5lrBkx9u5Hd0vjob-t1KDP8HrQ8sqQeOl781952c_lPBKJIxnGUo7OdYdYsk5fAl8hQ3Y-N0GqOi9W25_c1g-n9P53s5BU5flszC524x76JDn53wt8ySxQITTaPJs8eYKUSYThJ84Xn6Xo7Mwl-UeiBE8Ya3yOS2sZHvhKl8wBTWuLPrjHjUthgK9kTAHfxuhJlSWTFqnxntw162DZOvjqx85FuOiyHQkkvEaXbAuFTTGCmfyy1tbDf-y9MN6thBUh8k-Zua9lg2PCat3WU6qnZOQJvd20s5UbmX
+                - generic [ref=e901]:
+                  - img "Dayforce logo" [ref=e906]
+                  - generic [ref=e907]:
+                    - generic [ref=e908]:
+                      - generic [ref=e909]:
+                        - generic [ref=e910]:
+                          - strong [ref=e911]: Product Manager Sr – Dayforce Wallet
+                          - img [ref=e913]
+                        - generic [ref=e915]: Product Manager Sr – Dayforce Wallet with verification
+                      - generic [ref=e917]: Dayforce
+                      - generic [ref=e919]: Canada (Remote)
+                      - generic [ref=e920]:
+                        - generic [ref=e921]: CA$107.5K/yr - CA$157.5K/yr
+                        - list [ref=e922]:
+                          - listitem [ref=e923]:
+                            - generic [ref=e926]:
+                              - generic [ref=e927]: 25 company alumni work here
+                              - generic [ref=e928]: 25 Thomson Reuters company alumni work here
+                    - list [ref=e930]:
+                      - listitem [ref=e931]:
+                        - time [ref=e932]: 1 week ago
+            - listitem [ref=e933]:
+              - link "Clearco logo Senior Product Manager with verification Clearco Canada (Remote) You’d be a top applicant You’d be a top applicant 3 weeks ago" [ref=e935] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4387972996&referenceJobId=4389413744&originToLandingJobPostings=4387972996&trackingId=N4vMJH9Fx2Dwwuo903Lr2g%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7LuDd1Ir-CwiVz9Olgc3WmX37NzRDKQLdHdiG7XzHCyL3gSFSHK-toX7HBst0uJGNDTt0WPMU2S4MpRr3X_hPtYI1T3jfQQ9_AVhn6LJtBkhW4mlMdf-Cy6KcPIQ0wUh_6Wt6Wha17z9mzfO64uo0n80gmjl_c3aLsgAEfKtNez_ejT0Tgz26K0UaA0bHjMSI7z3b5YHIygxv80kLvCzaxGDJTDlOgIwGcNrNVObWbnR7w_6xMG9zpbwoWeJ2hnkgRp6uuwaixctPw3ON997j7Vt2dORBBraR-KsKAjE4irNI3TlGk4uydJEfCfalUh6UJwgdeiXNxWAs4r5OzUKcTQcGOcRxU--CQiYUcOg1I6wFPPbC_ybUmel9zVkDp8mOUXr4I3UGbnTsHmAmZBkSjACmCGOpFZZrWA3MwObk2yawtzFXr-Nv-wRyo3YmmM1p9munXHAuykLizvoW5a1K6v_Gs52zhCmuysd5QsylAR11PjBh8eSx6MwzxF8z8fJB5UQuoOeZ28xIHKFlM8cjFPibP4B7UID_AKpfo7Pq7-JnWw
+                - generic [ref=e937]:
+                  - img "Clearco logo" [ref=e942]
+                  - generic [ref=e943]:
+                    - generic [ref=e944]:
+                      - generic [ref=e945]:
+                        - generic [ref=e946]:
+                          - strong [ref=e947]: Senior Product Manager
+                          - img [ref=e949]
+                        - generic [ref=e951]: Senior Product Manager with verification
+                      - generic [ref=e953]: Clearco
+                      - generic [ref=e955]: Canada (Remote)
+                      - list [ref=e957]:
+                        - listitem [ref=e958]:
+                          - img "You’d be a top applicant" [ref=e961]:
+                            - img [ref=e962]
+                          - generic [ref=e965]: You’d be a top applicant
+                    - list [ref=e967]:
+                      - listitem [ref=e968]:
+                        - time [ref=e969]: 3 weeks ago
+            - listitem [ref=e970]:
+              - link "IDC logo Principal Product Manager - Technical (Remote) with verification IDC Ontario, Canada (Remote) 14 Thomson Reuters company alumni work here 2 weeks ago" [ref=e972] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4388402223&referenceJobId=4389413744&originToLandingJobPostings=4388402223&trackingId=su9dBjoQHV4U3Mhb38OXDg%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7Lida0ESmZUWL2HZzZlAmAEZoDSkSQyPBUEkQLNC062C54wqpfzalLqHIFxhr4py4hTRAIgv3JgVoGzCgzTuYnWi51PIRDg-zZFfpvrm5XTKZ4UxCBb5gAke_zckgzDons_G1ouDTytrm3uLS6hSQvAtZx1InsFhRUCDqq5uCENBf_I9NbEZi8om8gdrlmWlZKfCPVwOfp3p3zGl_97CMUdBMrpVMXt3MpJ0fCt9fQ2QfpjVFXE2ge12G_NCZdyKd7hda55Tap8rZxprNszDEhbS9mp7NEGbdQOUplAPU30F3M2IFo6hvbBSG_LcMSVIV8ZSRI5JHhlHKhuTrN-lWyM-0Gw99n7MOcm0-OnepFL4XNsRYHyNo2iczKVM8opP04BaDdNXp6WFDUt5uK5Wqpb4tNmXpxrkiJiv5W_UdzML07fzOH_JM-U78QD2YunMYg-SPCIVUTBzAByWeJGh7od3S5j3BK3VKlRznQWnOzTlcGZ82gmm0pDHEE9jnd-qDID_J4RhWtGT7ScM58dLy
+                - generic [ref=e974]:
+                  - img "IDC logo" [ref=e979]
+                  - generic [ref=e980]:
+                    - generic [ref=e981]:
+                      - generic [ref=e982]:
+                        - generic [ref=e983]:
+                          - strong [ref=e984]: Principal Product Manager - Technical (Remote)
+                          - img [ref=e986]
+                        - generic [ref=e988]: Principal Product Manager - Technical (Remote) with verification
+                      - generic [ref=e990]: IDC
+                      - generic [ref=e992]: Ontario, Canada (Remote)
+                      - list [ref=e994]:
+                        - listitem [ref=e995]:
+                          - generic [ref=e998]:
+                            - generic [ref=e999]: 14 company alumni work here
+                            - generic [ref=e1000]: 14 Thomson Reuters company alumni work here
+                    - list [ref=e1002]:
+                      - listitem [ref=e1003]:
+                        - time [ref=e1004]: 2 weeks ago
+            - listitem [ref=e1005]:
+              - 'link "Hopper logo Sr. Product Manager: Disruption - Core & Commerce (100% Remote - Canada) with verification Hopper Toronto, ON (Remote) 1 Thomson Reuters company alum works here 1 week ago" [ref=e1007] [cursor=pointer]':
+                - /url: https://www.linkedin.com/jobs/collections/similar-jobs?currentJobId=4371720106&referenceJobId=4389413744&originToLandingJobPostings=4371720106&trackingId=O%2FQpM2HC8qfRxLMJKI8bLQ%3D%3D&refId=RYZkX5GzaYYlPUVzwFGYqg%3D%3D&eBP=CwEAAAGdePu7LvYKtusHp3_vi62Rt-Ov7SgxgWkg7A5C0-airC344p-Aqk1t-Bi7Kz1mHA3rfSHDRdr7FZeF2i25btfH0TeMotMfcOHLzLGYdG7htKV08O4fGqB2YiYNTExGwrZkW8xzQ9HWkMH1oialb_vpLxkNV2dKbFYE_hjDfllJDU1h9-digdjjQ2pMrmuGVAwo_lVEwm6cNUfH0sZwufe-wd0OXU2eHMi-Pu7ZJOxnO0jMo6OlDFGno8IK8k4ECLhhLBP3_SOXbmAGlh440v8QDDzXCi-sOh9Nemqr8nHmu4roDNTEpItKDnHXqmquA2L-EWcK5-mMIyobNf-v67-ahTy-tWFAIt6XrrQ2fKoOWPO4qo3GpASplolnygKdOshN3ZGl8wBvsGORGAdNKj7DmMborbAWDNIzZfLkAxgIMo1b0SJjkwNjn1PkxVpCZG6IRQrTjlMXRznqtIe2O_oxrqGyFoCG_OESv-OPO6ULCxcSJ9ge_6-nkLLir1soH3j2zA-2rK937kv9fqG7-BpElJdb
+                - generic [ref=e1009]:
+                  - img "Hopper logo" [ref=e1014]
+                  - generic [ref=e1015]:
+                    - generic [ref=e1016]:
+                      - generic [ref=e1017]:
+                        - generic [ref=e1018]:
+                          - strong [ref=e1019]: "Sr. Product Manager: Disruption - Core & Commerce (100% Remote - Canada)"
+                          - img [ref=e1021]
+                        - generic [ref=e1023]: "Sr. Product Manager: Disruption - Core & Commerce (100% Remote - Canada) with verification"
+                      - generic [ref=e1025]: Hopper
+                      - generic [ref=e1027]: Toronto, ON (Remote)
+                      - list [ref=e1029]:
+                        - listitem [ref=e1030]:
+                          - generic [ref=e1033]:
+                            - generic [ref=e1034]: 1 company alum works here
+                            - generic [ref=e1035]: 1 Thomson Reuters company alum works here
+                    - list [ref=e1037]:
+                      - listitem [ref=e1038]:
+                        - time [ref=e1039]: 1 week ago
+          - link "See more jobs like this" [ref=e1041] [cursor=pointer]:
+            - /url: https://www.linkedin.com/jobs/collections/similar-jobs?referenceJobId=4389413744
+      - complementary [ref=e1042]:
+        - generic [ref=e1043]:
+          - generic [ref=e1044]:
+            - img "Premium" [ref=e1046]:
+              - img [ref=e1047]
+            - heading "Learn skills to get a new job with these courses" [level=2] [ref=e1049]
+            - listitem [ref=e1050]:
+              - link "AI Strategy Foundations for Data Scientists and Team Leaders" [ref=e1051] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/ai-strategy-foundations-for-data-scientists-and-team-leaders?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_3383280_learning
+                - img "AI Strategy Foundations for Data Scientists and Team Leaders" [ref=e1054]
+                - img [ref=e1056]
+              - generic [ref=e1058]:
+                - link "AI Strategy Foundations for Data Scientists and Team Leaders" [ref=e1059] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/learning/ai-strategy-foundations-for-data-scientists-and-team-leaders?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_3383280_learning
+                  - generic [ref=e1060]: AI Strategy Foundations for Data Scientists and Team Leaders
+                - generic [ref=e1062]: 8,275 viewers
+            - listitem [ref=e1063]:
+              - 'link "Human-First AI: Building AI Products That People Actually Use" [ref=e1064] [cursor=pointer]':
+                - /url: https://www.linkedin.com/learning/human-first-ai-building-ai-products-that-people-actually-use?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_8316000_learning
+                - 'img "Human-First AI: Building AI Products That People Actually Use" [ref=e1067]'
+                - img [ref=e1069]
+              - 'link "Human-First AI: Building AI Products That People Actually Use" [ref=e1072] [cursor=pointer]':
+                - /url: https://www.linkedin.com/learning/human-first-ai-building-ai-products-that-people-actually-use?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_8316000_learning
+                - generic [ref=e1073]: "Human-First AI: Building AI Products That People Actually Use"
+            - listitem [ref=e1074]:
+              - 'link "Excel: Market Research Strategies" [ref=e1075] [cursor=pointer]':
+                - /url: https://www.linkedin.com/learning/excel-market-research-strategies-24560332?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_3965505_learning
+                - 'img "Excel: Market Research Strategies" [ref=e1078]'
+                - img [ref=e1080]
+              - generic [ref=e1082]:
+                - 'link "Excel: Market Research Strategies" [ref=e1083] [cursor=pointer]':
+                  - /url: https://www.linkedin.com/learning/excel-market-research-strategies-24560332?isLearningSubscriber=true&trk=jobs_d_flagship3_job_details_j020%3Aa001_3965505_learning
+                  - generic [ref=e1084]: "Excel: Market Research Strategies"
+                - generic [ref=e1086]: 10,572 viewers
+            - link "Show more on LinkedIn Learning" [ref=e1088] [cursor=pointer]:
+              - /url: /learning?trk=jobdetails_learning_awareness
+          - generic [ref=e1089]:
+            - paragraph [ref=e1090]: Looking for talent?
+            - link "Post a job" [ref=e1091] [cursor=pointer]:
+              - /url: https://www.linkedin.com/talent/job-posting-redirect?trk=flagship3_job_detail
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e1093]:
+            - generic [ref=e1095] [cursor=pointer]:
+              - generic [ref=e1096]:
+                - img "Vimal Sekar" [ref=e1097]
+                - generic [ref=e1099]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1100]:
+                - generic [ref=e1101]:
+                  - generic [ref=e1102]: Messaging
+                  - generic [ref=e1103]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e1104]:
+              - button "Open messenger dropdown menu" [ref=e1106] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e1107]
+              - button "Compose message" [ref=e1110] [cursor=pointer]:
+                - img [ref=e1111]
+                - generic [ref=e1113]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1114] [cursor=pointer]:
+                - img [ref=e1115]
+                - generic [ref=e1117]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

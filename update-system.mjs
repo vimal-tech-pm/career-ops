@@ -15,7 +15,7 @@
  * See DATA_CONTRACT.md for the full system/user layer definitions.
  */
 
-import { execSync } from 'child_process';
+import { execFileSync, execSync } from 'child_process';
 import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -26,6 +26,15 @@ const ROOT = __dirname;
 const CANONICAL_REPO = 'https://github.com/santifer/career-ops.git';
 const RAW_VERSION_URL = 'https://raw.githubusercontent.com/santifer/career-ops/main/VERSION';
 const RELEASES_API = 'https://api.github.com/repos/santifer/career-ops/releases/latest';
+
+// Paths that used to be upstream-managed but now hold local fixes that
+// must survive auto-update. They are skipped even when a parent directory
+// is updated. Keep this list small and review each entry periodically.
+const LOCAL_PROTECTED = [
+  'modes/pdf.md',
+  'templates/cv-template.html',
+  'update-system.mjs',
+];
 
 // System layer paths — ONLY these files get updated
 const SYSTEM_PATHS = [
@@ -46,6 +55,7 @@ const SYSTEM_PATHS = [
   'modes/training.md',
   'modes/de/',
   'CLAUDE.md',
+  'AGENTS.md',
   'generate-pdf.mjs',
   'merge-tracker.mjs',
   'verify-pipeline.mjs',
@@ -99,8 +109,91 @@ function compareVersions(a, b) {
   return 0;
 }
 
-function git(cmd) {
-  return execSync(`git ${cmd}`, { cwd: ROOT, encoding: 'utf-8', timeout: 30000 }).trim();
+function git(...args) {
+  return execFileSync('git', args, { cwd: ROOT, encoding: 'utf-8', timeout: 30000 }).trim();
+}
+
+function gitStatusEntries() {
+  const status = git('status', '--porcelain');
+  if (!status) return [];
+
+  return status.split('\n')
+    .filter(Boolean)
+    .map(line => ({
+      code: line.slice(0, 2),
+      path: line.slice(3),
+    }));
+}
+
+function revertPaths(paths) {
+  if (paths.length === 0) return;
+  git('checkout', '--', ...paths);
+}
+
+function addPaths(paths) {
+  if (paths.length === 0) return;
+  git('add', '--', ...paths);
+}
+
+function normalizeRepoPath(path) {
+  return path.replace(/\\/g, '/').replace(/\/+$/, '');
+}
+
+function isLocalProtected(path) {
+  const normalized = normalizeRepoPath(path);
+  return LOCAL_PROTECTED.some(protectedPath => normalized === normalizeRepoPath(protectedPath));
+}
+
+function hasProtectedDescendant(path) {
+  const normalized = normalizeRepoPath(path);
+  const prefix = `${normalized}/`;
+  return LOCAL_PROTECTED.some(protectedPath => normalizeRepoPath(protectedPath).startsWith(prefix));
+}
+
+function remoteFilesUnder(ref, path) {
+  const files = git('ls-tree', '-r', '--name-only', ref, '--', path);
+  return files.split('\n').map(f => f.trim()).filter(Boolean);
+}
+
+function pushUnique(list, value) {
+  if (!list.includes(value)) list.push(value);
+}
+
+function checkoutSystemPath(ref, path, updated, skipped) {
+  if (isLocalProtected(path)) {
+    pushUnique(skipped, path);
+    return;
+  }
+
+  if (hasProtectedDescendant(path)) {
+    let remoteFiles = [];
+    try {
+      remoteFiles = remoteFilesUnder(ref, path);
+    } catch {
+      return;
+    }
+
+    const checkoutFiles = [];
+    for (const file of remoteFiles) {
+      if (isLocalProtected(file)) {
+        pushUnique(skipped, file);
+      } else {
+        checkoutFiles.push(file);
+      }
+    }
+
+    if (checkoutFiles.length === 0) return;
+    git('checkout', ref, '--', ...checkoutFiles);
+    for (const file of checkoutFiles) pushUnique(updated, file);
+    return;
+  }
+
+  try {
+    git('checkout', ref, '--', path);
+    pushUnique(updated, path);
+  } catch {
+    // File may not exist in remote (new additions), skip
+  }
 }
 
 // ── CHECK ───────────────────────────────────────────────────────
@@ -155,6 +248,7 @@ async function check() {
 
 async function apply() {
   const local = localVersion();
+  const initialStatusPaths = new Set(gitStatusEntries().map(entry => entry.path));
 
   // Check for lock
   const lockFile = join(ROOT, '.update-lock');
@@ -170,7 +264,7 @@ async function apply() {
     // 1. Backup: create branch
     const backupBranch = `backup-pre-update-${local}`;
     try {
-      git(`branch ${backupBranch}`);
+      git('branch', backupBranch);
       console.log(`Backup branch created: ${backupBranch}`);
     } catch {
       console.log(`Backup branch already exists (${backupBranch}), continuing...`);
@@ -178,27 +272,25 @@ async function apply() {
 
     // 2. Fetch from canonical repo
     console.log('Fetching latest from upstream...');
-    git(`fetch ${CANONICAL_REPO} main`);
+    git('fetch', CANONICAL_REPO, 'main');
 
-    // 3. Checkout system files only
+    // 3. Checkout system files only (skipping locally-protected paths)
     console.log('Updating system files...');
     const updated = [];
+    const skipped = [];
     for (const path of SYSTEM_PATHS) {
-      try {
-        git(`checkout FETCH_HEAD -- ${path}`);
-        updated.push(path);
-      } catch {
-        // File may not exist in remote (new additions), skip
-      }
+      checkoutSystemPath('FETCH_HEAD', path, updated, skipped);
+    }
+    if (skipped.length > 0) {
+      console.log(`Skipped (locally protected): ${skipped.join(', ')}`);
     }
 
     // 4. Validate: check NO user files were touched
     let userFileTouched = false;
     try {
-      const status = git('status --porcelain');
-      for (const line of status.split('\n')) {
-        if (!line.trim()) continue;
-        const file = line.slice(3);
+      for (const entry of gitStatusEntries()) {
+        const file = entry.path;
+        if (initialStatusPaths.has(file)) continue;
         for (const userPath of USER_PATHS) {
           if (file.startsWith(userPath)) {
             console.error(`SAFETY VIOLATION: User file was modified: ${file}`);
@@ -212,8 +304,7 @@ async function apply() {
 
     if (userFileTouched) {
       console.error('Aborting: user files were touched. Rolling back...');
-      git('checkout .');
-      unlinkSync(lockFile);
+      revertPaths(updated);
       process.exit(1);
     }
 
@@ -227,15 +318,17 @@ async function apply() {
     // 6. Commit the update
     const remote = localVersion(); // Re-read after checkout updated VERSION
     try {
-      git('add .');
-      git(`commit -m "chore: auto-update system files to v${remote}"`);
+      const pathsToStage = [...updated];
+      const dismissFile = join(ROOT, '.update-dismissed');
+      if (existsSync(dismissFile)) {
+        unlinkSync(dismissFile);
+        pathsToStage.push('.update-dismissed');
+      }
+      addPaths(pathsToStage);
+      git('commit', '-m', `chore: auto-update system files to v${remote}`);
     } catch {
       // Nothing to commit (already up to date)
     }
-
-    // 7. Clean up dismiss flag if it exists
-    const dismissFile = join(ROOT, '.update-dismissed');
-    if (existsSync(dismissFile)) unlinkSync(dismissFile);
 
     console.log(`\nUpdate complete: v${local} → v${remote}`);
     console.log(`Updated ${updated.length} system paths.`);
@@ -250,32 +343,31 @@ async function apply() {
 // ── ROLLBACK ────────────────────────────────────────────────────
 
 function rollback() {
-  const local = localVersion();
-
   // Find most recent backup branch
   try {
-    const branches = git('branch --list "backup-pre-update-*"');
-    const branchList = branches.split('\n').map(b => b.trim().replace('* ', '')).filter(Boolean);
+    const branches = git('for-each-ref', '--sort=-committerdate', '--format=%(refname:short)', 'refs/heads/backup-pre-update-*');
+    const branchList = branches.split('\n').map(b => b.trim()).filter(Boolean);
 
     if (branchList.length === 0) {
       console.error('No backup branches found. Nothing to rollback.');
       process.exit(1);
     }
 
-    const latest = branchList[branchList.length - 1];
+    const latest = branchList[0];
     console.log(`Rolling back to: ${latest}`);
 
-    // Checkout system files from backup branch
+    // Checkout system files from backup branch, preserving locally-protected paths
+    const updated = [];
+    const skipped = [];
     for (const path of SYSTEM_PATHS) {
-      try {
-        git(`checkout ${latest} -- ${path}`);
-      } catch {
-        // File may not have existed in backup
-      }
+      checkoutSystemPath(latest, path, updated, skipped);
+    }
+    if (skipped.length > 0) {
+      console.log(`Skipped (locally protected): ${skipped.join(', ')}`);
     }
 
-    git('add .');
-    git(`commit -m "chore: rollback system files from ${latest}"`);
+    addPaths(updated);
+    git('commit', '-m', `chore: rollback system files from ${latest}`);
 
     console.log(`Rollback complete. System files restored from ${latest}.`);
     console.log('Your data (CV, profile, tracker, reports) was not affected.');

@@ -66,6 +66,15 @@ location:
   country: "United States"
   city: "San Francisco"
   timezone: "PST"
-  visa_status: "No sponsorship needed"
-  # For remote roles outside your country:
+  citizenship: "US citizen"
+  # Keep visa_status as a short human-readable summary for compatibility.
+  visa_status: "Authorized to work in the United States without sponsorship"
+  work_authorization:
+    canada: "Would require employer support or a remote arrangement"
+    united_states_current: "Authorized without sponsorship"
+    united_states_preferred_paths: "Not needed"
+    united_states_remote_fallback: "Open to remote work from current country when allowed"
+  us_relocation_goal: "Already in the USA; open to domestic relocation"
+  sponsorship_policy: "US roles requiring current US work authorization are fine; sponsorship is not needed"
+  # For remote roles or relocation:
   # onsite_availability: "1 week/month in any city"
