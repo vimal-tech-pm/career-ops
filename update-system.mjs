@@ -28,11 +28,12 @@ const RAW_VERSION_URL = 'https://raw.githubusercontent.com/santifer/career-ops/m
 const RELEASES_API = 'https://api.github.com/repos/santifer/career-ops/releases/latest';
 
 // Paths that used to be upstream-managed but now hold local fixes that
-// must survive auto-update. They are filtered out of SYSTEM_PATHS at
-// apply time. Keep this list small and review each entry periodically.
+// must survive auto-update. They are skipped even when a parent directory
+// is updated. Keep this list small and review each entry periodically.
 const LOCAL_PROTECTED = [
   'modes/pdf.md',
   'templates/cv-template.html',
+  'update-system.mjs',
 ];
 
 // System layer paths — ONLY these files get updated
@@ -134,6 +135,67 @@ function addPaths(paths) {
   git('add', '--', ...paths);
 }
 
+function normalizeRepoPath(path) {
+  return path.replace(/\\/g, '/').replace(/\/+$/, '');
+}
+
+function isLocalProtected(path) {
+  const normalized = normalizeRepoPath(path);
+  return LOCAL_PROTECTED.some(protectedPath => normalized === normalizeRepoPath(protectedPath));
+}
+
+function hasProtectedDescendant(path) {
+  const normalized = normalizeRepoPath(path);
+  const prefix = `${normalized}/`;
+  return LOCAL_PROTECTED.some(protectedPath => normalizeRepoPath(protectedPath).startsWith(prefix));
+}
+
+function remoteFilesUnder(ref, path) {
+  const files = git('ls-tree', '-r', '--name-only', ref, '--', path);
+  return files.split('\n').map(f => f.trim()).filter(Boolean);
+}
+
+function pushUnique(list, value) {
+  if (!list.includes(value)) list.push(value);
+}
+
+function checkoutSystemPath(ref, path, updated, skipped) {
+  if (isLocalProtected(path)) {
+    pushUnique(skipped, path);
+    return;
+  }
+
+  if (hasProtectedDescendant(path)) {
+    let remoteFiles = [];
+    try {
+      remoteFiles = remoteFilesUnder(ref, path);
+    } catch {
+      return;
+    }
+
+    const checkoutFiles = [];
+    for (const file of remoteFiles) {
+      if (isLocalProtected(file)) {
+        pushUnique(skipped, file);
+      } else {
+        checkoutFiles.push(file);
+      }
+    }
+
+    if (checkoutFiles.length === 0) return;
+    git('checkout', ref, '--', ...checkoutFiles);
+    for (const file of checkoutFiles) pushUnique(updated, file);
+    return;
+  }
+
+  try {
+    git('checkout', ref, '--', path);
+    pushUnique(updated, path);
+  } catch {
+    // File may not exist in remote (new additions), skip
+  }
+}
+
 // ── CHECK ───────────────────────────────────────────────────────
 
 async function check() {
@@ -217,16 +279,7 @@ async function apply() {
     const updated = [];
     const skipped = [];
     for (const path of SYSTEM_PATHS) {
-      if (LOCAL_PROTECTED.includes(path)) {
-        skipped.push(path);
-        continue;
-      }
-      try {
-        git('checkout', 'FETCH_HEAD', '--', path);
-        updated.push(path);
-      } catch {
-        // File may not exist in remote (new additions), skip
-      }
+      checkoutSystemPath('FETCH_HEAD', path, updated, skipped);
     }
     if (skipped.length > 0) {
       console.log(`Skipped (locally protected): ${skipped.join(', ')}`);
@@ -303,16 +356,17 @@ function rollback() {
     const latest = branchList[0];
     console.log(`Rolling back to: ${latest}`);
 
-    // Checkout system files from backup branch
+    // Checkout system files from backup branch, preserving locally-protected paths
+    const updated = [];
+    const skipped = [];
     for (const path of SYSTEM_PATHS) {
-      try {
-        git('checkout', latest, '--', path);
-      } catch {
-        // File may not have existed in backup
-      }
+      checkoutSystemPath(latest, path, updated, skipped);
+    }
+    if (skipped.length > 0) {
+      console.log(`Skipped (locally protected): ${skipped.join(', ')}`);
     }
 
-    addPaths(SYSTEM_PATHS);
+    addPaths(updated);
     git('commit', '-m', `chore: rollback system files from ${latest}`);
 
     console.log(`Rollback complete. System files restored from ${latest}.`);
