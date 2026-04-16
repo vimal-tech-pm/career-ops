@@ -14,6 +14,7 @@
     "update": "node update-system.mjs apply",
     "rollback": "node update-system.mjs rollback",
     "liveness": "node check-liveness.mjs",
+    "linkedin-login": "node linkedin-login.mjs",
     "scan": "node scan.mjs",
     "resume-map": "node extract-resume-company-role-map.mjs"
   },
