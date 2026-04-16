@@ -27,6 +27,14 @@ const CANONICAL_REPO = 'https://github.com/santifer/career-ops.git';
 const RAW_VERSION_URL = 'https://raw.githubusercontent.com/santifer/career-ops/main/VERSION';
 const RELEASES_API = 'https://api.github.com/repos/santifer/career-ops/releases/latest';
 
+// Paths that used to be upstream-managed but now hold local fixes that
+// must survive auto-update. They are filtered out of SYSTEM_PATHS at
+// apply time. Keep this list small and review each entry periodically.
+const LOCAL_PROTECTED = [
+  'modes/pdf.md',
+  'templates/cv-template.html',
+];
+
 // System layer paths — ONLY these files get updated
 const SYSTEM_PATHS = [
   'modes/_shared.md',
@@ -204,16 +212,24 @@ async function apply() {
     console.log('Fetching latest from upstream...');
     git('fetch', CANONICAL_REPO, 'main');
 
-    // 3. Checkout system files only
+    // 3. Checkout system files only (skipping locally-protected paths)
     console.log('Updating system files...');
     const updated = [];
+    const skipped = [];
     for (const path of SYSTEM_PATHS) {
+      if (LOCAL_PROTECTED.includes(path)) {
+        skipped.push(path);
+        continue;
+      }
       try {
         git('checkout', 'FETCH_HEAD', '--', path);
         updated.push(path);
       } catch {
         // File may not exist in remote (new additions), skip
       }
+    }
+    if (skipped.length > 0) {
+      console.log(`Skipped (locally protected): ${skipped.join(', ')}`);
     }
 
     // 4. Validate: check NO user files were touched
