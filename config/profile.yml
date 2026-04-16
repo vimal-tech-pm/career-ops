@@ -25,7 +25,6 @@ candidate:
 target_roles:
   primary:
     - "Senior Product Manager"
-    - "AI Product Manager"
     - "Product Manager"
     - "Product Owner"
   archetypes:
@@ -34,11 +33,11 @@ target_roles:
       fit: "primary"
       track: "product"
       sell_when: "JD emphasizes roadmap ownership, cross-functional delivery, migration, KPI-driven prioritization, and executive communication"
-    - name: "AI Product Manager"
+    - name: "AI-Enabled Senior Product Manager"
       level: "Senior"
-      fit: "secondary"
-      track: "ai-product"
-      sell_when: "JD emphasizes AI-enabled product strategy, experimentation, agentic workflows, internal AI adoption, or AI-assisted customer experiences"
+      fit: "adjacent"
+      track: "ai-adjacent"
+      sell_when: "JD emphasizes senior PM ownership with AI-enabled workflows, experimentation, internal AI adoption, or AI-assisted customer experiences without requiring a long-tenured AI PM background"
     - name: "Product Manager"
       level: "Senior"
       fit: "secondary"
@@ -56,14 +55,14 @@ target_roles:
       sell_when: "JD wants hands-on prototyping, fast validation, and product judgment paired with AI-native tooling"
 
 narrative:
-  headline: "Senior Product Manager who modernizes complex platforms and prototypes AI-native products"
-  exit_story: "Built a product career across enterprise lending, platform modernization, and mission-critical audit workflows, then expanded into AI-native product building and internal AI enablement. Now optimizing for senior product roles where roadmap leadership, platform depth, and practical AI fluency all matter."
+  headline: "Senior Product Manager who modernizes complex platforms, leads roadmap execution, and uses practical AI fluency as an edge"
+  exit_story: "Built a product career across enterprise lending, platform modernization, and mission-critical audit workflows. Recently started an early-stage internal AI initiative, uses Vercel for prototyping at Thomson Reuters, and builds personal AI product experiments. Now optimizing for senior product roles where roadmap leadership, platform depth, and practical AI fluency all matter."
   superpowers:
     - "Turn messy platform constraints into clear roadmaps, releases, and migration plans"
     - "Lead cross-functional execution across 7+ scrum teams and senior stakeholders"
     - "Use analytics, experimentation, and KPI dashboards to prioritize what actually moves outcomes"
     - "Bridge modernization, compliance, and customer experience without losing delivery momentum"
-    - "Prototype AI-enabled product ideas quickly and translate them into practical bets"
+    - "Prototype AI-enabled product ideas through Vercel work at Thomson Reuters and personal AI projects, while keeping professional positioning anchored in senior product management"
   proof_points:
     - name: "Thomson Reuters Confirmation Platform"
       url: "https://www.linkedin.com/in/vimalsekar/"
@@ -83,8 +82,8 @@ narrative:
       track: "product"
     - name: "AI Product Builder"
       url: "https://www.linkedin.com/in/vimalsekar/"
-      hero_metric: "Building AI-native product experiments since 2025 using Claude Code, OpenAI Codex, Replit, and Vercel"
-      track: "ai-product"
+      hero_metric: "Building AI-native product experiments since 2025 using Claude Code, OpenAI Codex, Replit, and Vercel; also uses Vercel for prototyping in the current Thomson Reuters role"
+      track: "ai-adjacent"
 
 resume_mapping:
   # Treat these as work arrangements/capacity labels rather than employer names
@@ -103,10 +102,10 @@ compensation:
   minimum: "CAD 150K"
   location_flexibility: "GTA/Toronto hybrid is fine; Canada roles are fine; US relocation is ideal for the right role; remote work from Canada is acceptable when visa or relocation support is not available; occasional travel is fine"
   alternate_ranges:
-    - track: "ai-product"
+    - track: "ai-adjacent"
       target_range: "CAD 150K-250K"
       minimum: "CAD 150K"
-      note: "Use this when the role expects both senior PM ownership and hands-on AI-native prototyping."
+      note: "Use this when the role expects senior PM ownership plus practical AI fluency, early AI initiative exposure, or hands-on prototyping; do not position the candidate as a long-tenured AI Product Manager."
 
 location:
   country: "Canada"

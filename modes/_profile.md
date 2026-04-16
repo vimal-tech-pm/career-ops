@@ -17,7 +17,7 @@
 | Archetype | Thematic axes | What they buy |
 |-----------|---------------|---------------|
 | **Senior Product Manager** | Platform modernization, roadmap ownership, migration leadership, KPI-driven prioritization, executive communication | Someone who can modernize complex platforms, lead cross-functional delivery, and move business metrics |
-| **AI Product Manager** | AI-enabled product strategy, agentic workflows, internal AI adoption, experimentation, rapid prototyping | Someone who can pair product judgment with practical AI fluency and fast validation |
+| **AI-Enabled Senior Product Manager** | Senior PM ownership, AI-enabled workflows, early internal AI adoption, experimentation, Vercel prototyping, personal AI projects | Someone who brings senior product judgment plus practical AI fluency, without claiming a long-tenured AI PM background |
 | **Product Manager** | Roadmap ownership, customer problems, launch execution, prioritization, measurable outcomes | Someone who can own product outcomes end to end across complex workflows |
 | **Product Owner** | Backlog ownership, user stories, sprint planning, Agile delivery, engineering partnership | Someone who can turn strategy into execution detail without losing delivery momentum |
 | **0-to-1 AI Product Builder** | Hands-on prototyping, AI-native tooling, fast validation, agentic workflows, product experimentation | Someone who can test ambiguous bets quickly and de-risk them before scale |
@@ -31,10 +31,10 @@
 | If the role is... | Emphasize about you... | Proof point sources |
 |-------------------|------------------------|---------------------|
 | Senior Product Manager | Senior PM for mission-critical platforms: roadmap ownership, launches, migrations, KPI systems, and executive alignment | cv.md + article-digest.md |
-| AI Product Manager | Product leader who pairs enterprise platform depth with AI-native prototyping, internal AI enablement, and agentic experimentation | cv.md + article-digest.md |
+| AI-Enabled Senior Product Manager | Senior Product Manager who pairs enterprise platform depth with early internal AI exploration, Vercel prototyping at Thomson Reuters, and personal AI product experiments | cv.md + article-digest.md + config/profile.yml |
 | Product Manager | Outcome-focused PM who improves adoption, NPS, conversion, and time-to-market across complex workflows | cv.md + article-digest.md |
 | Product Owner | Delivery-oriented PM who owns backlog quality, user stories, UAT, release readiness, and cross-functional execution | cv.md + article-digest.md |
-| 0-to-1 AI Product Builder | Hands-on builder who prototypes AI products with Claude Code, OpenAI Codex, Replit, Lovable, Bolt, and Vercel | cv.md + article-digest.md |
+| 0-to-1 AI Product Builder | Hands-on builder who prototypes personal AI products with Claude Code, OpenAI Codex, Replit, Lovable, Bolt, and Vercel; also uses Vercel for prototyping at Thomson Reuters | cv.md + article-digest.md + config/profile.yml |
 
 ## Your Exit Narrative
 
@@ -49,7 +49,22 @@ Use the candidate's exit story from `config/profile.yml` to frame ALL content:
 
 <!-- What's your "signature move"? What do you do that others can't? -->
 
-Frame profile as **"Senior product leader with platform depth and AI-builder range** who turns messy platform constraints into clear roadmaps, launches, migrations, and measurable outcomes without losing delivery discipline" that adapts framing to the role
+Frame profile as **"Senior product leader with platform depth and practical AI fluency** who turns messy platform constraints into clear roadmaps, launches, migrations, and measurable outcomes without losing delivery discipline" that adapts framing to the role
+
+## Resume and Cover Letter Title Policy
+
+For candidate-facing materials, use **Senior Product Manager** as the default title/headline. Never open a resume summary, cover letter, or application answer with "AI Product Manager" unless the user explicitly asks for that positioning. Do not use phrases like "principal-ready", "principal-style", "director-ready", or other stretch-title framing unless the user explicitly asks for that positioning. If the job title is Principal Product Manager, reflect that in the subject line or role reference, but keep the candidate identity anchored as Senior Product Manager.
+
+## AI Positioning Truth Boundaries
+
+- Treat AI as an adjacency to senior product management: early professional AI initiative exposure, Vercel prototyping at Thomson Reuters, and personal AI product projects.
+- Keep the proof point / resume label **AI Product Builder** unchanged for now.
+- Describe the internal Thomson Reuters AI initiative as "started", "early-stage", "exploring", "prototyping", "AI adoption", or "AI enablement" unless source evidence proves production ownership.
+- Describe Vercel as valid professional prototyping experience at Thomson Reuters.
+- Describe Claude Code, OpenAI Codex, Replit, Lovable, Bolt, and personal Vercel work as personal AI product experimentation unless tied to Thomson Reuters explicitly.
+- Do not claim long-tenured AI Product Manager experience, production AI platform ownership, AI portfolio ownership, or production AI tooling ownership.
+- Do not inject terms like "MCP integrations", "MCP server ownership", "ChatGPT connector ownership", or "third-party AI integration ownership" unless explicitly supported by source material.
+- For AI-heavy roles, preferred summary framing is: "Senior Product Manager with 14+ years across SaaS platforms, roadmap ownership, platform modernization, and cross-functional delivery, with practical AI fluency from early internal AI exploration, Vercel prototyping at Thomson Reuters, and personal AI projects."
 
 ## Your Portfolio / Demo
 
@@ -58,7 +73,7 @@ Frame profile as **"Senior product leader with platform depth and AI-builder ran
      password: demo-2026
      when_to_share: "LLMOps, AI Platform roles" -->
 
-Check if public portfolio or demo is configured in `config/profile.yml`. Do not promise one. For AI-product roles, use the AI-native builder proof points from `cv.md`
+Check if public portfolio or demo is configured in `config/profile.yml`. Do not promise one. For AI-adjacent roles, use AI Product Builder proof points carefully: separate early professional AI exploration and Vercel prototyping at Thomson Reuters from personal AI product experiments.
 
 ## Your Comp Targets
 
@@ -71,7 +86,7 @@ Check if public portfolio or demo is configured in `config/profile.yml`. Do not 
 
 **Candidate's guidance:**
 - Senior Product Manager / Product Manager / Product Owner: target **CAD 170K-250K**; minimum **CAD 150K**.
-- AI Product Manager / 0-to-1 AI Product Builder: target **CAD 150K-250K** when the role combines senior PM scope with hands-on AI-native prototyping.
+- AI-enabled Senior Product Manager / 0-to-1 AI Product Builder: target **CAD 150K-250K** when the role combines senior PM scope with practical AI fluency, early AI initiative exposure, or hands-on prototyping. Do not position the candidate as a long-tenured AI Product Manager.
 - GTA/Toronto hybrid is fine; remote across Canada/USA and occasional travel are acceptable for the right scope.
 
 ## Your Negotiation Scripts
