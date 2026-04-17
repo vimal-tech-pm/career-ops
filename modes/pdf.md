@@ -51,6 +51,18 @@
     - The visual order in the PDF = the order of appearance in `cv.md` (top to bottom).
     - The user deliberately chose that order in `cv.md` (they may, for example, prioritize a principal role over a more-recent parallel role). Do NOT reorder by date, relevance, duration, or any other criterion.
     - Before writing the HTML to disk, verify the job list in `{{EXPERIENCE}}` follows the same order as the `###` headings in the `PROFESSIONAL EXPERIENCE` section of `cv.md`.
+
+9b. Self-Employed line-order exception (within-job line mapping):
+
+    Default mapping for every job block: cv.md's italic company line (`*Company | Location*`) renders into `<div class="job-company">` (the prominent top slot of `.job-header`); cv.md's `###` heading text (the role title) renders into `<div class="job-role">` (the secondary slot below). The date goes in `.job-period` (top-right). The location goes in `.job-location`.
+
+    EXCEPTION — Self-Employed entries: for any cv.md role whose italic company line contains "Self-Employed" (case-insensitive; matches "Self-Employed", "Self Employed", "self-employed"), flip the within-job mapping:
+    - Render the role title (the `###` heading text, e.g. "AI Product Builder") inside `<div class="job-company">` — the prominent top slot.
+    - Render "Self-Employed" inside `<div class="job-role">` — the secondary slot below.
+    - The date and location slots are unchanged.
+
+    Rationale: "Self-Employed" is not a real employer name and should not occupy the visually prominent company slot. The role title (e.g. "AI Product Builder") is the signal the user wants foregrounded for that entry. This exception applies ONLY to Self-Employed entries — every other role keeps the default company-on-top mapping.
+
 10. Build competency grid from JD requirements (6-8 keyword phrases)
 11. Inject keywords naturally into existing achievements (NEVER invent)
 12. Generate complete HTML from template + personalized content
@@ -58,13 +70,22 @@
 14. Write HTML to `/tmp/cv-{candidate}-{company}.html`
 15. Run: `node generate-pdf.mjs /tmp/cv-{candidate}-{company}.html output/cv-{candidate}-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
 
-15a. Verify page count in the generate-pdf.mjs output (line "📊 Pages: N"):
-     - Pages = 2 → continue to report
-     - Pages = 1 → content too sparse; loosen the Step 8a caps (add +2 bullets to each "current" role, +1 to each "recent" role), regenerate HTML and re-run
-     - Pages ≥ 3 → overflow; apply the Step 8a trim sequence, regenerate HTML and re-run
-     - Maximum 2 regeneration attempts; if still incorrect after attempt 2, report the current page count to the user and ask which section they prefer to cut or expand
+15a. Verify the generated output in TWO checks, in this order. Both must pass before continuing to the report.
 
-16. Report: PDF path, page count (must be 2), % keyword coverage, list of all roles included (verify none were dropped)
+     **Check (1) — Role count (HARD GATE):**
+     - Count `###` headings under "## PROFESSIONAL EXPERIENCE" in `cv.md` → `N_source`
+     - Count `<div class="job-header">` blocks (or distinct `.job-company` elements) in the generated HTML → `N_rendered`
+     - If `N_rendered == N_source` → pass, continue to Check (2).
+     - If `N_rendered < N_source` → a role was dropped. This violates Step 8a's "never drop a role entirely" rule. Regenerate HTML by re-applying Step 8a's trim sequence MORE aggressively: reduce every non-current role by 1 additional bullet, down to a minimum of 1 bullet per role. Every role from `cv.md` must be present, even if reduced to a single bullet. Then re-run.
+     - Maximum 2 regeneration attempts on this check. If after attempt 2 a role is still missing, STOP, do NOT produce the PDF, and ask the user which section they want to compress further (or whether to allow a 3-page PDF). Do NOT silently ship a PDF with a missing role.
+
+     **Check (2) — Page count:** parse the line `"📊 Pages: N"` from generate-pdf.mjs output:
+     - Pages = 2 → pass, continue to report
+     - Pages = 1 → content too sparse; loosen the Step 8a caps (add +2 bullets to each "current" role, +1 to each "recent" role), regenerate HTML and re-run BOTH checks
+     - Pages ≥ 3 → overflow; apply the Step 8a trim sequence (still honoring "never drop a role"), regenerate HTML and re-run BOTH checks
+     - Maximum 2 regeneration attempts on this check; if still incorrect after attempt 2, report the current page count to the user and ask which section they prefer to cut or expand. Never resolve overflow by dropping a role.
+
+16. Report: PDF path, page count (must be 2), **roles rendered / roles in `cv.md`** (must be equal, e.g. `7/7`), % keyword coverage, list of all roles included (verify none were dropped)
 
 ## ATS Rules (clean parsing)
 
@@ -178,10 +199,11 @@ c. If mapping fails, show the user what was found and ask for guidance
 
 #### Step 3 — Generate tailored content
 
-Same content generation as the HTML flow (Steps 1-11 above), plus the same layout rules (Steps 8a and 9/9a):
+Same content generation as the HTML flow (Steps 1-11 above), plus the same layout rules (Steps 8a, 9/9a, 9b):
 - Adapt Professional Summary with JD keywords + exit narrative (Step 7)
 - Reorder bullets WITHIN each role by JD relevance; keep job order = cv.md order
 - Apply the per-age-tier bullet caps (Step 8a) — every role must appear; trim older tiers first if needed
+- Apply the Self-Employed line-order exception (Step 9b): for any Self-Employed entry, swap the prominent and secondary text so the role title (e.g. "AI Product Builder") is on top and "Self-Employed" appears below
 - Select top competencies from JD requirements
 - Inject keywords naturally (NEVER invent)
 
