@@ -46,6 +46,87 @@ npm run doctor
 
 If the terminal says `npm` is not found, install Node.js LTS and restart VS Code.
 
+## Updater And GitHub Sync
+
+The updater is not called automatically by Node.js itself. It is called from project instructions and npm scripts.
+
+Main places that call the updater:
+
+| File | What It Does |
+|---|---|
+| `AGENTS.md` | Tells Codex/OpenCode-style agents to run `node update-system.mjs check` at the start of a session |
+| `CLAUDE.md` | Tells Claude Code to run `node update-system.mjs check` at the start of a session |
+| `package.json` | Defines `npm run update:check`, `npm run update`, and `npm run rollback` |
+| `test-all.mjs` | Includes an updater check in the project test/doctor flow |
+| Manual terminal commands | You can run `node update-system.mjs check`, `node update-system.mjs apply`, or `node update-system.mjs rollback` yourself |
+
+There are two safe ways to use the Vimal GitHub updater on the new laptop.
+
+Option 1: Replace the original updater name.
+
+This is the simplest option. Keep the normal call sites unchanged, but replace the file they point to:
+
+1. Keep `update-system-vimal.mjs`.
+2. Delete or rename the old `update-system.mjs`.
+3. Rename `update-system-vimal.mjs` to `update-system.mjs`.
+4. Run:
+
+```bash
+node update-system.mjs check
+```
+
+This works because all existing instructions and npm scripts already call `update-system.mjs`.
+
+Option 2: Keep both updater files and change the callers.
+
+Use this if you do not want to delete or rename the original updater. On the new laptop, edit these references:
+
+1. In `AGENTS.md`, replace updater commands like this:
+
+```text
+node update-system.mjs check
+```
+
+with:
+
+```text
+node update-system-vimal.mjs check
+```
+
+Also update the apply, dismiss, and rollback examples in the same file:
+
+```text
+node update-system-vimal.mjs apply
+node update-system-vimal.mjs dismiss
+node update-system-vimal.mjs rollback
+```
+
+2. In `CLAUDE.md`, make the same replacements.
+
+3. In `package.json`, update the scripts:
+
+```json
+"update:check": "node update-system-vimal.mjs check",
+"update": "node update-system-vimal.mjs apply",
+"rollback": "node update-system-vimal.mjs rollback"
+```
+
+4. In `test-all.mjs`, update the updater check reference only if you want the full project test/doctor flow to use `update-system-vimal.mjs` too.
+
+After that, run:
+
+```bash
+npm run update:check
+```
+
+or:
+
+```bash
+node update-system-vimal.mjs check
+```
+
+If both files exist and you do not change these callers, the system will keep using the original `update-system.mjs`.
+
 ## LinkedIn And Playwright Setup
 
 Yes, the new person's LinkedIn will be different.
